@@ -1,0 +1,50 @@
+		=======================================================
+		    Module Required for Developing Thread Based Applications
+		=======================================================
+=>The module name Required for Developing Thread Based Applications is "threading".
+=>Before developing thread based applications, we must import "threading" module.
+=>We know that a module is a collection of Variable Names, Function Names and Class 
+    Names.
+=>Here "threading" module contains the following Vriable Names, Function Names and class 
+   names.
+===========================================================================
+Module Name:  threading
+===========================================================================
+
+===========================================================================
+Function Names:
+-------------------------
+	1) current_thread()----Syntax:    threading.current_thread()
+
+	2) active_count()------syntax:     threading.active_count()
+
+===========================================================================
+Class Name-1:    Thread----use of Threadclass  is to create sub thread(s)
+---------------------------------------
+	1) Thread(target,args)---------  t1=threading.Thread(target=funcname,args=(  ) )
+	2) start()---used for dispatching / sending sub threads to targeted Function
+			Syntax:-   subthreadobj.start()
+	3) setName(str)---setting the user-friendly name to the thread--deprecated on --"name"
+				Syntax:-   subthread.setName("User-FreindlyName")
+						(OR)
+						subthread.name=User-FreindlyName
+
+	4) getName()---- getting the thread name--------deprecared on "name"
+					Syntax:-   subthread.getName()
+						(OR)
+					   subthread.name
+
+	5) is_alive()---Returns True provided thread is running otherwise False
+				Syntax:-  subthreadobj.is_alive()
+	6) join()----It is used for making the sub threads to join with main thread after complete			execution of sub threads
+			Syntax:- 	subthread.join()
+
+	7) run(self):-
+
+---------------------------------------
+Class Name-2:    Lock
+---------------------------------------
+	1) acquire()
+	2) release()
+
+===========================================================================

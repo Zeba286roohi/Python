@@ -1,0 +1,18 @@
+		=================================================
+				 Inheritance 
+		=================================================
+Index:
+-----------
+=>Purpose of Inheritance
+=>Definition of Inheritance
+=>Memory Management in Inheritance
+=>Advantages of Inheritance
+=>Types Of Inheritances
+		1) Single Inheritance
+		2) Multi Level Inheritance
+		3) Hierachical Inheritance
+		4) Multiple Inheritance
+		5) Hybrid Inheritance
+=>Syntax for Inheritance.
+=>Programming Examples
+-----------------------------------------------------------------------------

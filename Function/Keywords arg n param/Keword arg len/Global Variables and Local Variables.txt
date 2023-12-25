@@ -1,0 +1,27 @@
+		========================================
+			Global Variables and Local Variables 
+		========================================
+=>The purpose of Global variables is that "To store Common Values for Different Function Calls"
+=>Global Variables are those, whish are defined before all the function calls.
+=>Local Variables are those, which are used for storing Temporary results in the Function Body.
+=>Local Variables are those, whish are defined within  the Function Body
+=>Syntax:-
+------------------
+			 FileName.py
+			 ------------------
+			 var1=val1
+			 var2=val2   # here var1,var2...are called global variables
+			 def   functionname1(list of formal params if any):
+			        ------------------------------
+				var5=val  # here  var5 is called Local Variable
+				------------------------------
+			 def   functionname2(list of formal params if any):
+			        ------------------------------
+				var6=val  # here  var6 is called Local Variable
+				------------------------------
+			 def   functionname-n(list of formal params if any):
+			        ------------------------------
+				var7=val  # here  var7 is called Local Variable
+				------------------------------
+============================X==================================
+			

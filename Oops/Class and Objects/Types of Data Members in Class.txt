@@ -1,0 +1,39 @@
+		=========================================
+			Types of Data Members in Class
+		=========================================
+=>In a class of Python, we can define two types of Two Data Members. They are
+			a) Instance Data Members
+			b) Class Level Data Members
+--------------------------------------------------------------------------
+a) Instance Data Members
+--------------------------------------------------------------------------
+=>Instance Data members are used for Storing Specific Values 
+=>Instanace Data memebrs memory space created Every Time when an object created.
+=>Instance Data Members must be specified in 3 ways. They are
+		a) Through an object name
+		b) Though Instance Method Name
+		c) Though Constructors.
+=>Instance Data Members are always available inside of object(also known as object 
+    level data members).
+=>Instance Data Members must be accessed w.r.t object name or self
+					objname.instance data member name
+					self.instance data member name
+
+-------------------------------------------------------------------------
+b) Class Level Data Members
+--------------------------------------------------------------------------
+=>Class Level Data Members are used for Storing Common Values.
+=>Class Level Data memebrs memory space created Only Once Irrespective number of objects 
+    created.
+=>Class Level Data Members must be specified in two ways. They are
+			a) Inside of Class definition 
+			b) Inside of Class Level Method Definition
+=>Class  Level Data Members are always available to all the  objects bcoz they are 
+    common 
+=>Class Level Data Members must be accessed w.r.t  Class Name or object name  or 
+    self or cls.
+				ClassName.Class Level data member name
+				ObjectName.Class Level data member name
+				self.Class Level data member name
+				cls.Class Level data member name
+=========================X=============================

@@ -1,0 +1,38 @@
+		==============================================
+			Number of approaches to develop python programs
+		==============================================
+=>In real time, we can develop python programs in 2 approaches. They are
+		a) Interactive Mode
+		b) Batch Mode
+----------------------------------------------------
+a) Interactive Mode:
+----------------------------------------------------
+=>In this mode, Python Programmer issued a statement and gets an output at a time.
+=>This is useful to test one Instruction / statement at a time.
+=>This mode of development is not recommended to solve Big Problems bcoz the 
+    instructions related big problem solving are not able to save and we can't retrieve those instructions.
+=> Examples  Software:-   Python Command Prompt, Python IDLE. 
+	 (These things are comming along with Python Software Installation )
+=>Hence to solve Big Problems / Big programs, we must go  for Batch Mode 
+   Programming.
+--------------------------------------------------------------------------------------
+b) Batch Mode:
+-------------------------------------------------------------------------------------
+=>In this mode of development, Python Programmer develops group / batch of 
+   Instructions in a single unit and it must be saved on some file name with an extension .py ( FileName.py )
+=>Once we save the the instructions on some file name then we can open and access 
+   that file name any time in our projects.
+--------------------------
+Example Softwares:   
+--------------------------
+			1) Python IDLE  ---- ( Python Software Installation)
+The following IDEs need to install Separately --
+			2) Jupiter Note Book (Anakonda )
+			3) Spider (Anakonda )
+			4) VS Code 
+			5) Sublime Text 
+			6) PyCharm
+			7) Edit Plus
+Note:- These are called IDEs ( Integrated Development Environment) used for developing Python Programs
+
+------------------------------------------------------------------------------------------------

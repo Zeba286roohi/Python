@@ -1,0 +1,9 @@
+		===================================================
+				Introduction to MySQL
+		===================================================
+=>MySQL is one RDBMS Software
+=>MySQL is of the Freeware and Open Source
+=>MySQL is suitable for small and large scale application for Data Persistency.
+=>MySQL is Very Fast , reliable and Scalable and Easy to use for maintaining Data Persistency.
+=>MySQL was first released in the year 1995
+=========================================================================

@@ -1,0 +1,83 @@
+			==============================================
+					Types of Constructors in Python
+			==============================================
+=>In Python Programming, we have two types of Constructors. They are
+			
+			1. Default or Parameter-Less or no-argument Constructor
+			2. Parameterized Constructor
+-------------------------------------------------------------------------------------
+1. Default or Parameter-Less or no-argument Constructor:
+--------------------------------------------------------------------------------------
+=>Definition:-  A constructor is said to be Default if and only if It never Takes any Formal 
+-----------------     Parameters (except self).
+
+=>The purpose of Default Constructor is that "To Initlize the multiple objects of same class 
+    with same Values".
+
+=>Syntax:-        def    __init__(self):   # Default Constructor
+				-----------------------------
+				---Block of statement--Initlization-
+				------------------------------
+Examples:
+-------------------
+#TestEx1.py
+class Test:
+	def __init__(self):   # Constructors--Object Initlization
+		print("i am from Default Constructor")
+		self.a=10
+		self.b=20
+		print("="*50)
+		print("Val of a={}".format(self.a))
+		print("Val of b={}".format(self.b))
+		print("="*50)
+#main program
+t1=Test()					# object creation
+t2=Test()            # object creation
+t3=Test()			 # object creation
+=======================================================================
+b) Parameterized Constructor
+-------------------------------------------------------------
+=>The purpose of Parameterized  Constructor is that " To initlize the multiple objects of same class with different  values".
+=>A constructor is said to be Parameterized if and only if It always takes  parameter(s) along  self.
+
+=>Syntax:      def     __init__(self, list of formal pareams):
+                            ------------------------------
+			    ------------------------------
+			    Block of statements--Initlization
+			    ------------------------------
+			    ------------------------------
+Examples:
+--------------------
+#TestEx2.py
+class Test:
+	def __init__(self,a,b):   # Constructors--Object Initlization
+		print("i am from Parameterized Constructor")
+		self.a=a
+		self.b=b
+		print("="*50)
+		print("Val of a={}".format(self.a))
+		print("Val of b={}".format(self.b))
+		print("="*50)
+#main program
+t1=Test(10,20)					# object creation
+t2=Test(100,200)            # object creation
+t3=Test(1,2)			 # object creation
+
+------------------------------------------------------------------------------------------------------------------------
+Note: In Class of Python, we can't define both default and Parameterized constructors bcoz PVM can remember only latest constructor (due to its interpretation Process) . To full fill the need of both default and parameterized constructors , we define single constructor with default parameter mechanism.
+
+#TestEx4.py
+class Test:
+	def __init__(self,a=1,b=2):   # Constructors--Object Initlization
+		print("i am from Default / Parameterized Constructor")
+		self.a=a
+		self.b=b
+		print("="*50)
+		print("Val of a={}".format(self.a))
+		print("Val of b={}".format(self.b))
+		print("="*50)
+#main program
+t1=Test()						# object creation
+t2=Test(100,200)            # object creation
+t3=Test(20,30)
+===========================================================================

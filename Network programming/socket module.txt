@@ -1,0 +1,60 @@
+		================================================
+				socket module
+		================================================
+=>To deal with network programming, we must use a pre-defined module called "socket".
+=>Socket Module contains Variables , Function,class names.
+---------------------------------------------------------------------
+1) socket()
+----------------------
+=>This function is used for creating an object of socket.
+=>An object of Socket can be created  both at client and server side programs and an object of socket  acts as a Bi-Directional Communication object between Server Side and Client Program.
+Syntax:      varname=socket.socket()
+		here varname is an object of <class, socket.Socket>
+
+Examples:      s=socket.socket()
+------------------------------------------------------------------------------------------------------------
+2) bind()
+----------------
+=>This function is used for binding the server side program at certain DNS and port number.
+=>Syntax:         socketobj.bind( ("DNS/IPaddress", portno) )
+=>Examples :      s.bind( ("localhost",8888) )
+					(OR)
+			     s.bind( ("127.0.0.1",8888) )
+---------------------------------------------------------------------------------------------------------------------------------
+3) listen():
+-------------------------------------------------------------------------------------------------------------------
+=>This Function is used for configuring Server Side Program in such way that to how many clients The Server Side Program can communicate.
+=>Syntax:     socketobj.listen(number of clients)
+=>Examples:       s.listen(2)
+-------------------------------------------------------------------------------------------------------------------------------
+4) accept():
+--------------------
+=>This function is used for accepting the client side program request.
+=>This function returns two objects( clientconobj, clientaddress)
+=>Syntax:         clientsocketobject,clientaddr=socketobj.accept()
+
+=>Examples:     clientsocketobj,caddr=s.accept()
+-----------------------------------------------------------------------------------------------------------------------
+5) send() with encode():
+-------------------------------------------------------------------
+=>This function is used for sending The response of Server side program to the client side program and Client Side program send request to Server Side Program in the form of Encrypted format (bytes or bytearray) by calling encode()
+=>Syntax1:        clientsocketobject.send( str(data).encode()  )  # At server side program
+=>Syntax2:        clientsocketobject.send(str(data).encode()) # At client code
+-----------------------------------------------------------------------------------------------------------------
+6) recv() with decode():
+-----------------------------------------
+=>This function is used for receving the the request coming from Client Side Program and 
+and used for for receving the response from Server Side program at client side program.
+=>Syntax1:-      clientsocketobj.recv(1024 / 2048 / 4096....).decode() # At server side
+
+=>Syntax2:-      clientsocketobj.recv(1024 / 2048 / 4096....).decode()  # At client Side
+--------------------------------------------------------------------------------------------------------------------------------
+7) connect():
+-------------------------
+=>This Function is used for obtaining connection from server side program at client side program.
+=>Syntax:-      clientsocketobject.connect( ("DNS/IPAddress", porno))
+=>Examples:     s=socket.socket()
+				s.connect( ("localhost",8888))
+					(OR)
+				s.connect(("127.0.0.1"),8888)
+===================================x========================================

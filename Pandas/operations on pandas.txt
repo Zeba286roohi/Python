@@ -1,0 +1,82 @@
+=======================================================
+		Accesssing the Data of DataFrame
+=======================================================
+1) DataFrameobj.head(no.of rows)
+2) DataFrameobj.tail(no.of rows)
+
+3) DataFrameobj.describe()
+
+4) DataFrameobj.shape
+
+5) DataFrameobj [start:stop:step]
+
+6) DataFrameobj["Col Name"]
+
+7) DataFrameobj[ ["Col Name1","Col Name-2"...."Col Name-n"] ]
+
+8) DataFrameobj[ ["Col Name1","Col Name-2"...."Col Name-n"]] [start:stop:step]
+9) DataFrameobj.iterrows()
+===================================================
+Understabding loc() ----- here start and stop index Included and 
+                                         Col Names can be used(but not column numbers]
+--------------------------------------------------------------------------------------
+1) DataFrameobj.loc[row_number]
+2) DataFrameobj.loc[row_number,[Col Name,.........] ]
+3) DataFrameobj.loc[start:stop:step]
+4) DataFrameobj.loc[start:stop:step,["Col Name"] ]
+5) DataFrameobj.loc[start:stop:step,["Col Name1", Col Name-2......."] ]
+6) DataFrameobj.loc[start:stop:step,"Col Name1" : Col Name-n"] 
+------------------------------------------------------------------------------------------------------------
+
+Understabding iloc() ----- here start index included and stop index excluded and 
+                                         Col Numbers  must be used(but not column names]
+--------------------------------------------------------------------------------------
+1) DataFrameobj.iloc[row_number]
+2) DataFrameobj.iloc[row_number,Col Number.........] 
+3) DataFrameobj.iloc[row_number,[Col Number1,Col Number2............] ]
+3) DataFrameobj.iloc[row start:row stop, Col Start: Col stop]
+4) DataFrameobj.iloc[row start:row stop,Col Number ]
+5) DataFrameobj.iloc[ [row number1, row number-2.....] ]
+6) DataFrameobj.iloc[ row start: row stop , [Col Number1,Col Number2............] ]
+6) DataFrameobj.iloc[ : , [Col Number1,Col Number2............] ]
+=======================================================================
+		Adding Column Name to Data Frame
+=======================================================================
+1)  dataframeobj['new col name']=default value
+2)  dataframeobj['new col name']=expression
+=======================================================================
+		Removing Column Name from Data Frame
+=======================================================================
+1)dataframe.drop(columns="col name")
+2)dataframe.drop(columns="col name",inplace=True)
+=======================================================================
+		sorting the dataframe data
+=======================================================================
+1) dataframeobj.sort_values("colname")
+2) dataframeobj.sort_values("colname",ascending=False)
+3) dataframeobj.sort_values(["colname1","col name2",...col name-n] )
+=======================================================================
+		knowing duplicates in dataframe data
+=======================================================================
+1) dataframeobj.duplicated()---------------gives boolean result
+=======================================================================
+		Removing duplicates from dataframe data
+=======================================================================
+1) dataframeobj.drop_duplicates()
+2) dataframeobj.drop_duplicates(inplace=True)
+=======================================================================
+		Data Filtering and Conditional Change
+=======================================================================
+1) dataframeobj.loc[ simple condition]
+			
+			Ex:    df.loc[ df["maths"]>75 ]
+
+2) dataframeobj.loc[ compund condition]
+			Ex:   df.loc[ (df["maths"]>60) & (df["maths]<85) ]
+Ex: df.loc[ (df["percent"]>=60)  & (df["percent"]<=80),["grade"]]="First"  # cond updattion.
+
+Special Case:
+3) dataframeobj.loc[simple condition.str.contains(str)]
+4) dataframeobj.loc[simple condition.str.startswith(str)]
+5) dataframeobj.loc[simple condition.str.endswith(str)]
+=======================================================================

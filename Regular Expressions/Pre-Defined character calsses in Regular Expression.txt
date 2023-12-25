@@ -1,0 +1,17 @@
+		=======================================================
+		      Pre-Defined character calsses in Regular Expression
+		=======================================================
+=> Pre-Defined character calsses defined alread in  Python Software and used Python programmers for building Search Patterns and it is used to search or 
+find or match with given data and obtains desired result.
+=>Syntax for  Pre-Defined character calsses.
+				\Pre-Defined Character Class
+=> Pre-Defined character calsses are given bellow.
+
+1) \s----------->Searches for space character only
+2) \S----------->Searches for all except space character 
+3) \w---------->searches for a word character (Or)  [A-Za-z0-9]
+4) \W-------->searches for special symbols ( except  word charcater) OR [^A-Za-z0-9]
+5) \d-------->searches for digits only   or [ 0-9 ]
+6) \D-------->Searches for all except digits  or [^0-9]
+---------------------------------------------------------------------------------------------------------------------------------
+

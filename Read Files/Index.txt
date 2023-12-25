@@ -1,0 +1,52 @@
+			===============================================
+						Files in Python
+							(OR)
+					Stream Handling in Python
+			===============================================
+Index:
+----------
+=>Purpose of Files
+=>Types of Applications
+		a) Non-Persistant Applications
+		b) Persistant Applications
+=>Definition of Files
+=>Operations on Files
+		a) Write Operations
+		b) Read Operations
+=>Types of Files
+		a) Text Fuiles
+		b) Binary Files
+=>Syntax for opening the Files
+		a) By Using Open()
+		b) By using " with  open()  "
+=>File Opening Modes
+		1) r
+		2) w
+		3) a
+		4) r+
+		5) w+
+		6) a+
+		7) x
+=>Function for writing the data to the Files
+		a) write()
+		b) writeline()
+=>Function for Reading the data to the Files
+		a) read()
+		b) read(no.of chars)
+		c) readline()
+		d) readlines()
+=>Random Access Files in Python
+		a) tell()
+		b) seek()
+=>Programming Examples
+---------------------------------------------------------------------------------
+=>Pickling and Un-pickling Concept
+	(Object Seralization and De-serialization )
+=>"pickle" module
+=>Programming Examples
+=>"os" module
+=>Programming Examples
+----------------------------------------------------------------------------------
+
+
+		

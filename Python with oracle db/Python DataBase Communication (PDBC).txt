@@ -1,0 +1,46 @@
+		================================================
+			  Python DataBase Communication (PDBC)
+		================================================
+=>Even we achieved the Data Persistency with Files concept, we have the following limitations.
+1. Files Concept of any language does not contain security bcoz files            
+    concept does not contain user names and passwords.
+2. To extract  or process the data from files is very complex bcoz Files data 
+     must always processed with Indices. 
+3. The data of the files does not contain Column Names and Very complex to Process / Query  the data
+4. Files are unable to store large Volume of Data.
+5. The Architecture of Files Changes from One OS to another OS
+     (OR ) Files are Dependent on OS.
+
+=>To Overcome the limitations of Files, we must use the concept of DataBase Softwares Which are purely RDBMS Products(Oracle, MySQL, MongoDB,SQLITE3, DB2,SQL SERVER...........)
+------------------------------------------------------------------------------------------------------------------------------------
+=>When we Data Base Softwares for acheving the data persistency, we get the following advantages. 
+
+	1. DataBase Softwares are Fully Secured bcoz they provides User Name and 
+	    password
+	2. To Process or Extract or Querying the data from DataBase Softwares is very     easy bcoz the data present in tables of Database softwares are qualified  with Column Names.
+	3. Data Base Software are able to store large Volume of Data.
+	4. Data Base Softwares are  InDepeendent from OS.
+--------------------------------------------------------X------------------------------------------------------
+
+=>If Python Program want to communicate with Any Database Software Product  then we must use pre-defined modules and such pre-defined modules are not present in Python Library. So that Python Programmer must  get / Install the pre-defined modules of Database Software by using a tool called pip.
+=>To Make any Python Program to communicate with any data base software then we must install a third party module which is related Data base software.
+=>For Example, To communicate with Oracle Database, we must install cx_Oracle Module, To communicate with MySQL data base , we must install mysql-connector.....etc and they must be installed explicitly by using pip tool
+
+=>Syntax:     pip  install   module name
+
+=>here pip tool present in the following folder
+"C:\Users\nareshit\AppData\Local\Programs\Python\Python310\Scripts "
+
+=>If we get an error as " pip is not recognized internal command " then set the path  as follows
+
+C:\Users\nareshit>set path="C:\Users\nareshit\AppData\Local\Programs\Python\Python310\Scripts "
+
+
+Example:    intsall  cx_Oracle
+--------------
+                   pip   install   cx_Oracle
+
+Example:    install  mysql-connector
+
+		pip  install   mysql-connector
+=============================x===============================

@@ -1,0 +1,10 @@
+		=======================================
+		            II) Sequence Category Data Types
+		=======================================
+=>The purpose of Sequence Category Data Types is that " To Store Sequence of Values."
+=>We have 4 data types in Sequence Category. They are
+			i) str
+			ii) bytes
+			iii) bytearray
+			iv) range
+=================================================

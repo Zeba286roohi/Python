@@ -1,0 +1,58 @@
+		============================
+				4) complex()
+		=============================
+=> complex() is used converting "Any Possible Type Value into complex type value".
+=>Syntax:-     varname=complex( int / float /bool /str )
+-----------------------------------------------------------------
+Examples:(int----->complex---->Possible )
+-----------------------------------------------------------------
+>>> a=10
+>>> print(a,type(a))----------10 <class 'int'>
+>>> b=complex(a)
+>>> print(b,type(b))--------(10+0j) <class 'complex'>
+>>> a=-4
+>>> print(a,type(a))-----------   -4 <class 'int'>
+>>> b=complex(a)
+>>> print(b,type(b))----     (-4+0j) <class 'complex'>
+---------------------------------------------------------------------
+Examples:(float----->complex---->Possible)
+----------------------------------------------------------------------
+>>> a=2.3
+>>> print(a,type(a))---------2.3 <class 'float'>
+>>> b=complex(a)
+>>> print(b,type(b))---------(2.3+0j) <class 'complex'>
+>>> a=-4.5
+>>> print(a,type(a))----    -4.5 <class 'float'>
+>>> b=complex(a)
+>>> print(b,type(b))------   (-4.5+0j) <class 'complex'>
+-----------------------------------------------------------------------
+Examples:(bool----->complex---->Possible)
+-----------------------------------------------------------------------
+>>> a=True
+>>> print(a,type(a))-------True <class 'bool'>
+>>> b=complex(a)
+>>> print(b,type(b))----(1+0j) <class 'complex'>
+>>> a=False
+>>> print(a,type(a))-----False <class 'bool'>
+>>> b=complex(a)
+>>> print(b,type(b))----- 0j <class 'complex'>
+
+
+-----------------------------------------------------------------------
+Examples:(str----->complex)
+-------------------------------------------------------------------------
+>>> a="12"   # it is int str
+>>> print(a,type(a))----------12 <class 'str'>
+>>> b=complex(a)
+>>> print(b,type(b))------(12+0j) <class 'complex'>
+>>> a="12.3" # it is float str
+>>> print(a,type(a))------12.3 <class 'str'>
+>>> b=complex(a)
+>>> print(b,type(b))--------(12.3+0j) <class 'complex'>
+>>> a="True"  # it is bool str
+>>> print(a,type(a))----True <class 'str'>
+>>> b=complex(a)----ValueError: complex() arg is a malformed string
+>>> a="KVR"   # it is pure str
+>>> print(a,type(a))--------KVR <class 'str'>
+>>> b=complex(a)--------ValueError: complex() arg is a malformed string
+--------------------------------------------------------------------------------------------

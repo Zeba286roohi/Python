@@ -1,0 +1,15 @@
+		=======================================
+				2) map()
+		=======================================
+=>The  purpose of map() is that "To convert Old Iterbale object elements into new Interable object Elements by applying to the function".
+=>In otherwords , map() converts old list elements into new list elements by applying to the function
+
+=>Syntax:-
+		varname=map(Functionname,Iterable object)
+=>varname is an object of <class,'map'> and we can convert into any iterable object type by using Ityerable type casting functions.
+=>Function name can be either Normal function or anonymous function.
+=>Iterable object can be sequence, list , set or dict type.
+=>The execution process of map() is that " Every element of iterable object sending to the specified function,
+ function will execute business logic and returned the result from function and it will be placed in an object of type <class,map>". 
+This Process will be continued until all elements of iterable object completed .
+----------------------------------------------------X------------------------------------------------------

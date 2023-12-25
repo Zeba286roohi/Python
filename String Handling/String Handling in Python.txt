@@ -1,0 +1,270 @@
+		=========================================
+			String Handling in Python(part-2)
+		=========================================
+=>We know that a String is a collection / sequence of  Characters enclosed within single / double  Quotes  (or)  triple single / double Quotes.
+=>String data is of type <class,'str'>
+=>To do various opereations on String data, we have to use the following the functions.
+---------------------------------------------------
+1) capitalize():
+----------------------
+=>This function is used for capitalizing the given str data
+=>Syntax:     varname=strobj.capitalize()
+-----------------
+Examples:
+-----------------
+>>> s="python is an oop lang"
+>>> print(s,type(s))---------python is an oop lang <class 'str'>
+>>> cs=s.capitalize()
+>>> print(cs,type(cs))----  Python is an oop lang <class 'str'>
+>>> print(s,type(s))----     python is an oop lang <class 'str'>
+---------------------------------------------------------------------------------
+2) title():
+--------------
+=>This Function is used for getting all words First Characters as capital.
+=>Syntax:-       varname=strobj.title()
+Examples:
+----------------
+>>> s="python is an oop lang"
+>>> ts=s.title()
+>>> print(ts,type(ts))--------Python Is An Oop Lang <class 'str'>
+>>> print(s,type(s))-----python is an oop lang <class 'str'>
+------------------------------------------------------------------------------
+3) find():
+ -------------
+ =>This function is used for finding an index of the first occurance of specified str data  in the given str data.
+ =>If the data found then it returns Its  +ve index value
+ =>If the data not found then it returns  -1
+
+Syntax:-    varname=strobj.find(str data)
+Examples:
+-----------------
+>>> s="python is an oop lang"
+>>> print(s,type(s))
+python is an oop lang <class 'str'>
+>>> ind=s.find("python")
+>>> print(ind)------0
+>>> ind=s.find("n")
+>>> print(ind)------5
+>>> ind=s.find("k")
+>>> print(ind)-------     -1
+>>> ind=s.find("o")
+>>> print(ind)-------4
+Examples:
+-----------------
+      for let in s:
+             ind=s.find(let)
+	     print(ind)
+Examples:
+-----------------------
+#Indexex.py
+line=input("Enter a line of text:")
+print("Given Data={}".format(line))
+for ch in line:
+	print("\tCharacter: {}   Index={}".format(ch,line.find(ch)))
+----------------------------------------------------------------------------------------------------------
+#indexex.pt
+line=input("Enter line of text:")  # Python
+i=0
+for ch in line:
+	print("Character :{}--->Index:{} and orginal Index={}".format( ch, line.index(ch),i ))
+	i=i+1
+-------------------------------------------------------------------------------------------------
+4) isalnum():
+---------------------
+=>This Function returns True Provided str data contains "Alphabets with digits or only with digits or only with alphabets"
+=>This Function returns False Provided str data is a combination of "Alphabets and numbers with any special Symbols"
+
+Syntax:-  varname=strobj.isalnum()
+				(or)
+		strobj.isalnum()
+-------------------
+Examples:
+-----------------
+>>> s="12345"
+>>> b=s.isalnum()
+>>> print(b)------------True
+>>> s="python12345"
+>>> s.isalnum()----------True
+>>> s="python12345#"
+>>> s.isalnum()---------False
+>>> s="python  12345"
+>>> s.isalnum()----------False
+>>> s="Python is an oop lang"
+>>> s.isalnum()-----------False
+>>> s="python"
+>>> s.isalnum()--------True
+-------------------------------------------------------------------------------------------------
+5) isalpha():
+  ----------------
+  =>This Function returns True provided str data contains only Alphabets otherwise it returns False.
+
+=>Syntax:-          varname=strobj.isalpha()	
+
+Examples:
+-----------------
+>>> s="Python"
+>>> b=s.isalpha()
+>>> print(b)------------True
+>>> s="1234"
+>>> print(s.isalpha())--------False
+>>> s="python1234"
+>>> print(s.isalpha())-------False
+>>> s="python_1234"
+>>> print(s.isalpha())-------False
+------------------------------------------------------------------------------
+6) isdigit():
+-------------------
+=>This Function returns True provided str data contains only purly digits(0-9) otherwise it returns False.
+Syntax:-   varname=strobj.isdigit()
+			or
+		strobj.isdigit()
+Examples:
+-----------------
+>>> a="1234"
+>>> print(a.isdigit())------------True
+>>> a="pyth1234"
+>>> print(a.isdigit())--------False
+>>> a="python"
+>>> print(a.isdigit())------False
+>>> a="pyth#$123"
+>>> print(a.isdigit())---------False
+------------------------------------------------------------------------------
+7) islower() :
+--------------------
+=>This Function returns True provided the str data is completely available in lowercase otherwise it returns False.
+
+Syntax:-   varname=strobj.islower()
+			or
+		strobj.islower()
+Examples:
+-----------------
+>>> s="python"
+>>> print(s.islower())----------True
+>>> s="Python"
+>>> print(s.islower())---------False
+>>> s="python is an oop lang"
+>>> print(s.islower())----True
+>>> s="python is An oop lang"
+>>> print(s.islower())-------False
+------------------------------------------------------------------------------
+7) isupper() :
+--------------------
+=>This Function returns True provided the str data is completely available in upper case otherwise it returns False.
+
+Syntax:-   varname=strobj.isupper()
+			or
+		strobj.isupper()
+
+Examples:
+------------------
+>>> s="Python"
+>>> print(s.isupper())----------False
+>>> s="PYTHON"
+>>> print(s.isupper())-------True
+>>> s="python is an oop lang"
+>>> print(s.isupper())---------False
+>>> s="PYTHON IS AN OOP LANG"
+>>> print(s.isupper())-------True
+--------------------------------------------------------------------------------
+9) isspace()
+-------------------
+=>This Function returns True provided str data contains purely space otherwise it returns False.
+=>Syntax:-       varname=strobj.issapce()
+					(or)
+				strobj.isapce()
+
+Examples:
+-----------------
+>>> s="Python is an oop"
+>>> print(s.isspace())--------False
+>>> s="  "
+>>> print(s.isspace())--------True
+>>> s="          "
+>>> print(s.isspace())--------True
+>>> s="123  345"
+>>> print(s.isspace())---False
+>>> s=""  # empty string
+>>> s.isspace()-----------False
+---------------------------------------------------------------------------------------			
+10) upper():
+--------------------
+=>This Function is used for converting lower case data into upper case data.
+Syntax:-    varname=strobj.upper()
+
+11) lower():
+--------------------
+=>This Function is used for converting upper case data into lower case data.
+Syntax:-    varname=strobj.lower()
+
+Examples:
+-----------------
+>>> s="python is an oop lang"
+>>> uc=s.upper()
+>>> print(uc)-------PYTHON IS AN OOP LANG
+>>> print(s)-------python is an oop lang
+>>> print(uc)---- PYTHON IS AN OOP LANG
+>>> lc=uc.lower()
+>>> print(lc)-------- python is an oop lang
+--------------------------------------------------------------------------------
+12) join():
+--------------
+=>This Function is used concatinating all the sequence of values which are available in the form str
+Syntax:-   varname=strobj1.join(iterable obj)
+
+Examples-:
+----------------
+>>>tpl=('java', 'python', 'Data Science')
+>>> print(tpl, type(tpl))--('java', 'python', 'Data Science') <class 'tuple'>
+>>> s2=""
+>>> s3=s2.join(tpl)
+>>> print(s3)---->javapythonData Science
+--------------------------
+>>> lst=["Apple","Mango","Kiwi","Guava"]
+>>> frs=""
+>>> frs=frs.join(lst)
+>>> print(frs)-------------------AppleMangoKiwiGuava
+>>> lst=["Apple","Mango","Kiwi","Guava"]
+>>> frs=" "
+>>> frs=frs.join(lst)
+>>> print(frs)--------------Apple Mango Kiwi Guava
+--------------------------------------------------------------------------------------------------------
+13) split():
+--------------------
+=>This function is used for splitting the given str data into different tokens based spitting value. The default splitting value is space
+=>This Function returns splitting values in the form of list.
+
+Syntax:-   listobj=strobj.split()
+		
+		  listobj=strobj.split("spliting value")
+Examples:
+----------------
+>>> s="Python is an oop lang"
+>>> s.split()---------  ['Python', 'is', 'an', 'oop', 'lang']
+>>> s="9-11-2021"
+>>> l=s.split("-")
+>>> print(l)----------['9', '11', '2021']
+>>> s="apple#kiwi#guava-banana"
+>>> l=s.split("#")
+>>> print(l)----------['apple', 'kiwi', 'guava-banana']
+>>> l[2].split("-")--------['guava', 'banana']
+============================X====================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

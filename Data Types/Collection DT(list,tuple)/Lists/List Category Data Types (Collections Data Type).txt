@@ -1,0 +1,9 @@
+	================================================
+		III) List Category Data Types (Collections Data Type)
+	================================================
+=>The purpose of List Category Data Types is that " To store multiple values either of same type or different type or both types with Unique and Duplicates in single object."
+=>We have 2 types of data types in List Category. They are
+			1) list 
+			2) tuple
+
+

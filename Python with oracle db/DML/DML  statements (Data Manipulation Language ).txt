@@ -1,0 +1,51 @@
+		===============================================
+			2) DML  statements (Data Manipulation Language )
+		===============================================
+=>The purpose of  DML  statements in Database softwares is that "To Manipulate 
+     records of table."
+=>Manipulating records of a table is nothing inserting records , deleting records and 
+     updating records.
+=>In Database softwares , we have 3 types of DML  statements . They are
+			a) insert
+			b) delete
+			c) update
+=>When we use any DML statement, we must commit (permanent changes )the data base by using commit() and rollback ( undo the changes) the DML operation we use rollback(). 
+=>commit() and rollback() are present in connection object.
+------------------------------------------------------------------------------------------------------------
+a) insert:
+----------------
+=>This statement is used for inserting a record into a table.
+=>Syntax:-    
+	SQL>insert into employee values( val1 for col1, val2 for col2...val-n for  col-n)
+=>Examples:
+----------------------
+	SQL> insert into employee values(222,'Renuka',7.7,'TCS');
+----------------------------------------------------------------------------------------------------
+b) delete:
+---------------------
+=>This command is used for deleting the records.
+=>Syntax1:-      SQL> delete from table-name
+			   SQL> delete from table-name where condition list
+=>Example1:-    SQL> delete from employee
+=>Example2:-    SQL> delete from employee where eno=555
+=>Example3:- SQL> delete from employee where sal>4.0 and sal<6.0;
+-------------------------------------------------------------------------------------------------
+c) update:
+--------------------------
+=>This command is used for updating the record values of table 
+=>Syntax:  (Updating All Records)
+		SQL> update  TableName 
+		          set ExistingColName1=Expression1,ExistingColName2=Expression2...
+
+
+=>Syntax: (Updating Perticular records)
+		SQL> update  TableName 
+		          set ExistingColName1=Expression1,ExistingColName2=Expression2...
+			  where  condition list
+--------------------------
+Example:
+--------------------------
+SQL> update  employee set sal=sal+sal*(10/100);
+---------------------------
+SQL> update employee set sal=sal+sal*(20/100) where eno=600;
+---------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,8 @@
+		=========================================
+			Python Programming Inpired From
+		=========================================
+
+	=> Functional Programming From C	
+	=> Object Oriented Programming From CPP
+	=>Modular programming from Modulo3
+	=>Scripting Programming from PERL 

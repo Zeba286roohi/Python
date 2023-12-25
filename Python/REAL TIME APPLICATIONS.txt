@@ -1,0 +1,29 @@
+	========================================================
+		Real Time Applications developed by using PYTHON
+	========================================================
+=Python Programming can be in 23 different area / applications.
+	
+		1) Web Application Development  (Django,flask,pyramid...etc)
+		2) Gaming Application development
+		3) Artificial  Intekigence (Machine learning and Deep Learing Applications)
+		4) Desktop GUI Applications. 
+		5) Image Processing Based Applications
+		6) Text processing Based Applications.
+		7) Business Based Applications
+		8) Education Sector
+		9) Audio and Video based Applications
+		10)Web Scrapping / Harvesting Application
+		11) Data Visuavalization.
+		12) Scientific and Numerical Applications
+		13) Software development
+		14) Operating System development
+		15) CAD and CAM based Applications
+		16)Embedded System 
+		17) Console Based Applications.
+		18) Comuter Vision.
+		19) Lanaguage development .
+		20) Automation in testing
+		21) Data Analysis and Data Analaytics
+		22) Development of IOT
+		23) Enterprize Applications
+

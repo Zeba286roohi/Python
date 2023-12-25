@@ -1,0 +1,16 @@
+		===================================
+				Platform Independent
+		===================================
+=>If any programming language based applications / Programs  runs on evevry OS then it is callled Platform Independent.
+=>Python is one of the Platform Indepenedent Language bcoz "In Python Programming Execution Environment all Values are stored in the form OBJECTS".
+
+=>All the Objects can store un-limited number of values and They will not depends on any OS. (Indepenedent from OS)
+
+Examples:
+----------------
+=>C,CPP  are comes under Platform Dependent  bcoz C, CPP lang data types are keywords and their memory space changing from one OS to another OS.
+=>Java comes under Platform Independent bcoz Java lang Pre-Data Types are keywords and their memory space remains same on all TYpes OSes but they can store single value and unable to store multiple values. where as Java Programming also contains Classes and Objects and in Objects we can store Multiple Values with Limited only.
+=>Where  Python Programming Language is one of the Platform Independent bcoz python programming stores all the values in the form OBJECTS with UN-LIMITED size. 
+
+NOTE:-  in python values are stored in the form objects.
+=========================X===================================

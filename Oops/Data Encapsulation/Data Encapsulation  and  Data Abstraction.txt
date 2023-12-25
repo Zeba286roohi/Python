@@ -1,0 +1,85 @@
+		==============================================
+			 Data Encapsulation  and  Data Abstraction
+		==============================================
+------------------------------------
+Data Encapsulation:
+------------------------------------
+=>Data Encapsulation is one of the distinct feature of OOPs
+=>The Purpose of Data Encapsulation is that " To hide the confidential Information from 
+    External Programmers / Users".
+=>The Process of Hiding / securing the confidential Information from external Programmers / 
+    Un-Authorized Users is called Data Encapsulation.
+=>The confidential Information  represents Data Members and Methods.
+=>In Python Programming, we can apply Data Encasulation at 2 places. They are
+			a) At  Data Member Level.
+			b) At Method Level.
+
+=>To implement Data Encapsulation, in Python Programming, The Data Members and Methods Must Be preceded with  __  ( Eqv.   Private )
+
+=>Syntax1:   (Data Encapsulation at Data Member Level)
+
+				_ _Data MemberName1= Value1
+				_ _Data MemberName2= Value2
+				---------------------------------------------
+				_ _Data MemberName-n= Value-n
+
+=>Syntax2:   (Data Encapsulation at Method Level):
+---------------
+			def  _ _MethodName(self, list of formal params if any):
+			              ----------------------------------------------
+				      Block of statements
+				      -----------------------------------------------
+
+----------------------------------
+Data Abstraction
+----------------------------------
+=>The Process of retrieving or extracting Essential details (Data Members or method) without considering  Hidden Deatils is called Data Abstraction.
+=====================================================================
+Example1:-----------Data Encapsulation at Data Member Level
+---------------------
+#Others1.py
+from Account import Account
+ao=Account()
+print("-"*50)
+#print("Account Number={}".format(ao.acno)) Not Possible to access
+print("Account Holder Name={}".format(ao.cname))
+#print("Account Holder Bal={}".format(ao.bal))  Not Possible to access
+print("Account Holder Branch Name={}".format(ao.bname))
+#print("Account Holder Pin={}".format(ao.pin)) Not Possible to access
+print("-"*50)
+*************************************************************
+#Others1.py #----------------------Data Abstraction at Data Member Level
+from Account import Account
+ao=Account()
+print("-"*50)
+#print("Account Number={}".format(ao.acno)) Not Possible to access
+print("Account Holder Name={}".format(ao.cname))
+#print("Account Holder Bal={}".format(ao.bal))  Not Possible to access
+print("Account Holder Branch Name={}".format(ao.bname))
+#print("Account Holder Pin={}".format(ao.pin)) Not Possible to access
+print("-"*50)
+-----------------------------------------------------------------------------------------------
+Example2:-----------Data Encapsulation at Data Method Level
+---------------------
+#SavingsAccount.py------File Name and Treated as Module Name
+class SAccount:
+	def  __getSAccount(self):   # Method  is  Encapsulated 
+		self.acno=10  
+		self.cname="Rossum"
+		self.bal=4.5		
+		self.bname="SBI"
+		self.pin=4567	
+
+*****************************************************************
+#Others2.py------------------Data Abstraction at Data Method Level
+from SavingsAccount import SAccount
+ao=SAccount()
+#ao.getSAccount()-----Not Possible to access bcoz method is hidden / capsulated
+print("-"*50)
+#print("Account Number={}".format(ao.acno))# Not Possible to access
+#print("Account Holder Name={}".format(ao.cname))
+#print("Account Holder Bal={}".format(ao.bal))  #Not Possible to access
+#print("Account Holder Branch Name={}".format(ao.bname))
+#print("Account Holder Pin={}".format(ao.pin)) #Not Possible to access
+print("-"*50)
+----------------------------------------------------------------------------------------------------------------

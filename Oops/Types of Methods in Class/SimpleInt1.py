@@ -1,0 +1,24 @@
+#Program for calculating Simple  Interest by using Classes and Objects
+#SimpleInt1.py
+class SimpleInt:
+	def  readvalues(self):
+		self.p=float(input("Enter Principle Amount:"))
+		self.t=float(input("Enter Time:"))
+		self.r=float(input("Enter Rate Of Interest:"))
+		self.calSimpleInt()
+		self.dispresult()   # One Instance Method calling another Instance Method
+
+	def  calSimpleInt(self):
+		self.si=(self.p*self.t*self.r)/100
+
+	def   dispresult(self):
+		print("="*50)
+		print("Principle Amount:{}".format(self.p))
+		print("Time :{}".format(self.t))
+		print("Rate of Interest :{}".format(self.r))
+		print("Simple Interest:{}".format(self.si))
+		print("="*50)
+
+#main program
+si=SimpleInt()
+si.readvalues()

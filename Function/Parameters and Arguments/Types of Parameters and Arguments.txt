@@ -1,0 +1,13 @@
+		===========================================================
+				Types of 	Parameters and Arguments
+		===========================================================
+=>Based on passsing arguments values to Parameters , the arguments are classified into 5 types.
+		
+		1) Positional Arguments / Parameters
+		2) Default Arguments / Parameters
+		3) Key word Arguments / Parameters
+		4) Variable Lengh Arguments / Parameters
+		5) Key Word Variable Lengh Arguments / Parameters
+
+
+

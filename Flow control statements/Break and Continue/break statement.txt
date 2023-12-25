@@ -1,0 +1,31 @@
+			===============================================
+						break
+			===============================================
+=>break statement is used for terminating the execution process of Looping provided certain condition satisfied.
+=>break statement always used inside of loop statements.
+=>when we use break statement inside of the Loop, PVM control comes out of loop and executes other statements in the program but not corresponding else block of loop. 
+=>Syntax1:-
+----------------
+	  for varname  in Iterable_Object:
+		      -----------------------------------
+		     if(Test Cond):
+			    break
+	  else:
+	       else block of statements
+	  --------------------------------------------
+	  Other statements in Program
+	-----------------------------------------------
+
+------------------
+=>Syntax2:-
+------------------
+	  while(Test Cond)
+		-----------------------------------
+		if(Test Cond):
+		    break
+	  else:
+	       else block of statements
+	  --------------------------------------------
+	  Other statements in Program
+	-----------------------------------------------
+============================================X=========================

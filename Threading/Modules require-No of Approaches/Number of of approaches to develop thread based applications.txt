@@ -1,0 +1,87 @@
+		==============================================================
+			Number of of approaches to develop thread based applications
+		==============================================================
+=>In Python, we can thread based applications in 3 approaches. They are
+		
+	1) By Using Functional Approach
+	2) By Using Sub Class of Thread class of threading  module ( with OOPs and Inheritance)
+	3) By Using Non-Sub Class of Thread class of threading  module ( with OOPs without Inheritance)
+------------------------------------------------------------------------------------------------------------------------
+1) By Using Functional Approach
+-----------------------------------------------------------------------------------------
+Step-1:   import threading module
+Step-2:   Define a Function with Logic which is executed by Sub Thread
+Step-3:   create sub thread
+Step-4:  dispatch or send the sub thread to the target function.
+
+Examples:
+------------------
+#FirstApproachEx1.py
+import threading  # step-1
+def  hello(s):  # step-2
+	print("-"*50)
+	print("\nThis Function executed by Sub Thread and Whose Name is:{}".format(threading.current_thread().name))
+	print("Hi,{} wel come to threading".format(s))
+	print("-"*50)
+
+#main program
+t=threading.Thread(target=hello,args=("pooja-kavya",) ) #  step-3
+t.start() #  step-4
+==========================================================================
+2) By Using Sub Class of Thread class of threading  module ( with OOPs and Inheritance)
+---------------------------------------------------------------------------------------------------------------------------------
+Step-1:  import threading 
+Step-2:  Choose the Programmer-Defined Class
+Step-3: The Programmer-defined class must inherit from Thread class of threading module.
+Step-4: create an object of Programmer-defined class 
+Step-5: call the start() w.r.t the object of Programmer-defined class
+		object.start()
+	 Here start() internally calling run() of Programmer-defind class
+
+Examples:
+------------------
+#SecondApproachEx1.py
+import threading   # step-1
+#       step-2          step-3
+class Sample(threading.Thread):
+	def  run(self):  # step-4
+		print("\nName of sub thread=",threading.current_thread().name)
+		print("i am from run()")
+
+		
+#main program
+print("Default Name of thread=",threading.current_thread().name) #MainThread
+#create a sub thread
+t1=Sample()
+t1.name="OOPS"
+print("Is sub thread alive before start=",t1.is_alive())#False
+t1.start() # step-5
+print("Is sub thread alive after start=",t1.is_alive())#True
+============================================================================
+3) By Using Non-Sub Class of Thread class of threading  module ( with OOPs without 
+     Inheritance)
+----------------------------------------------------------------------------------------------------------------------
+Step1: import threading
+Step-2: Choose the Programmer-Defined Class
+Step-3: Define Programmer-defined method in side of Programmer-Defined Class
+Step-4: Create an object Programmer-defined class
+Step-5: create sub thread w.r.t Thread class of threading module
+Step-6: Call the start() upon the subthreadobject
+
+
+Examples:
+--------------------
+#ThirdApproachEx1.py
+import threading  # step-1
+class Test:    # Step-2
+	def   hello(self,s): # step-3
+		print("\nName of sub thread=",threading.current_thread().name)
+		print("Hello ,{}, Good Morning".format(s))
+		print("I am from hello() of Test Class")
+		print("here hello() executed by sub thread")
+
+#main program
+t=Test() #  Create an object Programmer-defined class--step-4
+subth=threading.Thread(target=t.hello, args=( ("Rossum",) ) )#  # create sub thread--Step-5
+subth.start() #  # step-6
+=========================================================================

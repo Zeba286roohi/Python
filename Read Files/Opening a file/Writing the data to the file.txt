@@ -1,0 +1,22 @@
+		================================================
+			Writing the data to the file
+		================================================
+=>To write the data to the file, we have two pre-defined functions. They are
+			1) write()
+			2) writelines()
+--------------------------------------------------------------------------------------------------------------------
+1) write()
+--------------------------------------------------------------------------------------------------------------------
+=>This function is used for writing any type of data to the file in the form of str .
+=>Syntax:-     filepointer.write(data)
+=>filepointer is a valid variable name and it is always pointing to the file.
+=>data represents any type of value and it must be in the form of str always.
+--------------------------------------------------------------------------------------------------------------------
+2) writeline()
+--------------------------------------------------------------------------------------------------------------------
+=>This function is used for writing any type of Iterable object data in the form of str .
+=>Syntax:-      filepointer.writeline(data)
+=>filepointer is a valid variable name and it is always pointing to the file.
+=>data represents any type of Iterable object and it must be in the form of str always.
+==============================X=============================================
+

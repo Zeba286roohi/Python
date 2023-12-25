@@ -1,0 +1,161 @@
+		============================================
+			5. Bitwise Operators  (Most Imp)
+		============================================
+=>Bitwise Operators are Applicable on Integer data only but not applicable on 
+    floating point values bcoz they are varying precision.
+=>The purpose of Bitwise Operators is that "Converting Integer data internally into     Binary Format and Performs Binary Operations in the form Bit by Bit and final result always displayed in the form deciaml number system ". 
+=>Since the operations are carrying out in the form of Bit by Bit and Hence these operators are named as Bitwise Operators.
+=>In Python Programming, we have 
+		1. Bitwise Left Shift Operator ( << )
+		2. Bitwise Right Shift Operator ( >> )
+		3. Bitwise 'and' Operator  ( & )
+		4. Bitwise 'or' Operator  ( | )
+		5. Bitwise complement Operator  ( ~ )
+		6. Bitwise 'xor' Operator  ( ^ )
+--------------------------------------------------------------------------------------------------------------
+1. Bitwise Left Shift Operator ( << ):
+--------------------------------------------------------
+Syntax:-      varname = GivenData << No.of Bits
+
+=>The concept of bitwise left shift operator says that " Shift specified number of bits towards left by adding number of zeros at right side (no. of zeros==no. of specfied number of bits )
+
+Examples:
+-------------------
+>>> a=10
+>>> res=a<<3
+>>> print(res)-----------80
+>>> print(24<<2)--------96
+>>> print(2<<2)---------8
+>>> print(12<<3)--------96
+>>> print(5<<4)----------80
+===============================================================
+2. Bitwise Right Shift Operator ( >> ):
+--------------------------------------------------------
+Syntax:-      varname = GivenData >> No.of Bits
+
+=>The concept of bitwise right shift operator says that " Shift specified number of bits towards right by adding number of zeros at left side (no. of zeros==no. of specfied number of bits )
+-------------------
+Examples:
+-------------------
+>>> c=a>>3
+>>> print(c)--------1
+>>> print(12>>2)------3
+>>> print(12>>3)----1
+>>> print(12>>4)----0
+>>> print(36>>4)----2
+===============================================================
+3. Bitwise 'and' Operator  ( & ):
+-----------------------------------------------------
+=>Syntax:-    varname = Value1 & Value2
+
+=>The Functionality of  Bitwise 'and' Operator  is expressed in the following truth table.
+		---------------------------------------------------------------
+			Input1        Input2      Input1 & Input2
+		-----------------------------------------------------------------
+		         0                   1			    0
+			 1                   0			    0
+			 0                   0			    0
+			 1                   1			    1
+		-------------------------------------------------------------------
+Example1:
+------------------
+>>>a=10------------------------ 1010
+>>>b=15------------------------ 1111
+------------------------------------------------------------
+>>>c=a&b---------------------  1010----->result is 10
+>>>print(c)---->10
+
+Examples:
+---------------------
+>>> print(3&4)----------0
+>>> print(10&3)--------2
+----------------------------------------
+Special Case:
+-------------------------
+>>>s1={10,20,30}
+>>>s2={40,30,50}
+>>>s3=s1.intersection(s2)
+>>>print(s3)----------{30}
+>>>s4=s1&s2
+>>>print(s4)-------{30}
+==================================================================
+4. Bitwise 'or' Operator  ( | ):
+-----------------------------------------------------
+=>Syntax:-    varname = Value1 | Value2
+
+=>The Functionality of  Bitwise 'or' Operator  is expressed in the following truth table.
+		---------------------------------------------------------------
+			Input1        Input2      Input1 | Input2
+		-----------------------------------------------------------------
+		         0                   1			    1
+			 1                   0			    1
+			 0                   0			    0
+			 1                   1			    1
+		-------------------------------------------------------------------
+
+Examples:
+---------------------
+>>> a=10---------------------> 1010
+>>> b=7---------------------->  0111
+-------------------------------------------------------
+>>> c=a|b--------------------> 1111-----------> result is 15
+>>> print(c)----------15
+>>> print(3|4)----------7
+=================================================================
+5. Bitwise complement Operator  ( ~ ):
+----------------------------------------------------------
+Syntax:-    varname= ~Value
+=>This operator obtains complement of the given number
+
+Examples:
+------------------
+>>>a=10------------------------>  1010
+>>>b=~a------------------------> ~ (1010+1)
+					    - ( 1010
+					        0001)= - (1011)---->Result is  -11
+
+>>>a=15
+>>>b=~a---------------> ~(1111+1)
+                                 -(1111
+				   0001)= - 10000------> result is -16
+
+
+>>> a=13
+>>> b=~a
+>>> print(b)---------------   -14
+>>> a=345
+>>> print(~a)--------------    -346
+================================================================
+6. Bitwise 'xor' Operator  ( ^ ):
+----------------------------------------------------
+=>Syntax:-    varname = Value1 ^ Value2
+=>The Functionality of  Bitwise 'xor' Operator  is expressed in the following truth table.
+		---------------------------------------------------------------
+			Input1        Input2      Input1 ^ Input2
+		-----------------------------------------------------------------
+		         0                   1			    1
+			 1                   0			    1
+			 0                   0			    0
+			 1                   1			    0
+		-------------------------------------------------------------------
+
+Eamples:
+--------------
+>>>a=3----------------- 0 0 1 1
+>>>b=4----------------- 0 1 0 0
+---------------------------------------------------
+>>>c=a^b--------------0 1 1 1-------------Result is 7
+>>>print(c)----7
+>>> print(15^10)---5
+
+Special Case:
+---------------------
+>>> s1={10,20,30,40}
+>>> s2={10,40,50,60}
+>>> s3=s1.symmetric_difference(s2)
+>>> print(s3)----------{50, 20, 60, 30}
+>>>
+>>> s4=s1^s2
+>>> print(s4)-----------{50, 20, 60, 30}
+
+================================X=============================

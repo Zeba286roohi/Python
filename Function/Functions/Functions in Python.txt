@@ -1,0 +1,36 @@
+			====================================================
+					Functions in Python
+			====================================================
+=>The purpose of Functions is that "To perform certain Operation and prvides Re-usability".
+-----------------------------
+=>Def. of Function:
+----------------------------
+=>A Part of main program is called Function
+		(or)
+=>Sub Program of main program is called Function. 
+
+---------------------------------------------
+=>Advantages of Functions:
+---------------------------------------------
+=>If we develop any problem or program by using Function concept , we get following advantages.
+		=>Application Development time is Less
+		=>Application Memory Space is Less
+		=>Application Execution time is Less
+		=>Application Performance is Enhanced ( Improved )
+		=>Redundency (Duplication) of Code is Minimized
+---------------------------------------------------------------------------------------------------
+=>Parts of Functions:
+--------------------------------------------------------------------------------------------------
+=>When we deal with Functional Programming, we must ensure that there must exist 2 parts. They are
+			1) Function Definition
+			2) Function Calls
+=>A perticular Function Definition exist only once and we can have one or more Function Calls.
+=>For Every Function call , there must exists a Function Definition otherwise we get NameError.
+------------------------------------------------------------------------------------------------------------
+Phases in Functions:
+-------------------------------------------------------
+=>In Functions, there must exists 3 phases.
+		a) Every Function Must Take   INPUT
+		b) Every Function Must PROCESS the input
+		c) Every Function must give OUTPUT / RESULT
+

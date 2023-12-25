@@ -1,0 +1,97 @@
+	===============================================
+		Dict Category Data Types (Collections Data Type)
+	===============================================
+=>we have one data type in Dict Category  and whose name is 'dict'.
+=>'dict' is one of the pre-defined class and treated as dict data type.
+=>The purpose of dict data type is that "To store the data in the form (Key,Value)".
+=>In (Key,Value) , the values of Key represents Unique and values of Value 
+    represents Unique / Duplicates.
+=>The (Key,value) must be organized / stored within curly braces { } .
+=>An object of dict maintains Inserion Order 
+=>An object of dict never supports Indexing slicing
+=>An object of dict belongs to mutable. In otherwords the values of Key is immutable 
+    where values of Value  is mutable. The Values of Value can be updated based on Value of Key.
+=>We can create two types of dict objects.
+                      a) empty dict
+		      b) non-empty dict
+------------------
+a) empty dict:
+-------------------
+=>Empty dict is one which does not contain any (Key,Value) and whose length is 0.
+=>Syntax:-     dictobjname = { }
+				(or)
+		    dictobjname = dict()
+--------------------------------------------------------------
+=>Syntax for adding (Key,value) to empty dict
+--------------------------------------------------------------
+	dictobjname[Key1]=Val1
+	dictobjname[Key2]=Val2
+	-------------------------------
+	dictobjname[Key-n]=Val-n
+=>Here the values of Key1 ,Key2...Key-n can be either Numeric (int) or Str
+--------------------------------------------------------------------------------------
+b) non-empty dict:
+---------------------------
+=>Empty dict is one which  contains  (Key,Value) and whose length is > 0.
+=>Syntax:-     dictobjname = {Key1:Val1, Key2:Val2,....Key-n:Val-n }
+------------------------------------------
+Examples:
+------------------
+>>> d1={10:"RS",20:"JG",30:"RS",40:"DR"}
+>>> print(d1,type(d1),id(d1))---{10: 'RS', 20: 'JG', 30: 'RS', 40: 'DR'} <class 'dict'>							1520128442688
+>>> d1[10]----------'RS'
+>>> d1[20]----------'JG'
+>>> d1[30]---------'RS'
+>>> d1[40]-------'DR'
+>>> d1[0]------KeyError: 0
+>>> d1["RS"]-----KeyError: 'RS'
+>>>
+>>> d1[10]="Kavya"
+>>> print(d1,type(d1),id(d1))----{10: 'Kavya', 20: 'JG', 30: 'RS', 40: 'DR'} <class 'dict'>							1520128442688
+>>> d1[20]="Priyanka"
+>>> print(d1,type(d1),id(d1))---{10: 'Kavya', 20: 'Priyanka', 30: 'RS', 40: 'DR'} 
+						<class 'dict'> 1520128442688
+
+>>> d2={}
+>>> print(d2,type(d2),id(d2))----------{} <class 'dict'> 1520128442944
+>>> len(d2)----------0
+>>> d3=dict()
+>>> print(d3,type(d3),id(d3))-------{} <class 'dict'> 1520128756480
+>>> len(d3)----0
+>>> d2["Python"]=4000.00
+>>> d2["Data Sci"]=15000.00
+>>> d2["Django"]=5000
+>>> print(d2,type(d2),id(d2))---{'Python': 4000.0, 'Data Sci': 15000.0, 'Django': 5000}							<class 'dict'> 1520128442944
+>>> len(d2)--------3
+>>> d2["Java"]=2500
+>>> print(d2,type(d2),id(d2))---{'Python': 4000.0, 'Data Sci': 15000.0, 'Django': 5000,							'Java': 2500} <class 'dict'> 1520128442944
+>>> d2["Python"]------4000.0
+>>>
+>>> d3=dict()
+>>> print(d3,type(d3),id(d3))--------{} <class 'dict'> 1520128756928
+>>> d3[10]="Apple"
+>>> d3[20]="Mango"
+>>> d3[30]="Banana"
+>>> d3[40]="Kiwi"
+>>> print(d3,type(d3),id(d3))---{10: 'Apple', 20: 'Mango', 30: 'Banana', 40: 'Kiwi'}							<class 'dict'> 1520128756928
+
+>>> d4=dict()
+>>> print(d4,type(d4),id(d4))--------{} <class 'dict'> 1520128757120
+>>> d4[10]="Apple"
+>>> d4["Kiwi"]=30
+>>> d4[20]=30
+>>> d4[40]=30.99
+>>> print(d4,type(d4),id(d4))----{10: 'Apple', 'Kiwi': 30, 20: 30, 40: 30.99}
+						<class 'dict'> 1520128757120
+
+>>> d1={10:"Apple",20:'Mango'}
+>>> print(d1,type(d1),id(d1))----{10: 'Apple', 20: 'Mango'} <class 'dict'>									1520128756480
+>>> d1[10]="Guava"
+>>> print(d1,type(d1),id(d1))---{10: 'Guava', 20: 'Mango'} <class 'dict'>										1520128756480
+>>> d1[30]="Banana"
+>>> print(d1,type(d1),id(d1))----{10: 'Guava', 20: 'Mango', 30: 'Banana'} 
+						<class 'dict'> 1520128756480
+>>> d1={10:"Apple",20:'Mango'}
+>>> print(d1,type(d1),id(d1))----{10: 'Apple', 20: 'Mango'} <class 'dict'>									1520128442688
+>>> len(d1)------2
+============================X=================================

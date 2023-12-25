@@ -1,0 +1,143 @@
+				=======================================
+							os module 
+				=======================================
+=>"os" is one of pre-defined module
+=>The purpose of 'os' module is that " To perform ceratin Os Level Operations"
+=>The essential Os Level Operations are 
+				1) getting current working folder           (    getcwd()   )
+				2) create a folder					( mkdir() )
+				3) create a folders hierarchy                  ( makedirs()  )
+				4) remove a folder					( rmdir() )
+				5) remove a folders Hierarchy		( removedirs() )
+				6) rename a folder					(  rename()  )
+				7) list files in folder					(  listdir()  )
+-------------------------------------------------------------------------------------------------------------------------------------------
+1) getting current working folder:
+-------------------------------------------------------
+=>To get current working folder, we use a pre-defined function  getcwd() of os module
+=>Syntax:               varname=os.getcwd()
+
+#cwdex1.py
+import os
+cwdname=os.getcwd()
+print(cwdname)
+--------------------------------------------------------------------
+2) create a folder	:
+--------------------------------------------------------------------
+=>To create a folder, we use  mkdir() of os module.
+=>Syntax:-       os.mkdir("folder name")
+=>mkdir() can create one folder at a time and it is unable create Folders Hierarchy.
+=>mkdir() generate FileExistsError provided if the folder alerady exists.
+=>mkdir() generates FileNotFoundError provided when we attempt create Folders Hierarchy.
+
+Examples:
+---------------------
+#mkdirex.py
+import os
+try:
+	os.mkdir("D:\\kiwi\mango\guava")
+	print("Folder created successfully--verify")
+except FileExistsError:
+	print("Folder already exists")
+except FileNotFoundError:
+	print("Creation of Folders Hierarchy is not possible:")
+------------------------------------------------------------------------------------------------------------------------------------------
+3) create a folders hierarchy:
+--------------------------------------------------
+=>To create a folders hierarchy, we use  makedirs() of os module
+=>Syntax:-         os.makedirs("folders hierarchy")
+=>If the folders Hierarchy already exists then we get FileExistsError.
+-----------------
+Examples:
+-----------------
+#Program for  creating a folders Hierarchy	
+#mkdirsex.py
+import os
+try:
+	os.makedirs("D:\\India\Hyd\Ameerpet\Python\Data Science")
+	print("Folders created successfully--verify")
+except FileExistsError:
+	print("Folder already exists")
+-----------------------------------------------------------------------------------------------------------------------------
+4) remove a folder	:
+------------------------------------
+=>To remove a folder, we use  rmdir() of os module
+=>Syntax:       os.rmdir("folder name")
+=>If folder name does not exists then we get FileNotFoundError.
+=>If the folder contains any files or sub folder then it is not possible to remove folder and we get OSError.
+=>rmdir() can remove one folder at a time but possibel to remove Folders Hierarchy.
+
+Examples:
+-------------------
+#rmdirex.py
+import os
+try:
+	os.rmdir("D:\\hyd")
+	print("Folder removed successfully--verify")
+except FileNotFoundError:
+	print("Specified Folders does not exists")
+except OSError:
+	print("Specified Folder is not empty--not possible to remove")
+--------------------------------------------------------------------------------------------------------------------
+5) remove a folders Hierarchy:
+-------------------------------------------------------
+=>To  remove a folders Hierarchy, we use  removedirs() of os module
+=>Syntax:-      os.removedirs("folders Hierarchy")
+=>If folders  Hierarchy does not exists then we get FileNotFoundError.
+=>If the folder  hierarchy contains any files or sub folder then it is not possible to remove folders hierachy  and we get OSError.
+
+---------------------
+Examples:
+---------------------
+#removemdirex.py
+import os
+try:
+	os.removedirs("D:\\India/Hyd\Ameerpet/Python/django")
+	print("Folders Hierarhcy removed successfully--verify")
+except FileNotFoundError:
+	print("Specified Folders does not exists")
+except OSError:
+	print("Specified Folders is not empty--not possible to remove")
+---------------------------------------------------------------------------------------------------------------------------
+6) rename a folder	:
+------------------------------------------------------------------------------------------
+=>To rename a folder , we use rename() of os module
+=>Syntax:   os.rename("existing folder name", "New Folder name")
+=>If existing folder name does not exists then we get FileNotFoundError.
+
+
+Examples:
+------------------
+#renamedirex.py
+import os
+try:
+	os.rename("c:\\mango","c:\\india")
+	print("Folder renamed  successfully--verify")
+except FileNotFoundError:
+	print("Folders does not exists")
+----------------------------------------------------------------------------------------------------------------------
+7) list files in folder	:
+----------------------------------------
+=>To list the files in folder , we use listdir() of os module
+=>Syntax:-   listobj=os.listdir("folder name")
+=>if the "folder name" does not exists then we get FileNotFoundError
+
+
+Examples:
+------------------
+#Program for  listing files	
+#listfiles.py
+import os
+try:
+	foldername=input("Enter Folder Name:")
+	listfiles=os.listdir(foldername)
+	print("-"*50)
+	print("Number of file in '{}' folder={}".format(foldername, len(listfiles)))
+	print("-"*50)
+	for filename in listfiles:
+		print("\t{}".format(filename))
+	print("-"*50)
+except FileNotFoundError:
+	print("Folders does not exists:")
+===================================X========================================
+

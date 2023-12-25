@@ -1,0 +1,51 @@
+		===============================================
+		Numpy--selecting the elements based on condition
+					(OR)
+			Creating Filter Directly From ndArray
+		===============================================
+=>To select any element from ndarray object, we the two approaches. They are
+-------------------
+Approach-1:
+-------------------
+=>Prepare Boolean Array ( It contains True or False. True represents Condition  
+    satisfied and False represents Condition not satisfied]
+
+    Syntax:-        varname=ndarrayobject with condition
+
+                          varname is called boolean array.
+
+=>Pass the Boolean Array to the ndarray object. so that we can get  those elements from ndarray which satisfies  with the entry True(or) we can get  those elements from ndarray corresponding True entries of Boolean array.
+
+	Syntax:        ndarray [ Boolean Array ]
+
+-------------------
+Approach-2:
+-------------------
+=>In this approach, we directly pass Boolean array values to the ndarray for getting required elements based on condition.
+
+		Syntax:       ndarray[ndarrayobject with condition]
+------------------------------------------------------------------------------------------------------------------------
+Examples:
+-----------------------------
+Q1) Select the Possitive Elements from ndarray
+>>> import numpy as np
+>>> l=[10,21,-34,23,-45,30,-40]
+>>> print(l)--------------[10, 21, -34, 23, -45, 30, -40]
+>>> a=np.array(l)
+>>> a------------array([ 10,  21, -34,  23, -45,  30, -40])
+>>> b=a>0    # Boolean Array
+>>> print(b)----[ True  True False  True False  True False]
+>>> a[b]-------array([10, 21, 23, 30])
+===================OR=========================
+>>> a[ a>0 ]-----------array([10, 21, 23, 30])
+-------------------------------------------------------------------
+Q2) Select the Negative Elements from ndarray
+	>>> l=[10,21,-34,23,-45,30,-40]
+	>>> a=np.array(l)
+	>>> a----------	array([ 10,  21, -34,  23, -45,  30, -40])
+	>>> b=a<0  # Boolean Array
+	>>> b----	array([False, False,  True, False,  True, False,  True])
+	>>> a[b]-------	array([-34, -45, -40])
+		=================OR=============
+	>>> a[a<0]--------------	array([-34, -45, -40])
+---------------------------------------------------------------------------------

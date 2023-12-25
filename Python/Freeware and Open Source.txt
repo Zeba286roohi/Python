@@ -1,0 +1,26 @@
+		==========================================
+				 Freeware and Open Source
+		==========================================
+---------------------------
+=>Freeware:
+---------------------------
+=>Since Python software is Freely Downloadable and hence Python is one of the Freeware.
+---------------------------
+=>Open Source:
+---------------------------
+=>The standard python name realsed by PSF to the real time is called "CPYTHON".
+=>Some Companies came foward and customized CPYTHON for their in-house tools development and these customized development of CPYTHON  are called "Python Distributions".
+=>Some of the Python Distributions are.
+
+	1) JPython (or) Jython---->It is used for running Java Based Applications.
+	2) Iron Python (OR) Ipython--->It is used for running C#.net Applications.
+	3) Ruby Python ----->It is used to run RUBY Based Applications
+	4) Micro Python---->It is used to develop Micro Controller Applications.
+	5) Anakonda Python-->It used develop Big Data / Hadoop Based Applications.
+	6) Stackless Python--->Concurrenycy
+	7) PyPy---->It provides JIT(Just -in Time) compiler 
+	.................etc
+
+
+
+

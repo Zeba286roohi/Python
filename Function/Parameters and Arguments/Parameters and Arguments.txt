@@ -1,0 +1,30 @@
+		======================================
+			Parameters and Arguments
+		======================================
+=>Parameters are classfied into twp types. They are
+			a) Formal Parameters
+			b) Local Parameters (or) Variables
+=>Formal parameters are those, which are used in Function Heading and they are used for storing the 
+    inputs which are coming from Function calls.
+=>Local Parameters (or) Variables are those which are used in Function Body and they are used for       
+    storing Temporary results.
+=>Hence both Formal Parameters and Local Parameters (or) Variables are available in the context 
+    Function Definition.
+
+Examples:               def    compute(a,b,c):  #  here 'a', 'b', 'c' are called formal Parameters
+ ----------------			d=a+b*c     # Here 'd' is called  Local Parmeters / Variable
+					----------------------
+					----------------------
+
+=>Arguments are those which are used in Function Call and they may be in the form variables or values.
+------------------
+Example:
+------------------
+			#main program
+			x=10
+			y=20
+			z=30
+			compute(x,y,z)` # here 'x','y','z' are called Arguments
+			compute(100,200,300) # here 100,200 and 300 are called Argument values.
+=>The relation between arguments and formal parameters is that "all values of Arguments are passing to Formal parameters".
+========================================X==================================

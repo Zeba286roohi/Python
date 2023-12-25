@@ -1,0 +1,10 @@
+		============================================
+			I ) Fundamental Category Data Types
+		============================================
+=>The purpose of Fundamental Category Data Types is that "To store Single Value".
+=>Fundamental Category contains 4 data types. They are
+		a) int
+		b) float
+		c) bool
+		d) complex
+-------------------------------------------------------------------

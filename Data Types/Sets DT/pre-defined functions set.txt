@@ -1,0 +1,329 @@
+		======================================
+				pre-defined functions set
+		======================================
+=>On the object of set we can perform various operations by using pre-defined functions present in set. They are
+---------------------------------------------
+1) add():
+  -----------
+=>This function is used for adding the elements to the set object.
+=>Syntax:-     setobj.add(Value)
+----------------
+  Examples:
+--------------
+  >>> s1={10,"KVR"}
+>>> print(s1,type(s1),id(s1))-------{10, 'KVR'} <class 'set'> 2190683253088
+>>> s1.add("Python")
+>>> s1.add(45.67)-------
+>>> print(s1,type(s1),id(s1))----{'Python', 10, 45.67, 'KVR'} <class 'set'>													2190683253088
+>>> s1.add("satish")
+>>> print(s1,type(s1),id(s1))---{'Python', 10, 45.67, 'KVR', 'satish'} <class 'set'>								2190683253088
+>>> s2=set()  #empty set
+>>> print(s2,type(s2),id(s2))------set() <class 'set'> 2190683254432
+>>> s2.add(100)
+>>> s2.add(200)
+>>> s2.add(100)
+>>> s2.add("Django")
+>>> print(s2,type(s2),id(s2))------{200, 'Django', 100} <class 'set'> 2190683254432
+----------------------------------------------------------------------------------------  	
+2) clear():
+------------------
+=>This function is used for remvoing all the elements of set object and makes empty set object.
+=>Syntax:-   setobj.clear()
+----------------
+Examples:
+----------------
+>>> s1={10,"Rossum","Python",45.67,True,2+3j}
+>>> print(s1,type(s1),id(s1))---{'Python', True, 'Rossum', 10, (2+3j), 45.67}
+						<class 'set'> 2190683252640
+>>> len(s1)---------6
+>>> s1.clear()
+>>> print(s1,type(s1),id(s1))------set() <class 'set'> 2190683252640
+>>> len(s1)------0
+--------------------------------------------------------------------------------------------------
+3) copy():
+---------------
+=>This Function is used for copying the content of one set object object into another set object ( Implementing Shallow Copy )
+=>Syntax:-    setobj2=setobj1.copy()
+-------------------
+Examples:
+-------------------
+>>> s1={10,"Rossum","Python",45.67,True,2+3j}
+>>> print(s1,type(s1),id(s1))---{'Python', True, 'Rossum', 10, (2+3j), 45.67}
+						<class 'set'> 2190683253088
+>>> s2=s1.copy()  # shallow Copy
+>>> print(s2,type(s2),id(s2))---{'Python', True, 'Rossum', 10, (2+3j), 45.67} 
+						<class  'set'> 2190683253984
+>>> s1.add("Java")
+>>> s2.add("Django")
+>>> print(s1,type(s1),id(s1))---{'Python', True, 'Rossum', 'Java', 10, (2+3j), 45.67}							<class 'set'> 2190683253088
+>>> print(s2,type(s2),id(s2))----{'Python', True, 'Django', 'Rossum', 10, (2+3j), 45.67}							<class 'set'> 2190683253984
+-----------------------------------
+Deep Copy Examples:
+-----------------------------------
+>>> s1={10,"Rossum","Python",45.67}
+>>> print(s1,type(s1),id(s1))--{'Python', 10, 'Rossum', 45.67} <class 'set'>												2190683251968
+>>> s2=s1  # Deep Copy
+>>> print(s2,type(s2),id(s2))--------{'Python', 10, 'Rossum', 45.67} <class 'set'>									2190683251968
+>>> s1.add("Django")
+>>> print(s1,type(s1),id(s1))---{'Python', 'Django', 'Rossum', 10, 45.67} <class 'set'>								2190683251968
+>>> print(s2,type(s2),id(s2))----{'Python', 'Django', 'Rossum', 10, 45.67} <class 'set'>								2190683251968
+------------------------------------------------------------------------------------------
+4) remove() :
+------------------
+=>This function is used for removing the element/key from set object.
+=>If the element does not exists in set object then we get KeytError.
+=>Syntax:-   setobj.remove(element / key)
+----------------
+Examples:
+----------------
+>>> s1={10,"Rossum","Python",45.67}
+>>> print(s1)-----------{'Python', 10, 'Rossum', 45.67}
+>>> s1.remove("Python")
+>>> print(s1)---------{10, 'Rossum', 45.67}
+>>> s1.remove(45.67)
+>>> print(s1)--------{10, 'Rossum'}
+>>> s1.remove("Rossum")
+>>> print(s1)----------{10}
+>>> s1.remove(10)
+>>> print(s1)--------set()
+>>> s1={10,"Rossum","Python",45.67}
+>>> print(s1.remove(1000))-----KeyError: 1000
+>>> set().remove(10)--------KeyError: 10
+---------------------------------------------------------------------------------
+5) discard():
+------------------
+=>This function is used for removing an specified element from set object.
+=>if the specified element does not exist in set object, we never get KeyError.
+=>Syntax:-    setobj.discard(Value)
+----------------
+Examples:
+----------------
+>>> s1={10,"Rossum","Python",45.67}
+>>> print(s1)-------{'Python', 10, 45.67, 'Rossum'}
+>>> s1.discard(10)
+>>> print(s1)------{'Python', 45.67, 'Rossum'}
+>>> s1.discard("Rossum")
+>>> print(s1)------{'Python', 45.67}
+>>> s1.discard(100)   # no error
+--------------------------------------------------------
+6) pop():
+---------------
+=>This function is used for removing any arbitary element provided element present in setobj otherwise we get KeyError
+=>Syntax:-   setobj.pop()
+--------------
+Examples:
+---------------
+>>> s1={10,"Rossum","Python",45.67}
+>>> s1.pop()-------'Python'
+>>> s1.pop()--------10
+>>> s1.pop()------45.67
+>>> s1.pop()-------'Rossum'
+>>> s1.pop()----KeyError: 'pop from an empty set'
+---------------------------------------------------------------------------------------------
+7) isdisjoint():
+---------------------
+=>This function returns True provided the two sets are disjoint (there are no common elements ) otherwise returns False.
+=>Syntax:-     setobj1.isdisjoint(setobj2)
+Examples:
+----------------
+>>> s1={10,20,30,40}
+>>> s2={"apple","banana","kiwi"}
+>>> s3={10,"apple",20,"kiwi"}
+>>> print(s1)-------{40, 10, 20, 30}
+>>> print(s2)---------{'apple', 'kiwi', 'banana'}
+>>> print(s3)---------{'apple', 10, 20, 'kiwi'}
+>>>
+>>> s1.isdisjoint(s2)------True
+>>> s1.isdisjoint(s3)------False
+-----------------------------------------------------------------------------------
+8) issuperset() :
+--------------------------
+Syntax:-   setobj1.issuperset(setobj2)
+=>This function returns True provided setobj1 contains all the elements of setobj2 otherwise it returns False.
+-----------------
+Examples:
+-----------------
+>>> s1={10,20,30,40}
+>>> s2={10,20}
+>>> s3={10,20,50,60}
+>>> s1.issuperset(s2)-------True
+>>> s1.issuperset(s3)------False
+-----------------------------------------------------------------------------------------
+9) issubset():
+--------------------
+Syntax:-    setobj1.issubset(setobj2)
+=>This Function returns True provided all the elements of setobj1 present in setobj2. Otherwise we get False.
+Examples:
+--------------
+>>> s1={10,20,30,40}
+>>> s2={10,20}
+>>> s3={10,20,50,60}
+>>>
+>>> s1.issubset(s2)--------False
+>>> s2.issubset(s1)--------True
+>>> s3.issubset(s1)------False
+----------------------------------------------------------------------------------------
+10) union():
+-----------------
+Syntax:-       setobj3=setobj1.union(setobj2)
+=>This Function takes all the elements of setobj1 and setobj2 and collects unique elements the place them in setobj3
+---------------
+Examples:
+---------------
+>>> s1={10,20,30,40}
+>>> s2={10,50,60,70}
+>>> s3=s1.union(s2)
+>>> print(s3)---------{70, 40, 10, 50, 20, 60, 30}
+------------------------------------------------------------------
+11) intersection():
+------------------------------
+Syntax:   setobj3=setobj1.intersection(setobj2)
+=>This Function takes the common elements from setobj1 and setobj2 and place them in setobj3.
+
+Examples:
+-----------------
+>>> s1={10,20,30,40}
+>>> s2={10,50,60,70}
+>>> s3=s1.intersection(s2)
+>>> print(s3)-----------{10}
+>>> s1={10,20,30,40}
+>>> s2={60,70,50,80}
+>>> s3=s1.intersection(s2)
+>>> print(s3)-----------set()
+>>>
+>>> s1={10,20,30,40}
+>>> s2={50,60,10,70}
+>>> s3={10,70,80,90}
+>>> s4=s1.intersection(s2).intersection(s3)
+>>> print(s4)---------{10}
+-----------------------------------------------------------------------------
+12) difference():
+------------------------
+Syntax:-       setobj3=setobj1.difference(setobj2)
+=>This Function removes the common elements from setobj1 and setobj2 and takes remaining elements from setobj1 and place them in setobj3
+			(OR)
+Syntax:-       setobj3=setobj2.difference(setobj1)
+=>This Function removes the common elements from setobj2 and setobj1 and takes remaining elements from setobj2 and place them in setobj3
+=>hence setobj1.difference(setobj2) is not equal to setobj2.difference(setobj1)
+
+--------------
+Examples:
+--------------
+>>> s1={10,20,30,40}
+>>> s2={30,40,50,60}
+>>> s3=s1.difference(s2)
+>>> print(s3)------{10, 20}
+>>> s4=s2.difference(s1)
+>>> print(s4)-------{50, 60}
+--------------------------------------------------------------------------------------------------  
+13) symmetric_difference():
+----------------------------------------
+Syntax:-       setobj3=setobj1. symmetric_difference(setobj2)
+=>This function removes the common elements from setobj1 and setobj2 and takes all the remaining elements from both setobj1 and setobj2 and place them in setobj3.
+----------------
+Examples:
+----------------
+>>> s1={10,20,30,40}
+>>> s2={30,40,50,60}
+>>> s3=s1. symmetric_difference(s2)
+>>> print(s3)--------{10, 50, 20, 60}
+>>> s3=s2. symmetric_difference(s1)
+>>> print(s3)--------{10, 50, 20, 60}
+----------------------------------------------------------------------------------------------------
+-------------------
+Use Case:
+-------------------
+Let consider the following problem
+    cricket players={"Sachin","Kohli","Rohit"}
+    Tennis players={"Rohit","Ram","Sindu"}
+
+Q1) Find all the payers who are playing either Cricket or tennis or all
+Q2) Find all the players who are playing both the games.
+Q3) Find all the players who are playing Only Cricket but not tennis
+Q4) Find all the players who are playing Only Tennis but not Cricket
+Q5) Find all the players who are exclusively Playing either Cricket or  Tennis
+==========================================================
+Solving:
+-------------
+Q1) Find all the payers who are playing either Cricket or tennis or all
+ANS:  >>> cricket={"Sachin","Kohli","Rohit"}
+	>>> tennis={"Rohit","Ram","Sindu"}
+	>>> print(cricket)---------{'Rohit', 'Sachin', 'Kohli'}
+	>>> print(tennis)---------{'Sindu', 'Ram', 'Rohit'}
+	>>> allplayers=cricket.union(tennis)
+	>>> print(allplayers)------{'Sachin', 'Sindu', 'Ram', 'Rohit', 'Kohli'}
+-------------------------------------------------------------------------------------
+Q2) Find all the players who are playing both the games.
+ANS:-  
+>>> cricket={"Sachin","Kohli","Rohit"}
+>>> tennis={"Rohit","Ram","Sindu"}
+>>> print(cricket)--------{'Rohit', 'Sachin', 'Kohli'}
+>>> print(tennis)------{'Sindu', 'Ram', 'Rohit'}
+>>> bothplayers=cricket.intersection(tennis)
+>>> print( bothplayers)-------{'Rohit'}
+---------------------------------------------------------------------------------
+Q3) Find all the players who are playing Only Cricket but not tennis
+ANS:
+-------
+>>> cricket={"Sachin","Kohli","Rohit"}
+>>> tennis={"Rohit","Ram","Sindu"}
+>>> print(cricket)---------{'Rohit', 'Sachin', 'Kohli'}
+>>> print(tennis)--------{'Sindu', 'Ram', 'Rohit'}
+>>> onlycricket=cricket.difference(tennis)
+>>> print(onlycricket)-------{'Sachin', 'Kohli'}
+--------------------------------------------------------------------------------------
+Q4) Find all the players who are playing Only Tennis but not Cricket
+ANS:
+-------
+>>> cricket={"Sachin","Kohli","Rohit"}
+>>> tennis={"Rohit","Ram","Sindu"}
+>>> print(cricket)-------{'Rohit', 'Sachin', 'Kohli'}
+>>> print(tennis)-------{'Sindu', 'Ram', 'Rohit'}
+>>> onlytennis=tennis.difference(cricket)
+>>> print(onlytennis)------{'Sindu', 'Ram'}
+------------------------------------------------------------------------------------
+Q5) Find all the players who are exclusively Playing either Cricket or  Tennis
+ANS:
+--------   
+>>> cricket={"Sachin","Kohli","Rohit"}
+>>> tennis={"Rohit","Ram","Sindu"}
+>>> print(cricket)-----------{'Rohit', 'Sachin', 'Kohli'}
+>>> print(tennis)--------{'Sindu', 'Ram', 'Rohit'}
+>>> criten=cricket.symmetric_difference(tennis)
+>>> print(criten)-------{'Sachin', 'Kohli', 'Sindu', 'Ram'}
+                 (OR)
+>>> criten=tennis.symmetric_difference(cricket)
+>>> print(criten)-------{'Sachin', 'Kohli', 'Sindu', 'Ram'}
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------
+Use Case:  Solving   Bitwise Operators 
+------------------------------------------------------
+Let consider the following problem
+    cricket players={"Sachin","Kohli","Rohit"}
+    Tennis players={"Rohit","Ram","Sindu"}
+
+Q1) Find all the payers who are playing either Cricket or tennis or all
+Q2) Find all the players who are playing both the games.
+Q3) Find all the players who are playing Only Cricket but not tennis
+Q4) Find all the players who are playing Only Tennis but not Cricket
+Q5) Find all the players who are exclusively Playing either Cricket or  Tennis
+
+
+>>> cricket={"Sachin","Kohli","Rohit"}
+>>> tennis={"Rohit","Ram","Sindu"}
+>>> allplayers=cricket | tennis----------------ANS--Q1
+>>> print(allplayers)-------{'Sachin', 'Sindu', 'Ram', 'Rohit', 'Kohli'}
+
+>>> bothplayers=cricket & tennis-------ANS--Q2
+>>> print(bothplayers)-------{'Rohit'}
+
+>>> onlycricket=cricket-tennis------ANS---Q3
+>>> print(onlycricket)-------{'Sachin', 'Kohli'}
+
+>>> onlytennis=tennis-cricket-------ANS---Q4
+>>> print(onlytennis)--------{'Sindu', 'Ram'}
+
+>>> criten=tennis^cricket--------ANS--Q5
+>>> print(criten)------{'Sachin', 'Kohli', 'Sindu', 'Ram'}
+==========================X========================

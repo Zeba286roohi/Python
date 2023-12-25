@@ -1,0 +1,24 @@
+		==================================================
+			Devlopment of Programmer-Defined Exceptions
+		==================================================
+=>These exceptions developed by Python Programmers and they are available in Python Project  and used by other python programmers and they are always used for dealing with Common Problems.
+=>Some of the Common Problems are
+		1) Attempting to enter Invalid PIN.
+		2) Attempting Invalid User name or Password
+		3) Attempting to withdraw more amount than available balance.
+		4)Attempting to represent Invalid Pattern...etc
+
+=>To Develop programmer-defined exceptions, we must follow the following steps
+
+Step-1: Choose the Programmer_defined Class Name
+Step-2: The Programmer-defined class must inherit from either Exception or BaseException ( Here 
+             Exception or BaseExcetion are called base classes in exception handling)
+
+
+Examples:    class  KvrDivisionError(Exception):pass
+		       class  PinError(BaseException):pass
+--------------------------------------------------------------------------------------------------
+Hence, To develop any programmer-defined exceptions based applications, we must ensurer that there exist 3 phases. They are
+			1) Development of Programmer-defined Exception sub class
+			2) Development a Function which will hit programmer-defined exception
+			3) development of main program for handling the exception.

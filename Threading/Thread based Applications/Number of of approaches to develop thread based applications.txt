@@ -1,0 +1,30 @@
+		==============================================================
+			Number of of approaches to develop thread based applications
+		==============================================================
+=>In Python, we can thread based applications in 3 approaches. They are
+		
+	1) By Using Functional Approach
+	2) By Using Sub Class of Thread class of threading  module ( with OOPs and Inheritance)
+	3) By Using Non-Sub Class of Thread class of threading  module ( with OOPs without Inheritance)
+------------------------------------------------------------------------------------------------------------------------
+1) By Using Functional Approach
+-----------------------------------------------------------------------------------------
+Step-1:   import threading module
+Step-2:   Define a Function with Logic which is executed by Sub Thread
+Step-3:   create sub thread
+Step-4:  dispatch or send the sub thread to the target function.
+
+Examples:
+------------------
+#FirstApproachEx1.py
+import threading  # step-1
+def  hello(s):  # step-2
+	print("-"*50)
+	print("\nThis Function executed by Sub Thread and Whose Name is:{}".format(threading.current_thread().name))
+	print("Hi,{} wel come to threading".format(s))
+	print("-"*50)
+
+#main program
+t=threading.Thread(target=hello,args=("pooja-kavya",) ) #  step-3
+t.start() #  step-4
+====================================X=====================================

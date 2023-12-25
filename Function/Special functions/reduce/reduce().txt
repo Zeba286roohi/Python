@@ -1,0 +1,19 @@
+		================================
+				reduce()
+		================================
+=>reduce() is used for obtaining a single element / result from given iterable object by applying to a function.
+=>Syntax:-
+			varname=reduce(function-name,iterable-object)
+=>here varname is an object of int, float,bool,complex,str only
+=>The reduce() belongs to a pre-defined module called" functools".
+---------------------------------------
+Internal Flow of reduce()
+---------------------------------------
+step-1:- reduce() selects two First values of Iterable object and place them First var		     and Second var .
+step-2:- The function-name utilizes the values of First var and			         
+             Second var  applied to the specified logic and obtains the result.
+Step-3:- reduce () places the result of function-name in First variable	 and reduce() 
+              selects the succeeding element of Iterable object and places in second variable.
+Step-4: repeat  Step-2 and Step-3 until all elements completed in		             
+             Iterable object and returns the result of First Variable
+---------------------------------------------------------------------------------------------------

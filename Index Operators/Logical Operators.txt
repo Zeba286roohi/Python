@@ -1,0 +1,76 @@
+		====================================
+			4. Logical Operators
+		====================================
+=>The purpose of Logical Operators is that "To combine  two or more relational expressions"
+=>If two or more relational expressions are connected with logical Operators then it is called Logical Expression.
+=>The result of Logical expressions is either True or False.
+=>Logical Expression also called Compund Condition.
+=>We have 3 types of Logical Operators. They are given in the following table.
+=============================================================
+SLNO		Symbol      Meaning		 
+=============================================================
+1.			and		    Physical ANDing
+2.			or		    Physical ORing
+3.			not		    ------------------------
+==============================================================
+1) and   operator:
+-------------------------------
+=>The functionality of 'and' operator is shown in the following Truth Table.
+	---------------------------------------------------------------------------------
+		RelExpr1         RelExpr2       RelExpr1 and RelExpr2
+	---------------------------------------------------------------------------------
+		True			False			False
+		False		True				False
+		False		False			False
+		True			True				True
+	---------------------------------------------------------------------------------
+Examples:
+------------------
+>>> print(100>20 and 20>10)-----------True
+>>> print(100<20 and 20>10)-----------False
+>>> print(100!=20 and 20!=20)----------False
+>>> print(20!=20 and 20!=20)----------False
+==============================================================
+2) or   operator:
+-------------------------------
+=>The functionality of 'or' operator is shown in the following Truth Table.
+	---------------------------------------------------------------------------------
+		RelExpr1         RelExpr2       RelExpr1 or RelExpr2
+	---------------------------------------------------------------------------------
+		True			False			True
+		False		True				True
+		False		False			False
+		True			True				True
+	---------------------------------------------------------------------------------
+Examples:
+-------------------
+>>> print(100!=20 or 20!=20)----------True
+>>> print(100<=20 or 2!=20)-----------True
+>>> print(100>=20 or -12!=-12)----------True
+>>> print(100==20 or -12!=-12)----------False
+------------------------------------------------------------------------
+Note:- The Short Circuit Evaluation in the case  of 'or' operator is that " If or operator is connected with n-relational expressions and if First relational Expression is True then remaining relational expressions will not be evaluated and result is considered as True".
+
+Note:- The Short Circuit Evaluation in the case of 'and' operator is that " If 'and' operator is connected with n-relational expressions and if First relational Expression is False then remaining relational expressions will not be evaluated and result is considered as False".
+============================X=====================================
+3) not  operator:-
+---------------------------
+=>This operator gives opposite result of Boolean Value.
+=>The functionality of 'not' operator is shown in the following Truth Table.
+
+	---------------------------------------------------------------------------------
+		RelExpr1         not RelExpr1      
+	---------------------------------------------------------------------------------
+		True			False		
+		False		True			
+	---------------------------------------------------------------------------------
+Examples:
+------------------
+>>> print( 10<=2 and 1000>=200 )-----------False
+>>> print( not(10<=2 and 1000>=200 ) )--------True
+>>> print(not( not(10<=2 and 1000>=200 ) ))----False
+>>> print(10>2)----True
+>>> print(not 10>2)-----False
+>>> print(10==2)-----False
+>>> print(not 10==2)------True
+============================X==================================

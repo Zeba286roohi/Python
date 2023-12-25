@@ -1,0 +1,60 @@
+		=======================================
+				bytearray
+		=======================================
+=>'bytearray' is one of the pre-defined class and it is treated as Sequence Data Type.
+=>The purpose of bytearray data type is that "To store the Numerical Possitive Integer Values ranges from 0 to 256. i.e It stores Numerical Possitive Integer Values ranges from 0 to 255 (256-1) only.
+=>bytearray data type does not have any Symbolic notation for organizing the data but we can convert the data of any type into bytearray data type by using  bytearray().
+		Syntax:   varname=bytearray(object)
+=>On the object of bytearray data type, we can perform Indexing and Slicing Operations.
+=>An object of bytearray data type maintains insertion order (OR) In otherwords, In whichever order we insert the data in the same order the data will be displayed.
+=>An object of bytearray belongs to mutable bcoz It allows us to do the changes at same address.
+-------------------------------------------------------------------------------------
+
+Note:- The Functionality of bytearray is exactly similar to bytes data type but an object  of bytearray belongs to mutable and an object of bytes belongs to immutable.
+---------------------------------------------------------------
+Examples:
+------------------
+>>> l=[10,20,30,45,67,89]
+>>> print(l,type(l))----------[10, 20, 30, 45, 67, 89] <class 'list'>
+>>> ba=bytearray(l)
+>>> print(ba,type(ba),id(ba))---bytearray(b'\n\x14\x1e-CY') <class 'bytearray'>									2360235852976
+>>> print(ba[0])-----10
+>>> print(ba[1])-----20
+>>> print(ba[-1])----89
+>>> for x in ba:
+...        print(x)
+...
+			10
+			20
+			30
+			45
+			67
+			89
+>>> for x in ba[::-1]:
+...     print(x)
+			...
+			89
+			67
+			45
+			30
+			20
+			10
+>>> for x in ba[2:5]:
+...     print(x)
+			...
+			30
+			45
+			67
+>>> print(ba[0])---------10
+>>> ba[0]=153
+>>> print(ba,type(ba),id(ba))----bytearray(b'\x99\x14\x1e-CY') <class 'bytearray'>								2360235852976
+>>> for k in ba:
+...     print(k)
+				...
+				153
+				20
+				30
+				45
+				67
+				89
+-------------------------------------------------------------------------------------

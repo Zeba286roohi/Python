@@ -1,0 +1,31 @@
+		================================
+			VI) None Category Data Type
+		================================
+=>This contains class name as "NoneType"
+=>The value of NoneType is None   
+=>None is a pre-defined Value for NoneType data type
+=>An object of NoneType can't be create bcoz it contains single value called None.
+=>The value  None is not a False, space , empty . Hence None isself is the value.
+=>If we want to make the object and whose memory space to destroy / remove by the Garbage Collector then whose object value must be made as None.
+=>If a Function is not returning any value then its value is None.
+----------------
+Examples:
+----------------
+>>> d1={10:3.4,20:4.5,30:6.7,40:3.4}
+>>> val=d1.get(10)
+>>> print(val)------3.4
+>>> print(type(val))------------<class 'float'>
+>>> val=d1.get(20)
+>>> print(val, type(val))--------4.5 <class 'float'>
+>>> val=d1.get(200)
+>>> print(val, type(val))------ None   <class 'NoneType'>
+>>>
+>>>
+>>> None=23.45-----------SyntaxError: cannot assign to None
+>>> True=23------------SyntaxError: cannot assign to True
+>>> False=34----------SyntaxError: cannot assign to False
+
+>>> n1=NoneType()---------NameError: name 'NoneType' is not defined
+>>> None==False----------False
+>>> None==" "------------False
+----------------------------------------X-----------------------------------

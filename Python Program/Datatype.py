@@ -1,0 +1,10 @@
+id=1
+firstName="John"
+lastName="Belly"
+ssn="112-33-445"
+hasInsurance=True
+billingAmount="1000"
+print(type(billingAmount))
+billingAmount=float(billingAmount)
+print(type(billingAmount))
+print(id,firstName,lastName,ssn,hasInsurance,billingAmount,ssn[7:len(ssn)])

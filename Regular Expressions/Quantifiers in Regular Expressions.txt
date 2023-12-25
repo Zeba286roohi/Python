@@ -1,0 +1,12 @@
+		==================================================
+			Quantifiers in Regular Expressions
+		==================================================
+=>Quantifiers in Regular Expressions are used for searching number of occurences of the specified value (alphabets or digits or special symbols) 
+used in search pattern  to search in the given data and obtains desired result.
+
+
+1)  k------------------->Searches extracly one k 
+2) k+------------------>searches for one k or more k's
+3) k* ------------------>Searches zero k or one k or more k's
+4) k?----------------->searches zero k or one k
+5) .   ------------------> searches for all 

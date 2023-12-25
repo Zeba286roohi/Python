@@ -1,0 +1,21 @@
+			===============================================
+						Files in Python
+							(OR)
+					Stream Handling in Python
+			===============================================
+=>The purpose of Files concept is that " To store the data Permanently ".
+=>The process of storing the data permanently is known as "Persistentcy".
+--------------------------------------------------------------------------------------------------------
+=->In The context of files, we can develop two types of applications. They are
+		a) Non-persistency Applications
+		b) Persistent Applications.
+=>In Non-persistency Application development, we accept the data from Key board,stores in main memory in the form of objects, process the data and shown the result on the console .
+=>The results which are available in the main memory are Temporarry.
+
+=>In persistent Application development, we accept the data from Key board,stores in main memory in the form of objects, process the data and whose results are stored permanently.
+=>To store the result of any programming language permanently, we have two approaches. they are
+		a) By using Files
+		b) By using data base softwares.
+=>Note that if we write any python programming by using Files and Database softwares  then such type of applications are comes under  the example Persistent Applications.
+==========================================================================
+

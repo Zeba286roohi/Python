@@ -1,0 +1,32 @@
+		============================
+				5) str()
+		=============================
+=> str() is used for converting "All Types of Values into str type value".
+=>Syntax:-     varname=str( int / float /bool /complex )
+
+-------------------
+Examples:
+-------------------
+>>> a=12
+>>> print(a,type(a))--------12 <class 'int'>
+>>> b=str(a)
+>>> b----------   '12'
+>>> print(b,type(b))------ 12 <class 'str'>
+>>> a=2.3
+>>> print(a,type(a))--------2.3 <class 'float'>
+>>> b=str(a)
+>>> b----------------  '2.3'
+>>> print(b,type(b))-------- 2.3 <class 'str'>
+>>>
+>>> a=True
+>>> print(a,type(a))---------True <class 'bool'>
+>>> b=str(a)
+>>> b-------------- 'True'
+>>> print(b,type(b))--------  True <class 'str'>
+>>>
+>>> a=2+3j
+>>> print(a,type(a))---------(2+3j) <class 'complex'>
+>>> b=str(a)
+>>> b------------ '(2+3j)'
+>>> print(b,type(b))------(2+3j) <class 'str'>
+>>>

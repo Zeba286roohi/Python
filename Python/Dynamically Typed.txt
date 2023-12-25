@@ -1,0 +1,40 @@
+		===========================================
+				Dynamically Typed 
+		===========================================
+=>In context of Programming Languages, we have two types of Programming languages.
+			1) Static Typed Programming Languages
+			2) Dynamically Typed Programming Languages
+
+1) Static Typed Programming Languages:
+------------------------------------------------------------
+=>In Static Typed Programming Languages, It is mandatory to specify the data type otherwise we get Compile Time Error
+
+Examples:       C, CPP, JAVA, .NET...etc
+Instructions:     int a,b,c;  // Variable Declaration--Mandatory
+			   a=10
+			   b=20
+			   c=a+b
+			   
+			   a=12.34------------Error--incompatible types
+----------------------------------------------------------------------------------------
+2) Dynamically Typed Programming Languages:
+------------------------------------------------------------------------
+=>In  Dynamically Typed Programming Languages, It is not necessary to specify the data type for the variables bcoz Python Programming Environment will automatically assign the data type depends on type value programmer assigns.
+
+Example:  PYTHON
+
+Instructions:
+--------------------
+>>> a=10
+>>> b=20
+>>> c=a+b
+>>> print(a,type(a))--------------------10 <class 'int'>
+>>> print(b,type(b))-------------------20 <class 'int'>
+>>> print(c,type(c))------------------30 <class 'int'>
+>>> a=10
+>>> b=1.2
+>>> c=a+b
+>>> print(a,type(a))--------------------10 <class 'int'>
+>>> print(b,type(b))------------------1.2 <class 'float'>
+>>> print(c,type(c))-------------------11.2 <class 'float'>
+================================X==============================

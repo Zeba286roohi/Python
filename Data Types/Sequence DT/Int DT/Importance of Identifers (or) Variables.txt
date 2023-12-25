@@ -1,0 +1,62 @@
+		==========================================
+			Importance of Identifers (or) Variables
+		==========================================
+=>All the Literals are stored in Main Memory by allocating sufficient amount memory by the help of Data Types.
+ To Process the Literals / Values / data stored in Main memory, as programmer, we must give distinct names to the created memory space. 
+Since the distinct names  makes us to identify the Literals / Values for processing and hence distinct names  are called "IDENTIFIERS".
+=>Programatically , Identifier values can be changed during execution of the program and Hence Identifiers are called "VARIABLES".
+=>Hence all Types of Inputs / Literals / data Must be stored in main Memory in the form Variables.
+------------------------------
+=>Def. of Variable:
+------------------------------
+=>A Variable is an Identifer, whose values can be changed during execution of the program.
+=>ALL THE VARIABLES IN PYTHON ARE CALLED OBJECTS.
+=>BEHIND OF ALL OBJECTS , THERE EXIST A CLASS.
+================================X============================
+Rules for using Variables in Python Programming
+=============================================================
+1) A Variable Name is a combination of Alphabets, Digits and a special symbol  
+    Under score ( _ ).
+2) The First letter of variable name must starts with Alphabet (or) Under Score ( _ )
+
+		Examples:        sal=1.2----valid
+		                         1sal=34----Invalid
+					 _sal=3.4--valid
+					 sal1=4.5-----valid
+					 _sal_=5.6--valid\
+					 _123=56---valid
+					 _=45----valid
+
+3) Within the Variable Name , Special Symbols are not allowed 
+    except Under Score ( _ ).
+
+		Examples:        tot   sal=56-----Invalid
+					  tot_sal=45---valid
+					  tot-sal=45---invalid
+					  tot$sal=45----invalid
+					   _$sal=34-----invalid
+					   tot_sal#India=56------Valid
+		Here  the symbol hash (#) in python used for commenting.
+4) No keywords to be used as Variable Names. bcoz all the key words are having special meaning to the language  compilers.
+
+		Examples:      while=45---inavlid
+		                          if=56-----invalid
+					  while1=67----valid
+					  _while=67--valid
+					  _if_=78---valid
+					  int=45.67------VALID
+					  float=45------VALID
+	=>ALL Pre-defined Class Names(int, float.....etc)  can used as Varaible Names
+
+5) All the varaible Name are Case Sensitive.
+		Examples:
+		---------------
+				>>> AGE=99
+				>>> age=98
+				>>> Age=97
+				>>> aGe=96
+				>>> agE=95
+				>>> print(AGE,age,Age,aGe,agE)---- 99 98 97 96 95
+6) Choose the Variable Names in such way that They must be user-friendly.
+==============================================================
+					 

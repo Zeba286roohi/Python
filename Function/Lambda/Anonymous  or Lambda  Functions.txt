@@ -1,0 +1,24 @@
+		===========================================
+			Anonymous  or Lambda  Functions
+		===========================================
+=>Anonymous Functions are those which does not contain any name explicitly.
+=>The purpose of Anonymous Functions is that "To Peform Instant Operations".  
+    Instant Operations are those which are no longer interested to carry in further programs.
+=>Anonymous Functions contains single executable statement
+=>Anonymous Functions automatically or implicitly returns the value(No Need to 
+   use return statement to return the value).
+=>To define Anonymous Functions, we use a key word "lambda" and hence 
+    Anonymous Functions are called Lambda Functions.
+------------------
+=>Syntax:
+------------------
+		varname=lambda params-list : Expression
+--------------------
+Explanation:
+--------------------
+=>varname is an object of type of <class 'function'> and varname is itself indirectly     acts function name.
+=>lambda is a keyword used for defining Anonymous Functions
+=>Params-list represents list of variable names used for storing the input values 
+   coming function calls.
+=>Expression represents single executable statement and provides solution for Instant Operation.
+===========================================================

@@ -1,0 +1,31 @@
+		===================================================
+					Continue statement
+		===================================================
+=>continue is one of the keyword
+=>The purpose of continue statement is that to make control to top of the loop for that current iteration without executing the following statement  written after continue statement
+
+Syntax1:-
+--------------
+			while(Test cond1):
+			       --------------------
+			       --------------------
+			       if(Test cond2):
+			            ---------------
+				    continue
+				    ---------------
+			        statements written - after continue statement
+			--------------------------------------------------------
+			--------------------------------------------------------
+
+Syntax2:-
+--------------
+			for varname in iterable-object
+			       --------------------
+			       --------------------
+			       if(Test cond):
+			            ---------------
+				    continue
+				    ---------------
+			        statements written - after continue statement
+			--------------------------------------------------------
+			--------------------------------------------------------

@@ -1,0 +1,77 @@
+		====================================================
+		Communication between Python and Oracle DataBase 
+		====================================================
+=>steps for developing a python program for communicating with Oracle database:
+
+	1. import   cx_Oracle
+	2. Python Program must get the connection from Oracle Data Base.
+	3. Create an object of Cursor .
+	4. Design the Query, Place the Query in an object of Cursor and execute.
+	5. Python Program Process the Result 
+	6. Python Program Closes the connection.
+-----------------------------------------------------------------------------------------------------
+Explanation:
+===========================
+1. import   cx_Oracle
+-------------------------------------------
+=>If python Program wants to communicate with Oracle data base then must import corresponding cx_Oracle module  and it must be installed by using pip tool 
+=>Example:     import  cx_Oracle
+=>Once the module is imported then Python Programmer ready to use Variable Names, Function Names and Class Names.
+----------------------------------------------------------------------------------------------------
+2. Python Program must get the connection from Oracle Data Base.
+----------------------------------------------------------------------------------------------------
+=>If a Python Program wants to perform some operations on Oracle data base  then First we must get Connection from oracle data base.
+=>If a Python Program wants get connection from Oracle data base then we must use connect() of cx_Oracle module.
+
+Syntax:-          varname=cx_Oracle.connect("Connection url")
+
+=>Varname is an object of <class,'cx_Oracle.connection">
+=>cx_Oracle is pre-defined third party module used to communicate with Oracle Database.
+=>connect() is one of the pre-defined function present in cx_Oracle module and it is used to get the connection from Oracle Data base.
+=>The General format of Connection Url is "UserName/Password@DNS/serviceid"
+						(OR)
+=>The General format of Connection Url is		  
+                                                 "UserName/Password@IPAddress/serviceid"
+=>Here "user name " represents User Name of Oracle Data base (Ex: scott )
+=>Here "password " represents pasword of Oracle Data base (Ex: tiger )
+=>here DNS (Domain Naming Service) represents Name of Machine, where Oracle Database software installed. The default DNS of every computer is "localhost"
+=>Here IPAddress (Internet Protocol Address) represents Address of a machine where Oracle Data base installed. The default IPAddress of every computer is "127.0.0.1"(Loop Back Address) 
+=>here serviceid represents on what name Oracle data base is installed (or) alias name Oracle Database in the current working machine.
+=>Once Connection URL is wrong then we get  DatabaseError of cx_Oracle and we handle that exception.
+=>To find serviceid of Oracle Data base of any machine , goto SQL Prompt.
+		
+ORacle Enviroment:
+---------------------------------
+		SQL> select * from global_name;
+
+				OUTPUT
+				---------------
+				GLOBAL_NAME
+				---------------------------
+				ORCL  <-----Service Id
+				---------------------------
+---------------------------------
+Python Programming Env:
+-------------------------------------------
+	import  cx_Oracle
+	kvr=cx_Oracle.connect("scott/tiger@localhost/orcl")
+			(OR)
+	kvr=cx_Oracle.connect("scott/tiger@127.0.0.1/orcl")
+	print("Python Program got connection from Oracle DB")
+--------------------------------------------------------------------------------------------------------
+3. Create an object of Cursor .
+---------------------------------------------------------------------------
+=>Here cursor is a pre-defined class present in cx_Oracle module.
+=>The purpose of creating an object of cursor is that "To carry the Query from Python Program to Data base, Query Executed in Data base, Query result placed by Data base in the object of cursor and cursor gives result of the query to the Python Program".
+=>Hence an object of cursor acts as driver between Python program and Database Software.
+=>Programtically, to create an object of cursor, we must use cursor() which is present in connection object.
+Syntax:-      varname=conobj.cursor()
+=>here varname is an object of  <class, 'cx_Oracle.cursor ' >
+---------------------------------------------------------------------------------------------------------
+4. Design the Query, Place the Query in an object of Cursor and execute.
+-----------------------------------------------------------------------------------------------------------
+=>A Query is request / Question / statement to the data base from Python Program for perfoming certain Database Operations.
+=>To execute the Query from Python Program, we must use execute(), which is present in cursor object.
+=>Syntax:-         varname=cursorobj.execute("Query")
+=>Here Query can be Either DDL or DML or DRL 
+-------------------------------------------------------------------------------------------------------

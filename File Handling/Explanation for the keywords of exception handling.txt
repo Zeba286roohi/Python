@@ -1,0 +1,48 @@
+		==============================================
+		    Explanation for the keywords of exception handling
+		==============================================
+1. try :
+-----------------
+=>It is the block in which we block of statements generating exceptions. In Other words, what are 
+     all the statements generates exceptions , such statements must be written within try block and hence try block is called exception monitering block.
+=>When an exception occurs in try block then PVM comes out of try block and executes  
+     appropriate except block and generates User-Friendly error messages.
+=>After executing appropriate except block, PVM Never goes to try block to execute rest of the 
+     statements in try block
+=>Every try block must be immediately followed by except block.
+=>Every try block must contain atleast one except block  and recommended to write multiple 
+    except blocks for generating multiple user-frinedly error messages.
+--------------------------------------------------------------------------------------------------
+2. except block:
+---------------------------
+=>This is the block, In which we write block of statements for generating User-Friendly Error 
+     Messages.  In otherwords except block supresses Technical error messages and generates User-Friendly Error Messages and hence except is block is called Exception Processing Block.
+Note:- Handling Excxeption=try block + except block
+=>except block will execute when an exception occurs in try block.
+=>Even we write multiple except blocks, PVM will execute only one except block depends type of 
+    exception occurs in try block.
+=>except block must be written after try block and before else block ( if we write else block )
+-----------------------------------------------------------------------------------------------------------------
+3.else block:
+---------------------------
+=>This is the block, in which we write block of statements recommeded to generate Result of 
+    program.
+=>else block will execute when there is no exception occurs in try block.
+=>Writing else block is optional.
+=>else block must be written after except block and before finally block(if we write).
+----------------------------------------------------------------------------------------------------------------------
+4. finally block:
+------------------------------------------
+=>It is the block in which we write block of statements and they are relinquishing (Close / release / 
+    give-up / clean-up) the resources (files, database) which are obtained in try block
+=>finally block will execute compulsorily (if we write )
+=>Writing finally block is optional
+=>finally block must be written after else block.
+---------------------------------------------------------x----------------------------------------------------------
+
+
+
+
+
+
+

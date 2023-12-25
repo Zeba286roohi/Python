@@ -1,0 +1,45 @@
+		===================================
+				2) tuple   
+		===================================
+=>'tuple' is one of the pre-defined class and treated as List category data type.
+=>The purpose of list data type is that "To store multiple values either of same type or 
+    different type or both types with Unique and Duplicates in single object".
+=>To store the elements in tuple , the elements must be written (or) enclosed within 
+    Braces ( )  and the elements must be separated by comma.
+	Syntax:-     varname=(val1,val2,....,val-n)  # Non-empty tuple
+	                  varname= ( )         #empty tuple
+			  varname=tuple()    # empty  tuple
+=>An object of tuple data type maintains insertion order.
+=>On the object oftuple , we can perform both Indexing and Slicing Operations.
+=>An Object of tuple belongs to immutable.
+Note:- The Functionality of tuple is exactly similar to Functionality of list. But an object of list belongs to Mutable and an object of tuple belongs to immutable.
+--------------------------------------------------------------------------------------------
+Examples:
+------------------
+>>> t1=(10,20,10,34,56,20)
+>>> print(t1,type(t1))--------(10, 20, 10, 34, 56, 20) <class 'tuple'>
+>>> t2=(10,"KVR",33.33,"Python",True)
+>>> print(t2,type(t2))------(10, 'KVR', 33.33, 'Python', True) <class 'tuple'>
+>>> len(t1)----6
+>>> len(t2)----5
+>>> t3=()  # empty tuple
+>>> print(t3,type(t3))-------() <class 'tuple'>
+>>> t3=tuple()   # empty tuple
+>>> print(t3,type(t3))-----() <class 'tuple'>
+>>>
+>>> t4=10,"Travis",56.78,"OUCET",2+3j
+>>> print(t4,type(t4))------(10, 'Travis', 56.78, 'OUCET', (2+3j)) <class 'tuple'>
+>>> print(t4[0])------10
+>>> print(t4[1])-----Travis
+>>> print(t4[-1])------(2+3j)
+>>> print(t4[-2])-------OUCET
+>>> print(t4[2:5])------(56.78, 'OUCET', (2+3j))
+>>> print(t4[::-1])-------((2+3j), 'OUCET', 56.78, 'Travis', 10)
+---------------------------------------------
+>>> lst=[10,20,30,40,"Python"]
+>>> print(lst,type(lst))-----[10, 20, 30, 40, 'Python'] <class 'list'>
+>>> tpl=tuple(lst)
+>>> print(tpl,type(tpl))------(10, 20, 30, 40, 'Python') <class 'tuple'>
+>>> lst1=list(tpl)
+>>> print(lst1,type(lst1))-----[10, 20, 30, 40, 'Python'] <class 'list'>
+------------------------------------------------------------------------------------------------

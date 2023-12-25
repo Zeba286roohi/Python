@@ -1,0 +1,49 @@
+		====================================
+			Types of Copy Techniques in Python
+		====================================
+=>In Python Programming, we have two types of Copy Techniques. They are
+		a) Shallow Copy
+		b) Deep Copy
+
+a) Shallow Copy:
+   --------------------
+   =>In Shallow Copy
+		a) Initial Content of Both the objects are Same.
+		b) Memory Address(id's) of Both the Objects are different.
+		c) The Modifications are Indepenedent ( Whatever the changes we do one object they are not reflecting on other object).
+=>To Implement Shallow Copy, we use  copy()
+=>Syntax:-    object2=object1.copy()
+Examples:
+-----------------
+>>> l1=[10,"Rossum"]
+>>> print(l1,id(l1))----------[10, 'Rossum'] 1957575199232
+>>> l2=l1.copy()  # Shallow Copy
+>>> print(l2,id(l2))----------[10, 'Rossum'] 1957575198400
+>>> l1.append("Python")
+>>> l2.append("Data Sci")
+>>> print(l1,id(l1))-------[10, 'Rossum', 'Python'] 1957575199232
+>>> print(l2,id(l2))--------[10, 'Rossum', 'Data Sci'] 1957575198400
+-------------------------------------------------------------------
+b) Deep Copy:
+-----------------------
+=>In Deep Copy
+		a) Initial Content of Both the objects are Same.
+		b) Memory Address (id's)of Both the Objects are Same.
+		c) The Modifications are depenedent ( Whatever the changes we do one object they are  reflecting on other object).
+=>To Implement Deep Copy, we use  assignment operator ( = )
+
+=>Syntax:-	   object2=object1
+----------------
+Examnples:
+----------------
+>>> l1=[10,"Rossum"]
+>>> print(l1,id(l1))-----------[10, 'Rossum'] 1957574950720
+>>> l2=l1 # Deep Copy
+>>> print(l2,id(l2))----------[10, 'Rossum'] 1957574950720
+>>> l1.append("Python")
+>>> print(l1,id(l1))--------[10, 'Rossum', 'Python'] 1957574950720
+>>> print(l2,id(l2))-----------[10, 'Rossum', 'Python'] 1957574950720
+>>> l2.append("DSC")
+>>> print(l1,id(l1))---------[10, 'Rossum', 'Python', 'DSC'] 1957574950720
+>>> print(l2,id(l2))------[10, 'Rossum', 'Python', 'DSC'] 1957574950720
+===================================================

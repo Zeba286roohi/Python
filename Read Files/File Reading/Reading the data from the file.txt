@@ -1,0 +1,40 @@
+		================================================
+				Reading the data from the file
+		================================================
+=>To read the data from files, we have 4 pre-defined functions. They are
+			a) read()
+			b) read(no.of chars)
+			c) readline()
+			d) readlines()
+----------------------------------------------------------------------------------------------------------------------
+a) read():
+---------------
+=>This Function is used for reading entire content of file in the form of str
+=>Syntax:-        varname=filepointer.read()
+=>Here varname is of type str and it contains the entire content of file.
+-----------------------------------------------------------------------------------------------------------------------
+b) read(no. of chars):
+------------------------------------------------------------------
+=>This Function is used for reading specified number characters from  the file in the form of str
+=>Syntax:-        varname=filepointer.read(no. of chars)
+=>Here varname is of type str and it contains the specified number characters
+----------------------------------------------------------------------------------------------------------------------------------
+c) readline():
+-----------------------------------------------------------
+=>This Function is used for reading One Line at a time from  the file in the form of str
+=>Syntax:-        varname=filepointer.readline()
+=>Here varname is of type str and it contains the one Line of data from file.
+----------------------------------------------------------------------------------------------------------------------------------------
+d) readlines():
+-----------------------------------------------------------
+=>This Function is used for reading All Lines at a time from  the file in the form of list
+=>Syntax:-        varname=filepointer.readlines()
+=>Here varname is of type list and it contains the all Lines of  file.
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+

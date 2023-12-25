@@ -1,0 +1,40 @@
+		================================
+				float
+		================================
+=>'float' is one of the pre-defined class and treated as Fundamental data type.
+=>The purpose of float data type is that " To store Floating Point Values (OR) Real constant Values (Numbers with Decimal Places)"
+		Examples:  23.45, 56.99  0.99  ....etc
+				-24.56   -4.5   -0.8..etc
+		In 23.45, 23 is called Integer part and 0.45  is called decimal part
+-----------------------
+=>Examples:
+-----------------------
+>>> a=23.45
+>>> print(a, type(a))-------------23.45 <class 'float'>
+>>> a=0.99
+>>> print(a, type(a))------------0.99 <class 'float'>
+>>> a=22/7
+>>> print(a, type(a))-----------3.142857142857143 <class 'float'>
+------------------------------------------------------------------------------------------------
+=>float data type can also represent Scientific Notation(Mantisa e Exponent) and it can be converted into Normal Floating point value as 
+		Mantisa x 10 to the power of Exponent
+=>The advantage of  Scientific Notation is that It save the memory space.
+=>The float data type Never stores Number System data directly.
+----------------
+Examples:
+----------------
+>>> a=4e2
+>>> print(a,type(a))----------400.0 <class 'float'>
+>>> a=10e2
+>>> print(a,type(a))----------1000.0 <class 'float'>
+>>> a=10e-2
+>>> print(a,type(a))-------0.1 <class 'float'>
+>>> a=3.4e5
+>>> print(a,type(a))--------340000.0 <class 'float'>
+>>> a=0.0000000000000000000000000000000000000000000000002
+>>> print(a,type(a))--->   2e-49 <class 'float'>
+-------------------------------------------
+>>> a=0b1010.0b1010------SyntaxError: invalid decimal literal
+>>> b=0o12.0o34------------SyntaxError: invalid decimal literal
+>>> c=0xA.0xF-----------SyntaxError: invalid decimal literal
+=================================X=========================		

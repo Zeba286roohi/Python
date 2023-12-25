@@ -1,0 +1,15 @@
+	=================================================
+				raise key word
+	=================================================
+=>raise keyword is used for hitting / raising / generating the exception provided some condition must be satisfied.
+=>Syntax:-     if (Test Cond):
+			      raise   <exception-class-name>
+
+Examples:
+-------------------
+from kvr import KvrDivisionError
+def division(a,b):
+	if(b==0):
+		raise KvrDivisionError
+	else:
+		return (a/b)

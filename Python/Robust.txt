@@ -1,0 +1,7 @@
+		==========================================
+						Robust
+		==========================================
+=>A Programming is said to be Robust if and only if It always provides User-friendly Errors  Messages when end-user commits mistakes at implementation level.
+=>To get User-friendly error messges, we use exception handling feature.
+=>Since Python Programming Provides Exception handling Facility and hence python is one of the Robust (Strong) Programming Language.
+----------------------------------------------------------x--------------------------------------------------

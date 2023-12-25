@@ -1,0 +1,294 @@
+		======================================
+				range
+		======================================
+=>'range' is one of the pre-defined class and treated as Sequence Category Data Type.
+=>The purpose of range data type is that " To Store Squence of Numerical Integer Values with Equal Interval ".
+=>On the object of range  , we can perform Indexing and Slicing Operations.
+=>An object of range data type belongs to Immutable
+=>range data type contains 3 types of Syntaxes. They are
+--------------
+Syntax1:
+--------------
+		varname=range(value)
+=>Here varname is an object of <class,'range'>
+=>This syntax generates the range of values from 0 to value-1
+---------------
+Examples:
+---------------
+>>> r=range(11)
+>>> print(r, type(r))-------range(0, 11) <class 'range'>
+>>> for v in r:
+...     print(v)
+			...
+			0
+			1
+			2
+			3
+			4
+			5
+			6
+			7
+			8
+			9
+			10
+
+>>> for v in range(6):
+...     print(v)
+				...
+				0
+				1
+				2
+				3
+				4
+				5
+------------------------------------------------------------------------------
+Syntax2:-    varname=range(start,stop)
+=>This syntax generates range values from start to stop-1  values
+Examples:
+--------------
+>>> r=range(10,21)
+>>> print(r,type(r))-------------range(10, 21) <class 'range'>
+>>> for v in r:
+...     print(v)
+			...
+			10
+			11
+			12
+			13
+			14
+			15
+			16
+			17
+			18
+			19
+			20
+>>> for k in range(100,106):
+...     print(k)
+				...
+				100
+				101
+				102
+				103
+				104
+				105
+>>> for k in range(50,56):
+...     print(k)
+				...
+				50
+				51
+				52
+				53
+				54
+				55
+=>NOTE: In the above two syntaxes the default intervalue is 1 and generates range of values in Forward direction only.
+---------------------------------------------------------------------------------------
+Syntax-3:
+---------------
+		varname=range(start,stop,step)
+=>This syntax generates range of values from start to stop-1 with specified equal interval of value (step)
+Examples: 
+--------------
+>>> r=range(10,21,2)
+>>> print(r,type(r))---------range(10, 21, 2) <class 'range'>
+>>> for x in r:
+...     print(x)
+			...
+			10
+			12
+			14
+			16
+			18
+			20
+>>> for x in range(10,51,10):
+...     print(x)
+				...
+				10
+				20
+				30
+				40
+				50
+==========================================================
+Note:    range(Value)
+            range(start,stop)
+	    range(start,stop,step)
+----------------------------------------------------------------------------------------------
+Q1) Generate    0  1   2   3   4   5    6   7    8   9  10----range(11)
+>>> for x in range(11):
+...     print(x)
+			...
+			0
+			1
+			2
+			3
+			4
+			5
+			6
+			7
+			8
+			9
+			10
+---------------------------------------------------------------
+Q2) Generate   100  101   102  103  104  105-----range(100,106)
+>>> for x in range(100,106):
+...     print(x)
+			...
+			100
+			101
+			102
+			103
+			104
+			105
+--------------------------------------------------------------------------
+Q3) Generate 10   15   20    25   30   35   40----range(10,41,5)
+>>> for x in range(10,41,5):
+...     print(x)
+			...
+			10
+			15
+			20
+			25
+			30
+			35
+			40
+--------------------------------------------------------------------------------------
+Q4) Generate  10  20   30  40   50    60   70  80  90  100---range(10,101,10)
+>>> for x in range(10,101,10):
+...     print(x)
+			...
+			10
+			20
+			30
+			40
+			50
+			60
+			70
+			80
+			90
+			100
+---------------------------------------------------------------------
+Q5) Generate  -1   -2   -3  -4   -5  -6  -7  -8  -9   -10----- range(-1,-11,-1)
+>>> for x in range(-1, -11,-1):
+...     print(x)
+...
+		-1
+		-2
+		-3
+		-4
+		-5
+		-6
+		-7
+		-8
+		-9
+		-10
+-------------------------------------------------------------
+Q6) Generate  -10  -20   -30  -40  -50-----range(-10,-51,-10)
+>>> for x in range(-10,-51,-10):
+...     print(x)
+...
+				-10
+				-20
+				-30
+				-40
+				-50
+---------------------------------------------------------------------------
+Q6) Generate  10   9   8   7   6   5   4   3   2   1---range(10,0,-1)
+>>> for x in range(10,0,-1):
+...     print(x)
+			...
+			10
+			9
+			8
+			7
+			6
+			5
+			4
+			3
+			2
+			1
+--------------------------------------------------------------------------------
+Q7) Generate  100    90   80   70   60   50 ---range(100,49,-10)
+>>> for x in range(100,49,-10):
+...     print(x)
+		...
+		100
+		90
+		80
+		70
+		60
+		50
+------------------------------------------------------------------
+Q8) generate   -5  -4  -3  -2  -1  0   1   2   3   4  5--range(-5,6,1)
+>>> for x in range(-5,6,1):
+...		print(x)
+			...
+			-5
+			-4
+			-3
+			-2
+			-1
+			0
+			1
+			2
+			3
+			4
+			5
+--------------------------------------------------------------------------------------
+>>> r=range(100,151,10)
+>>> print(r)-----------range(100, 151, 10)
+>>> for x in r:
+...     print(x)
+			...
+			100
+			110
+			120
+			130
+			140
+			150
+>>> print(r[2])-----------120
+>>> print(r[-1])----------150
+
+>>> for x in r[2:]:
+...     print(x)
+				...
+				120
+				130
+				140
+				150
+>>> for x in r[::-1]:
+...     print(x)
+				...
+				150
+				140
+				130
+				120
+				110
+				100
+>>> print( range(1000,1050,10)[2])---------1020
+>>> print( range(1000,1050,10)[-1])----1040
+>>> for x in range(1000,1051,10)[::-1]:
+...		print(x)
+...
+			1050
+			1040
+			1030
+			1020
+			1010
+			1000
+=========================================================
+>>> r=range(10,100,10)
+>>> for x in r:
+...     print(x)
+			...
+			10
+			20
+			30
+			40
+			50
+			60
+			70
+			80
+			90
+>>> print(r[1])-------------20
+>>> r[1]=200------TypeError: 'range' object does not support item assignment
+>>>
+

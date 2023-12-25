@@ -1,0 +1,20 @@
+		===============================================
+			Importance of Object Oriented Principles  
+		===============================================
+=>In Real Time to develop any project, we must use a language and it can satisfy two types of Principles. They are
+		1) Procedure Oriented Principles ( Functional Oriented).
+		2) Object Oriented Principles.
+=>Python is one of Both Procedure and Object Oriented Programming.
+=>Even though Python belongs to Both Procedure and Object Oriented Programming , every thing treated as objects.
+--------------------------------------------------------------------------------------------------------------------
+	"Benifits of Treating Every thing as object "  (or) Adavnatges of OOPs
+--------------------------------------------------------------------------------------------------------------------
+=>In Object, we can store large Volume of Data and achieves Platform Independency 
+   (Python)
+=>The confidential Data can be transfered between multiple remote machine in the 
+    form cipher text (Encrypted format). So that security can be enhanced ( Improved).
+=>The Large of Volume of Data Transfered between Multiple Machines all at once in 
+    the form of object and leads to effective communication.
+=>All Values are available around the objects and provides effective memory     
+    Management.
+============================X===================================

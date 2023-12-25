@@ -1,0 +1,86 @@
+		=========================================
+				6. Membership Operators
+		=========================================
+=>The purpose of Membership Operators is that " To check the specified value in any Iterable object".
+=>An Iterable object is one, which contains multiple elements( Sequence type,list type, set type and dict type ).
+=>In Python, We have two type of Membership Operators. They are
+		a) in
+		b) not in
+---------------
+a) in
+---------------
+Syntax:-      varname= Value  in  Iterable_object
+=>If the "Value" present in Iterable_object then It returns True  otherwise it returns False.
+=>Here "varname"  contans True or False and whose type is bool.
+
+---------------
+b) not in
+-----------------
+Syntax:-      varname= Value  not in  Iterable_object
+=>If the "Value" not present in Iterable_object then It returns True  otherwise it returns False.
+=>Here "varname"  contans True or False and whose type is bool.
+
+Examples:
+-----------------
+>>> s="PYTHON"
+>>> "P" in s-------------True
+>>> "P" not in s-------False
+>>> "T" not in s-------False
+>>> "T" in s-----------True
+>>> "K" in s------------False
+>>> "K" not in s---------True
+>>> "TH" in s-------------True
+>>> "TH" not in s----------False
+>>> "THON" not in s--------False
+>>> "THON" in s---------True
+>>> s="PYTHON"----------
+>>> "PTO" in s----------False
+>>> "PYT" in s-----------True
+>>> "PYON" in s-----------False
+>>> "PYON" not in s---------True
+>>> "HON" not in s--------False
+>>> "HON" in s----------True
+>>> "NOH" in s----------False
+>>> "NOH" not in s----------True
+>>> "NOH" in s[::-1]----------True
+
+>>> lst=[10,20,30,40,"python"]
+>>> 10 not in lst----------False
+>>> 10 in lst------------True
+>>> "python" in lst----------True
+>>> "python" not in lst------------False
+>>> "pyt" in lst---------False
+>>> print(lst[4])----------python
+>>> "pyt" in lst[4]----------True
+>>> "pyt" not in lst[4]----------False
+>>> "pt" not in lst[4]-----------True
+>>> "noh" not in lst[4]---------True
+>>> "noh" in lst[4]----------False
+>>> "noh" in lst[4][::-1]---------True
+>>> "nh" not in lst[4][::-1]------------True
+----------------------------------------------X--------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

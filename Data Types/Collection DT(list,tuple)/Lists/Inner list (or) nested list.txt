@@ -1,0 +1,61 @@
+		=====================================
+				Inner list (or) nested list
+		=====================================
+=>The process of writing one list into another list is called Inner / Nested list.
+
+=>Syntax:  [ val1,val2, [ val11,val12,val13..... ],[val22,val23...]....,val-n ]
+------------------
+Example:-
+-------------------
+=>On Inner list , we can perform both Indexing and slicing operations.
+=>On Inner list, we can apply all pre-defined functions of list.
+>>> lst=[10,"Rossum",[15,18,16],[60,65,55],"OUCET"]
+>>> print(lst)----[10, 'Rossum', [15, 18, 16], [60, 65, 55], 'OUCET']
+>>> print(lst[0])------10
+>>> print(lst[1])--------Rossum
+>>> print(lst[2])-------[15, 18, 16]
+>>> print(lst[2][0] )--------15
+>>> print(lst[2][1] )-------18
+>>> print(lst[2][2] )--------16
+>>> print(lst[2][-1] )--------16
+>>> print(lst[2][-2] )--------18
+>>> print(lst[2][-3] )---------15
+>>> print(lst[-3])--------[15, 18, 16]
+>>> print(lst[-3][-1])--------16
+>>> print(lst[-3][-2])--------18
+>>> print(lst[-3][-3])-----15
+>>> print(lst[-3][::-1])----------[16, 18, 15]
+>>> print(lst[3])--------[60, 65, 55]
+>>> print(lst[3].sort())------None
+>>> print(lst[3])---------[55, 60, 65]
+>>> print(lst[4])--------OUCET
+>>> lst[2].append(14)-------
+>>> print(lst[2])--------[15, 18, 16, 14]
+>>> lst[3].insert(2.58)------TypeError: insert expected 2 arguments, got 1
+>>> lst[3].insert(2,58)-------
+>>> print(lst[3])------[55, 60, 58, 65]
+>>> print(lst)------[10, 'Rossum', [15, 18, 16, 14], [55, 60, 58, 65], 'OUCET']
+>>> lst.pop(2)-------[15, 18, 16, 14]
+>>> print(lst)-------[10, 'Rossum', [55, 60, 58, 65], 'OUCET']
+>>> lst.pop(-2)-------[55, 60, 58, 65]
+>>> print(lst)--------[10, 'Rossum', 'OUCET']
+>>> l1=[18,16,14]
+>>> l2=[67,34,80]
+>>> lst.insert(2,l1)
+>>> print(lst)--------[10, 'Rossum', [18, 16, 14], 'OUCET']
+>>> lst.append(l2)
+>>> print(lst)-----[10, 'Rossum', [18, 16, 14], 'OUCET', [67, 34, 80]]
+===============================X===============================
+
+
+
+--------------------------------------------------------------------------------------------
+My requirement
+--------------------
+		i want to store
+		stno  , name  , internal marks(sub1,sub2,sub3), Ext Marks(sub1,sub2,sub3), 
+		                      collegne name
+
+     [10,"Rossum", 15,20,18,60 65 55,'OUCET" ]---no proper arragement
+
+     [10,"Rossum", [15,20,30], [60,65,55],"OUCET"]

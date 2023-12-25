@@ -1,0 +1,21 @@
+		======================================
+			History of Python
+		======================================
+=>The Python programming Language foundation stone has laid in the year 1980
+=>The Python programming Language development started in the year 1989
+=>The  Python programming Language officially released in the year 1991 Feb
+=>The  Python programming Language Developed by "Guido Van Rossum"
+=>The  Python programming Language developed CWI in Nether lands.
+=>The Python programming Language maintained by non-commerical Organization Python Software Foundation (PSF).
+-------------------------------------------------------------------------------------------------------------
+Versions of Python
+------------------------------------------------------
+=>Python Programming Contains 3 Types of Versions.
+	a) Python 1.x
+	b) Python 2.x , here   x represents  0 1 2 3 4 5 6 7
+	c) Python 3.x here  x represents  0 1 2 3 4 5 6  7 8  9 10    11   12		
+=>Python 3.x does not contain backward Compatability with Python2.x
+--------------------------------------------------------------------------------
+Downloading Process of Python
+------------------------------------------------------
+We can download the python software from www.python.org

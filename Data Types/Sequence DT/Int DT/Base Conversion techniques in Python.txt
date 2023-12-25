@@ -1,0 +1,100 @@
+		==========================================
+			Base Conversion techniques in Python
+		==========================================
+=>The purpose of Base Conversion techniques in Python is that " Converting One Base Value into another Base Value."
+=>In Python Programming, we have 3 Base Conversion techniques. They are
+		1) bin()
+		2) oct()
+		3) hex()
+------------
+1) bin():
+------------
+=>This function is used for converting Other Number Systems data into Binary Number System.
+=>Syntax:-      varname=bin(Decimal / Octal / Hexa Decimal Data )
+
+Examples:
+---------------
+>>> a=15  # Decmal number system data
+>>> b=bin(a)
+>>> print(b)----------0b1111
+>>> b=bin(25)
+>>> print(b)-----------0b11001
+>>> a=0o22  #octal data
+>>> b=bin(a)
+>>> print(b)----------0b10010
+>>> b=bin(0o45)
+>>> print(b)--------0b100101
+>>> a=0xF  # Hexa Decimal 
+>>> b=bin(a)
+>>> print(b)-------0b1111
+>>> a=0xFACE
+>>> b=bin(a)
+>>> print(b)--------0b1111101011001110
+>>> b=bin(0xBEE)
+>>> print(b)---------0b101111101110
+>>> b=bin(0xBEER)--------SyntaxError: invalid hexadecimal literal
+>>> x1=bin(0x0133fabe11)
+>>> print(x1)------------0b100110011111110101011111000010001
+--------------------------------------------------------------
+2) oct():
+-------------
+=>This function is used for converting Other Number Systems data into Octal Number System.
+=>Syntax:-   varname=oct(Decimal / Binary / Hexa Decimal Data )
+
+Examples:
+--------------
+>>> a=18  # Decimal data
+>>> c=oct(a)
+>>> print(c)--------0o22
+>>> c=oct(234)
+>>> print(c)-----------0o352
+>>> a=0b1111
+>>> c=oct(a)
+>>> print(c)---------0o17
+>>> c=oct(0b1010)
+>>> print(c)------------0o12
+>>> c=oct(0b10100000011110001111000011)
+>>> print(c)----------0o240361703
+>>> a=0xACE
+>>> c=oct(a)
+>>> print(c)--------0o5316
+>>> c=oct(0xDEE)
+>>> print(c)---------0o6756
+>>> c=oct(0xDAD)
+>>> print(c)--------0o6655
+---------------------------------------------------------------------
+3) hex()
+------------
+=>This function is used for converting Other Number Systems data into Hexa Decimal  Number System.
+=>Syntax:-   varname=hex(Decimal / Binary / octal Data )
+
+---------------
+Examples:
+---------------
+>>> a=15   # decimal data
+>>> h=hex(a)
+>>> print(h)-----------------0xf
+>>> print(hex(172))----------0xac
+
+>>> a=0o22  #octal data
+>>> b=hex(a)
+>>> print(b)----------0x12
+>>> b=hex(0o34562)
+>>> print(b)----------0x3972
+>>> a=0b1111
+>>> b=hex(a)
+>>> print(b)--------0xf
+>>> b=hex(0b111111111100000000011111111111)
+>>> print(b)--------0x3ff007ff
+-------------------------------------------------------------------
+Special case:
+---------------------
+>>> a=15
+>>> b=bin(a)
+>>> print(b, type(b))---------0b1111 <class 'str'>
+>>> b-----------    '0b1111'
+>>> b=oct(a)
+>>> print(b, type(b))-----------0o17 <class 'str'>
+>>> b=hex(a)
+>>> print(b, type(b))-------------0xf <class 'str'>
+-----------------------------------------------------------------------------------------

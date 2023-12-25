@@ -1,0 +1,34 @@
+			====================================================
+					Functions in Python
+			====================================================
+Index:
+------------
+=>Purpose of Functions
+=>Def. of Function
+=>Advantages of Functions
+=>Part of Functions
+=>Phases in Functions
+=>Syntax for Defining the Functions
+=>Number of Approaches to Define Functions
+=>Problem solving examples
+--------------------------------------------------------------------
+=>Parameters and Arguments
+=>Types of Parameters and Arguments
+		a) Possitional Parameters / Arguments
+		b) Default Parameters / Arguments
+		c) Keyword Parameters / Arguments
+		d) Variable Length Parameters / Arguments
+		e) Keyword Variable Length Parameters / Arguments
+=>Local Parameters and Global Varaibles
+=>global key word and globals()
+=>Problem solving examples
+-----------------------------------------------------------------------
+=>Anonymous Functions (or) Lambda Functions
+=>Problem solving examples
+=>Special Functions in Python
+		a) filter() with Normal and Anonymous Functions
+		b) map() with Normal and Anonymous Functions
+		c) reduce() with Normal and Anonymous Functions
+=>Problem solving examples
+=================================X===================================
+

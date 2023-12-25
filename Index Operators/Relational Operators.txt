@@ -1,0 +1,25 @@
+		=====================================
+			3. Relational Operators
+		=====================================
+=>The purpose of  Relational Operators is that "To compare two values "
+=>if two or more values/ variables  connected with Relational Operators then it is called Relational Expression.
+=>The result of Relational Expression is either True or False and they helps us for taking decisions.
+=>Relational Operators are given in the following Table:
+==================================================================
+SLNO	Symbol		Meaning		Example a=10 b=20,c=10
+==================================================================
+1.		>			greater than         print(a>b)-------------False
+								     print(b>c)------------True
+2.		<			Less than	     print(a<b)------------True
+								     print(a<c)-------------False
+3.		==			Equality		     print(a==b)----------False		
+								     print(a==c)-----------True
+4.		!=			not equal to         print(a!=b)------------True											    print(a!=c)-------------False
+
+5.		>=			greater than	    print(a>=b)----------False		
+					or equal to	    print(a>=c)----------True
+6.		<=			Less than	     print(a<= -2)----------False
+					or equal to	    print(a<=c)-----------True
+==================================================================
+
+

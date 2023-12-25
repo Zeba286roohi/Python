@@ -1,0 +1,33 @@
+		===========================================
+			DRL statements (Data Retrieval Language )	
+		===========================================
+=>The purpose of DRL  statements is that "To read or extract the records data from table".
+=>The DRL statement in Database softwares is "select"
+=>Syntax:-
+--------------------
+SQL> select colname1, colname-2...Colname-n  from table_name;
+
+SQL> select colname1, colname-2...Colname-n  from table_name where cond list;
+
+Examples:
+-----------------
+		SQL>select * from employee;
+
+		SQL>select * from employee where sal>4.0 and sal<6.0;
+==================================================================
+=>In python Programming, Once select query executed , all the records are placed in the object  cur.
+=>To extract the records from cur object, we have 3 Functions. They are
+			1) fetchone()
+			2) fetchmany(no.of records)
+			3) fetchall()
+=>fetchone() is used for fetching one record at a time where cur object pointing and it return the record in the form of tuple.
+	Syntax:-    record=curobj.fetchone()
+=>fetchmany(n): here ''n" represents number of records
+		Syntax:-    records=curobj.fetchmany(n)
+		1) if n<0 then we never get any records
+		2) if n==total number of records in table then we get all records
+		3) if n<total number of records then we get n records
+		4) if n>total number of records then we get all the  records.
+=>fetchall() is used for fetching all the records of table and  it returns the records in the form of list of tuples.
+		Syntax:-    records=curobj.fetchall()
+------------------------------------------------X--------------------------------------

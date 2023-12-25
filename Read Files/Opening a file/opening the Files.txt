@@ -1,0 +1,46 @@
+		================================
+			opening the Files
+		================================
+=>To perform various operations on files, First we must open the file. In Python, we have 2 syntaxes to open the file. They are
+		1) by using   " open() "
+		2) by using   " with  open()"
+------------------------------------
+1) by using   " open() ":
+-----------------------------------
+=>open() is one of the pre-defined function and it present in default module  builtins
+=>This function is used for opening any specified file in specified file mode.
+
+=>Syntax:-        varname=open("FileName","File Mode")
+--------------------
+Explanation:
+--------------------
+=>varname is an object of TextIOWrapper and it is pointing to the file and it is called File pointer.
+=>FileName represents Type of file 
+=>File Mode can be either  of  r, w,a, r+,w+,a+,x 
+=>Once we open the file with open() , then it is mandatory to close file by using close() and it is one of the manual process. (Not supporting Auto Closeable Property)
+===========================================================
+2) by using   " with  open()"
+---------------------------------------------------------
+Syntax:         with    open("File Name", "File Mode") as <variable name>:
+				-----------------------------------------------------------------------
+				------------------------------------------------------------------------
+				Block of statement--File Operations
+				-----------------------------------------------------------------------
+				------------------------------------------------------------------------
+
+Explanation:
+-------------------
+=>here "with" and "as" are the keywords
+=>open() is pre-defined Function used for opening any specified file in specified file mode.
+=>varname is an object of TextIOWrapper and it is pointing to the file and it is called File pointer.
+=>Block of statements represents set of executable statements meant for performing file 
+   operations.
+=>The advantange of  " with open() as " approach is that " As long as PVM present inside of "with open() as " indentation , File is actively Under opening state and Once PVM comes out of "with open() as  " Indentation then file will be closed automatically.
+=>This approach provides auto-closeable of files. ( No need to write finally block and no need to use close() ).
+
+
+
+
+
+
+

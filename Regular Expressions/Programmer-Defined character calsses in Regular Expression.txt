@@ -1,0 +1,23 @@
+		=======================================================
+		  Programmer-Defined character calsses in Regular Expression
+		=======================================================
+=> Programmer-Defined character calsses defined or prepared by Python Programmers for 
+     building Search Pattern and it is used to search or find or match with given data and obtains desired result.
+=> Programmer-Defined character calsses are given bellow.
+=>Syntax for  Programmer-Defined character calsses.
+			
+			[Search Pattern]
+
+1.  [abc]------------------->Searches for either 'a' or 'b' or 'c' only.
+2.  [^abc]----------------->Searches for all except 'a' or 'b' or 'c'
+3.  [a-z]-------------------->Searches for all lower case alphabets only
+4.  [^a-z]-------------------->Searches for all  except lower case alphabets.
+5.  [A-Z]-------->Searches for all upper case alphabets only 
+6.  [^A-Z]-------->Searches for all except upper case alphabets
+7.  [0-9]------------>searches for all digits only
+8.  [^0-9]------------>searches for all  except digits.
+9.  [A-Za-z]------->searches for all lower and upper case alphabets  only
+10. [^A-Za-z]----->searches for all  except lower and upper case alphabets.
+11. [A-Za-z0-9]------->searches for all lower and upper case alphabets and digits
+12. [^A-Za-z0-9]------>searches for all special symbols
+					( except lower and upper case alphabets and digits)

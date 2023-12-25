@@ -1,0 +1,9 @@
+		=======================================
+				High Level 
+		=======================================
+=>In this context , we have two types of Programming Languages. They are
+		a) Low Level Programming Lang
+		b) High Level Programming Lang
+=>In Low Level Programming Lang, we represent data in the form lower level bits like Binary ,Octal and Hexa Deciaml number system.
+=>Internally Low Level data in the form lower level bits like Binary ,Octal and Hexa Deciaml number system can be automatically converted into Understandable format (Dcimal Number System) and Hence Python is considered as High Level Programmingh Language.
+================================X===============================

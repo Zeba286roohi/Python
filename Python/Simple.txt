@@ -1,0 +1,20 @@
+		===================================
+				1. Simple 
+		===================================
+=>Python is one of the SIMPLE Programming Language, bcoz of 3 important Tech Features. 
+1) Python Programming Provides "RICH SET OF APIs". So that Python Programmer can re-use the pre-defined code and develops real time applications casily without writing our own code.
+--------------------------------------------------------------------------
+Def of APIs(Application Programming Interface):
+--------------------------------------------------------------------------
+=>An API is a collection  of Modules.
+=>A Module is a collection of Functions, Variables and Classes.
+============================================================
+2)  Python Programming Provides an In-bulit facility called "Garbage Collector ", which is running behind of every python program for collecting Un-Used Memory space and improves the performnace of Python Based Applications.
+
+Def of Garbage Collector:
+---------------------------------------
+=>Garbage Collector is one of Back ground python Program, which running behind of every regular python program and whose purpose is that to collect Un-Used Memory space and improves the performnace of Python Based Applications.
+-------------------------------------------------------------------------------------------------
+3) Python Programming Provides "User-Freindly Syntaxes". So that Python programmer can develop error-free program in limited span of time.
+=============================X===============================
+

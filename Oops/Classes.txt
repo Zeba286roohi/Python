@@ -1,0 +1,22 @@
+		=====================================
+				1) Classes
+		=====================================
+=>The purpose of Classes Concept is that "To develop Programmer (or) Custom 
+     Defined Data types and to develop any real time application ".
+=>The Purpose of Developing Programmer (or) Custom Defined Data types is that "To 
+     store Customized data and to perform  cutomized operations."
+=>To develop programmer defined data type by using classes concept, we use a 
+     keyword called "class".
+=>Every Class Name is considered as Programmer defined data type.
+
+------------------------------------
+=>Definition of Class:
+------------------------------------
+=>A Class is a collection of Data Members and Methods
+
+=>When we define a class , Memory will not create for Data members and Methods but whose memory will be created when we create an object.
+
+
+
+
+			

@@ -1,0 +1,33 @@
+	==============================================
+			Syntax for dfining a class in python
+	==============================================
+
+class  <Class Name>:
+	def   instancemethodname(self,list of formal params if any):
+	        ------------------------------------------------
+		----Specify Instance Data Members----
+		--->Perfoms Specific Operations-----
+	@classmethod	
+	def  classlevelmethodname(cls, list of formal params if any):
+		------------------------------------------------
+		----Specify Class Level Data Members----
+		--->Perfoms Class Level Operations-----
+	@staticmethod
+	def staticmethodname(list of formal params if any):
+		----------------------------------------------------
+		-------Utility Operations---------------------
+		----------------------------------------------------
+
+
+-------------------
+Explanation:
+-------------------
+=>"class" is a keyword , which is used to develop Programmer-defined Data Types.
+=> <class name> is one of valid variable name and treated as Class Name and Every Class Name is one of the Programmer-Defined Data Type.
+=>In Class of Python , we can define two types of data members. They are
+			a) Instance Data Members
+			b) Class Level Data Members
+=>In Class of Python , we can define Three  types of Methods. They are
+			a) Instance Methods
+			b) Class Level Methods
+			c) Static Methods

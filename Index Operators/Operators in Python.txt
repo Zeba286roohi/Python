@@ -1,0 +1,26 @@
+		========================================
+				Operators in Python
+		========================================
+=>An operator is a symbol.  
+=>The purpose of Operators is that to perform certain operation on the given data.
+=>If two or more Variables / Objects are connected with an operator then it is            called  Expression.
+=>In Python Programming, we have 7 types of Operators. They are
+
+			1. Arithmetic Operators
+			2. Assigment Operator  
+			3. Relational Operators
+			4. Logical Operators
+			5. Bitwise Operators  (Most Imp)
+			6. Membership Operators
+					a) in
+					b) not in
+			7) Identity Operators
+					a) is
+					b) is not
+
+Note:-   Unary Increment/Decrement Opertator ---C,CPP,JAVA, .NET ++  --  
+               Not There in Python
+	   ?  :   Ternary Operator --not there in Python
+	    
+
+

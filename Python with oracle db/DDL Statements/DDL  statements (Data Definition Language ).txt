@@ -1,0 +1,41 @@
+		==============================================
+			1) DDL  statements (Data Definition Language )
+		==============================================
+=>The purpose of DDL statements is that "To create , alter and droping a table".
+=>In Oracle , we have 3 types of DDL statements. They are
+		1) create
+		2) alter
+		3) drop
+		-------------
+
+1) create :
+--------------------
+=>"create " is used for creating a table on oracle database.
+------------------
+=>Syntax:-
+------------------
+SQL> create table table-name ( Col1 Data Type, Col2  data type.....Col-n data type)
+
+Example: create student table with sno,name and marks
+
+SQL> create table student (sno number(3) primary key, name varchar2(10) not null, marks number(5,2) not null);
+-----------------------------------------------------------------------------------------------------------------------
+2) alter:
+---------------------------------
+=>"alter" command is used for altering the table  either by adding new column name or by changing column sizes.
+=>Syntax1:-      
+	SQL> alter table  table-name modify( existing col name   data type)
+=>Syntax2:-      
+	SQL> alter table  table-name add( new col name   data type)
+
+Example:    SQL> alter table teacher modify(tno  number(4));
+   		   SQL> alter table teacher add(sub varchar2(10));
+---------------------------------------------------------------------------------------------------------------------------------
+3) drop:
+-----------------------------------------------------------------------
+=>"drop" command is used for droping  or deleting the entire table.
+=>Syntax:-  SQL>>  drop  table  table-name
+
+=>Example:   delete / drop    student table
+		SQL> drop  table  student;
+-------------------------------------------------------------------------------------------------------

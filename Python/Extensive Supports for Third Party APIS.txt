@@ -1,0 +1,24 @@
+======================================================
+	Extensive Supports for Third Party APIS
+======================================================
+=>The Python Programming Supports extensively for making use of Third party APIS(( Modules) to for developing the real time applications with High Performnace with precise code.
+
+
+-----------------
+NOTE:
+---------------
+=>First Party---Lang Library(API)---Python In-bulit Library--developed by ROSSUIM
+=>Second party---OS Libary------
+=>Third Party------vendors----- Travis Oliphant-----Numpy(C+PYTHON)
+						MC Kinney------------PANDAS
+						------------------------------------------------
+									Scipy
+									Scikit
+									matplotlib
+									seaborn
+									NLTP
+									-------------
+
+	pip				PEP				
+	pip3.10
+	pip3

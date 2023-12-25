@@ -1,0 +1,27 @@
+			==========================================
+				Exception Handling in Python---Most imp
+			==========================================
+Index:
+-----------
+=>Purpose of Exaception handling
+=>What is meant by Exception
+=>What is meant by Exception Handling
+=>Types of Errors
+		a) Compile Time Errors
+		b) Logicl Errors
+		c) Runtime Error 
+=>Type of Exxceptions
+		a) Pre-defined (or) built-in exceptions
+		b) Programmer(or) User (or) Custom Defined exception
+=>keywords used in exception handling
+		1) try
+		2) except
+		3) else
+		4) finally
+		5) raise
+=>Syntax for Handling Exceptions
+=>Programming Examples
+=>Devlopment of Programmer-Defined Exceptions
+=>Programming Examples
+=>ATM Use Case with Exceptions.
+

@@ -1,0 +1,11 @@
+		=======================================
+			 Extensible  and  	 Embedded
+		=======================================
+=>An Extensible Programming language is one, which provides/offers the  Services / Facilities of its Coding to be re-used in other Languages.
+=>Example: Python Programming provides Extensible bcoz Python code cab be called part of C, CPP   etc languages.
+
+=>An Embedded Programming language is one, which expects Services / Facilities from other languages related their coding to re-use.
+
+=>=>Example: Python Programming provides Embedded bcoz Python Program can embed  the code  of C, CPP   etc languages.
+===============================X================================
+

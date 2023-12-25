@@ -1,0 +1,20 @@
+		=========================================
+			1) Possitional Arguments (or) Parameters
+		=========================================
+=>The Concept of Possitional Parameters (or) arguments says that "The Number of Arguments(Actual arguments ) must be equal to the number of formal parameters ".
+=>This Parameter mechanism also recommends Order of Parameters for Higher accuracy.
+=>Python Programming Environment follows by default Possitional  Arguments (or) Parameters. 
+-----------------------------------------------
+Syntax for Function Definition :
+-----------------------------------------------
+	def    functionname(parm1,param2.....param-n):
+		-------------------------------------------------
+		-------------------------------------------------
+
+-----------------------------------------------
+Syntax for Function Call:
+-----------------------------------------------
+		functionname(arg1,arg2....arg-n)
+=>Here the values of arg1,arg2...arg-n are passing to param-1,param-2..param-n respectively.
+========================x===========================================================
+

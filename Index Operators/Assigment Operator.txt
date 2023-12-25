@@ -1,0 +1,38 @@
+		======================================
+			2. Assigment Operator  
+		======================================
+=>The symbol for assignment operator is =
+=>The purpose of Assigment Operator  is that "To transfer RHS value(s) to LHS Variable(s) "
+=>We can use the Assigment Operator  in two ways. They are
+		1) Single Line Assigment Operator  
+		2) Multi Line Assigment Operator  
+--------------------------------------------
+1) Single Line Assigment Operator  
+--------------------------------------------
+=>This operator transfer Single value from RHS to Single Variable of LHS.
+
+=>Syntax:	   varname=value
+------------------
+Examples:
+------------------
+>>> a=123
+>>> b=100
+>>> c=a+b
+>>>print(a,b,c)----- 123    100    223
+---------------------------------------------------------------------------
+2) Multi Line Assigment Operator  
+--------------------------------------------
+=>This operator transfer Multiple values from RHS to Multiple Variables of LHS.
+
+=>Syntax:	  var1,var2.....var-n=val1,val2,....val-n
+=>here the values of val1,val2.....val-n are assigned to var1,var2...var-n respectively.
+
+Examples:
+---------------
+>>> a,b=10,20
+>>> sum,sub,mul=a+b,a-b,a*b
+>>> print(a,b)-----------10 20
+>>> print(sum,sub,mul)------30 -10 200
+>>> sno,sname,marks=100,"Rossum",44.44
+>>> print(sno,sname,marks)-----100 Rossum 44.44
+-------------------------------------------X------------------------------------------------

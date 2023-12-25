@@ -1,0 +1,20 @@
+=====================================================
+Steps for developing Server Side Program
+=====================================================
+1) import socket module
+2) Every Server Side Program must run at Certain DNS / IP Address and Port Number.
+3) Server Program must ACCEPT the Client Side Program Request.
+4) Server Side Program must READ the data  coming from  client side program.
+5) Server Side Program must PROCESS the the Data coming from  client side program.
+6) Server Side Program must Send RESPONSE back to client side program.
+
+Note: As long as Client Side Program sending requests to the server side program, The Server Side Program performs Step-(3), Step-(4) , Step-(5) and Step-(6)
+=======================================================================
+Steps for developing Client Side Program
+=======================================================================
+1) import socket module
+2) Every Client Side Program must get the connection from Server Side Program  by passing  
+    DNS or IP Address and Port Number.
+3) Client Side Program must SEND request to the Server Side Program
+4) Client Side Program must RECEIVE the response from Server Side Program.
+==========================================================================

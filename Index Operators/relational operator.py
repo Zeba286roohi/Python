@@ -1,0 +1,11 @@
+a=input("Enter value of a")
+b=input("Enter value of b")
+print("-"*50)
+print("Results of relational operators:")
+print("{}>{}={}".format(a,b,a>b))
+print("{}<{}={}".format(a,b,a<b))
+print("{}=={}={}".format(a,b,a==b))
+print("{}!={}={}".format(a,b,a!=b))
+print("{}>={}={}".format(a,b,a>=b))
+print("{}<={}={}".format(a,b,a<=b))
+

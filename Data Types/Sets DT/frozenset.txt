@@ -1,0 +1,38 @@
+		============================================
+					frozenset 
+		============================================
+=>'frozenset is one of the pre-defined class and treated as Set Category Data Type.
+=>The purpose of frozenset data type is that  To store multiple values either of same type or different type or both types with Unique Values in single object (Duplicate values are not allowed). "
+=>We don't have any symbolic Notation for storing the elements in frozenset but we can convert any tuple, list , set type elements to frozenset by using frozenset()
+=>Syntax:-        frozensetobj=frozenset( {Val1,Val2...Val-n} )
+						or
+			 frozensetobj=frozenset( [Val1,Val2...Val-n] )
+						or
+			  frozensetobj=frozenset( (Val1,Val2...Val-n) )
+			
+=>An object of frozenset never maintains insertion order. In otherwords, whatever the elements we are organizing in the object of frozenset , those elements can be displayed in any order out of its many possibilities.
+=>On the object of frozenset , we can't perform Indexing and slicing Operations bcoz set object never maintain Insertion Order.
+=>An object of frozenset belongs to  Immutable( 'frozenset' object does not support item assignment) .
+
+=>Note:- The Functionality of frozenset is exactly similar to the functionality of set but an object of set belongs both Mutable and immutable where as an object of frozenset belongs to immutable only.
+------------------------------------------------------------------------------------------------
+Examples:
+----------------------
+>>> s1={10,20,"Ram","Python",34.56}
+>>> print(s1,type(s1))-----{34.56, 20, 'Ram', 10, 'Python'} <class 'set'>
+>>> fs1=frozenset(s1)
+>>> print(fs1,type(fs1))---frozenset({34.56, 20, 'Ram', 10, 'Python'}) 
+						<class	'frozenset'>
+>>> print(fs1[0])----TypeError: 'frozenset' object is not subscriptable
+>>> fs1[0]=100---TypeError: 'frozenset' object does not support item assignment
+>>> fs1.add(100)---AttributeError: 'frozenset' object has no attribute 'add'
+>>> lst=[10,10,20,30,"KVR","Python",True]
+>>> print(lst,type(lst))---[10, 10, 20, 30, 'KVR', 'Python', True] <class 'list'>
+>>> fs2=frozenset(lst)
+>>> print(fs2,type(fs2))---frozenset({True, 10, 'Python', 20, 'KVR', 30}) <class													'frozenset'>
+>>> tpl=(10,10,20,30,"KVR","Python",True)
+>>> print(tpl,type(tpl))----(10, 10, 20, 30, 'KVR', 'Python', True) <class 'tuple'>
+>>> fs3=frozenset(tpl)
+>>> print(fs3,type(fs3))---frozenset({True, 10, 'Python', 20, 'KVR', 30}) <class										'frozenset'>
+=========================X==========================
+

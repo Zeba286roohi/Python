@@ -1,0 +1,60 @@
+		=============================
+				1) int()
+		=============================
+=> int() is used converting "Any Possible Type Value into int type value".
+=>Syntax:-     varname=int( float / bool / complex / str )
+---------------------------------------------------------------
+Examples:- ( float Value----> int value---> Possible )
+---------------------------------------------------------------
+>>> a=10.24
+>>> print(a, type(a))--------10.24 <class 'float'>
+>>> b=int(a)
+>>> print(b,type(b))-----------10 <class 'int'>
+>>> a=0.99
+>>> print(a, type(a))---------0.99 <class 'float'>
+>>> b=int(a)
+>>> print(b,type(b))-----------0 <class 'int'>
+--------------------------------------------------------------
+Examples:- ( bool Value----> int value--->Possible  )
+---------------------------------------------------------------
+>>> a=True
+>>> print(a, type(a))------------True <class 'bool'>
+>>> b=int(a)
+>>> print(b,type(b))-----------1 <class 'int'>
+>>> a=False
+>>> print(a, type(a))----------False <class 'bool'>
+>>> b=int(a)
+>>> print(b,type(b))----------0 <class 'int'>
+------------------------------------------------------------------------------
+Examples:- ( Complex Value----> int value--->Not Possible  )
+-----------------------------------------------------------------------------
+>>> a=2.3+4.5j
+>>> print(a, type(a))--------(2.3+4.5j) <class 'complex'>
+>>> b=int(a)-------TypeError: int() argument must be a string, a bytes-like object or a real number, not 'complex'
+-----------------------------------------------------------------------------------------------
+Examples:- (Str Value----> int value)
+-----------------------------------------------------------------------------
+>>> a="100"  # it is a int str
+>>> print(a,type(a))-----------100 <class 'str'>
+>>> a=a+1----------TypeError: can only concatenate str (not "int") to str
+>>> b=int(a)  #POSSIBLE
+>>> print(b, type(b))----100 <class 'int'>
+>>> b=b+1
+>>> print(b, type(b))----101 <class 'int'>
+-------------------------------------------------
+>>>a="KVR"  # it is pure str
+>>> print(a,type(a))------KVR <class 'str'>
+>>> b=int(a)------ValueError: invalid literal for int() with base 10: 'KVR'
+-------------------------------------------------------
+>>> a="12.34" # it is  float str
+>>> print(a,type(a))----------12.34 <class 'str'>
+>>> b=int(a)----ValueError: invalid literal for int() with base 10: '12.34'
+------------------------------------------------------------------
+>>> a="True"   # it is bool str
+>>> print(a,type(a))----------True <class 'str'>
+>>> b=int(a)-------ValueError: invalid literal for int() with base 10: 'True'
+-----------------------------------------------------------------------------
+>>> a="2+3j"  # it is complex  str
+>>> print(a,type(a))----------2+3j <class 'str'>
+>>> b=int(a)------ValueError: invalid literal for int() with base 10: '2+3j'
+------------------------------------------------------------------------------------------------

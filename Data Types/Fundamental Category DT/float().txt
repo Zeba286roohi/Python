@@ -1,0 +1,54 @@
+		=============================
+				2) float()
+		=============================
+=> float() is used converting "Any Possible Type Value into float type value".
+=>Syntax:-     varname=float( int / bool / complex /str )
+-------------------------------------------------------------------
+Example ( int value--->float--->Possible )
+-------------------------------------------------------------------
+>>> a=12
+>>> print(a,type(a))--------12 <class 'int'>
+>>> b=float(a)
+>>> print(b,type(b))-------12.0 <class 'float'>
+-------------------------------------------------------------------
+Example ( bool value--->float--->Possible )
+-------------------------------------------------------------------
+>>> a=True
+>>> print(a,type(a))-------True <class 'bool'>
+>>> b=float(a)
+>>> print(b,type(b))--------1.0 <class 'float'>
+>>> a=False
+>>> print(a,type(a))------False <class 'bool'>
+>>> b=float(a)
+>>> print(b,type(b))-------0.0 <class 'float'>
+-------------------------------------------------------------------
+Example ( complex value--->float--->Not Possible )
+-------------------------------------------------------------------
+>>> a=2+3j
+>>> print(a,type(a))-------(2+3j) <class 'complex'>
+>>> b=float(a)-------TypeError: float() argument must be a string or a real number, not 'complex'
+----------------------------------------------------------------------------------
+Example ( Str value---->float Value )
+-------------------------------------------------------------------
+>>> a="123" # it is int str
+>>> print(a,type(a))----------123 <class 'str'>
+>>> b=float(a)  # POSSIBLE
+>>> print(b, type(b))-------123.0 <class 'float'>
+------------------------------------------------------------
+>>> a="12.34"  # it is float str
+>>> print(a,type(a))-----12.34 <class 'str'>
+>>> b=float(a) # POSSIBLE
+>>> print(b, type(b))------12.34 <class 'float'>
+------------------------------------------------------------
+>>> a="KVR"  # It is pure str
+>>> print(a,type(a))-------KVR <class 'str'>
+>>> b=float(a)-----ValueError: could not convert string to float: 'KVR'
+-------------------------------------------------
+>>> a="True" # it is bool str
+>>> print(a,type(a))------True <class 'str'>
+>>> b=float(a)------ValueError: could not convert string to float: 'True'
+-------------------------------------------------
+>>> a="2+3j"  # it is complex str
+>>> print(a,type(a))--------2+3j <class 'str'>
+>>> b=float(a)----ValueError: could not convert string to float: '2+3j'
+--------------------------------------------------------------------------------

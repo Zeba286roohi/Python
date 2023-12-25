@@ -1,0 +1,25 @@
+		==================================
+				Interpreted 
+		==================================
+=>When we execute any python Program, Internally the phases takes place. They are 
+	a) Compilation Phase
+	b) Execution Phase
+
+a) Compilation Phase:
+------------------------------------
+=>The python Compiler, reads the Source Code (Example Sum.py) Line by Line and Converted into Intermediate Code of Python called "Byte Code "
+=>Since Python Compiler converting the source code into Byte Code Line  by Line and hence it is Interpreted.
+
+Examples:--- Sum.py----->Python Compiler(Line by Line)----->Sum.pyc (Byte Code)
+-------------------------------
+b) Execution Phase:
+-------------------------------
+=>The PVM (Python Virtual Machine) reads Line by Line of Byte Code (.pyc) and converted into Machine Understandable Code and It is read by OS and Processor and Gives Final Result of the Program
+=>Since this execution performed by PVM Line by Line and hence It is Interpreted Programming.
+
+Examples:-
+sum.pyc----->PVM (Line by Line)---->Machine Code--->OS+Processor-->Result
+
+=>When we execute Python Program Python Compilation execution performed By Compiler and PVM Line by Line and Hence Python is one of Interpreted Programming language.
+-------------------------------------------------------------------------------------------------------------
+

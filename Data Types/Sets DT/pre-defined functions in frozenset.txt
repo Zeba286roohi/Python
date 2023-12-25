@@ -1,0 +1,20 @@
+		============================================
+				pre-defined functions in frozenset 
+		============================================
+=>The following are pre-defined functions in frozenset 
+		a) copy()  
+		b) isdisjoint()
+		c) issuperset()
+		d) issubset()
+		e) union()      
+		f) intersection()
+		g) difference()
+		h) symmetric_difference()
+=>The following pre-defined functions not present in frozenset  bcoz an object of frozenset is purely Immutable.
+		a) add()
+		b) clear()
+		c) remove()
+		d) pop()
+		f) discard()
+========================X=======================
+

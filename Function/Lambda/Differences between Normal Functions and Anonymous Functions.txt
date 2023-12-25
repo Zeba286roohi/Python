@@ -1,0 +1,19 @@
+	==============================================================
+		Differences between Normal Functions and Anonymous Functions
+	==============================================================
+=>Normal Functions always used for performing Long Term Operation (nothing but    we can re-use in every part of project), 
+where Anonymous Functions are those which are meant for performing Instant Operations.
+=>Normal Functions definitions contains Block of statements where Anonymous 
+    Functions contains single executable statement.
+=>Normal Function Definition starts with "def" keyword where Anonymous 
+    Functions defeinition starts with "lambda"
+=>To return the value from normal function, it is mandatory to use return 
+    statement. where as Anonymous Functions returns the value automatically / implcitly (no need to use return statement).
+=> Syntax for normal function:
+                   def     functionname (list of formal params):
+		            -----------------------------------------------
+			    Block of statements
+			    -----------------------------------------------
+=>Syntax for Anonymous Functions:
+			varname=lambda params-list : expression
+===========================x====================================

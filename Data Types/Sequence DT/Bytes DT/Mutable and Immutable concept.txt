@@ -1,0 +1,18 @@
+		=====================================
+			Mutable and Immutable concept
+		=====================================
+Mutable:
+-----------
+=>A Mutable Object is one which allows us to perform the changes / updations at the 
+    same Address.
+Examples:-        list   set    dict  
+---------------
+Immutable:
+---------------
+=>An Immutable Object is one which satisfies the following Properties.
+		a) It NEVER allows us to perform the the changes / updations at the 
+		     same Address.( If at all any changes / updation are allowed then modified values are placed in different address)
+		b) It NEVER allows us to perform ITEM ASSIGNMENT
+Examples:-
+			int, float, str, tuple, set...etc
+=======================X===============================

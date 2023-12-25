@@ -1,0 +1,33 @@
+		====================================
+			4. match  case statement
+		====================================
+=>match..case is one of the new feature in Python 3.10 onwards
+=>match  case statemnt is always recommeded to deal with pre-defined / designed 
+   decisions / Operations.
+
+=>Syntax:-
+-----------------
+		match ( Choice Expression ):
+			case Lable1:
+			              Execute Block of statements-1
+			case Label-2:
+					Execute Block of statements-2
+			case Label-3:
+			              Execute Block of statements-3
+			----------------------------------------------------------
+			----------------------------------------------------------
+			case Label-n:
+					Execute Block of statements-n
+			case _ :
+					execute default case block
+
+
+Explanation:
+---------------------
+=>here 'match' 'case ' are keywords
+=>"Choice Expression" can be either Integer, Char , Sring, bool
+=>Label1,Label2....lable-n can be  Integer, Char , Sring, bool
+=>If the value of Choice Expression is matching with Label-1 then PVM executes corresponding Block of Statement-1
+=>If the value of Choice Expression is not matching with Label-1 and it is matching with Label-2 then PVM executes corresponding Block of Statement-2 and Hence This comparision process will be continued with all Case Labels and they matches PVM executes Correspinding Block of statements. 
+=>If the value of Choice expression is not matching with any case labels then PVM executes default case block statements which are written under  case_:
+=>Writing the default case block  with  case_:   is optional

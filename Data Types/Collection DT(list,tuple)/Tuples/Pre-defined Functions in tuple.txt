@@ -1,0 +1,26 @@
+		=======================================
+			    Pre-defined Functions in tuple
+		=======================================
+=>tuple contains two pre-defined functions. They are
+		a) index()
+		b) count()
+-----------------------------
+Examples:
+-----------------------------
+>>> t1=(10,20,10,34,56,20)
+>>> t1.count(10)-----2
+>>> t1.count(20)-------2
+>>> t1.index(10)-------0
+>>> t1.index(56)-------4
+-------------------------------------------------------------------------
+=>tuple does not contains the following functions.
+		a) append()
+		b) insert()
+		c) remove()
+		d) pop(index)
+		e) pop()
+		f) copy()
+		g) sort()
+		h) reverse()
+		i) extend()
+=============================X==========================

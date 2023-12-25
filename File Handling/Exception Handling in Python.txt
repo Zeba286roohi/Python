@@ -1,0 +1,64 @@
+			==========================================
+				Exception Handling in Python---Most imp
+			==========================================
+=>The purpose of Exception handling is that " To Develop or Build Robust(Strong) Applications".
+=>In Real Time, To develop any project or application, we need to choose a language.
+=>By using this language, we develop, compile and run / execute the programs. During process, we get Various errors and they are of 3 types.
+		1) Compile Time Errors
+		2) Logic Errors
+		3) Runtime Errors.
+----------------------------------------------------------------------------------------------------------------
+1) Compile Time Errors:
+--------------------------------------
+=> Compile Time Errors are those, which are occuring during Compilation Process(.py--->.pyc)
+=> Compile Time Errors occurs due to Syntaxes not followed and they are traced Python 
+     Compiler.
+=> Compile Time Errors solved by Python Programmers at project development level.
+--------------------------------------------------------------------------
+2) Logic Errors:
+-------------------------------------------------------------------------
+=>Logic Errors are those which are occuring during Excution Time / Run Time.
+=>Logic Errors are those which are occuring  due to Wrong representation of logic.
+=>Logic Errors always gives Wrong results and they must be solved by Python Programmers 
+    during project development level.
+---------------------------------------------------------------------------------------------------------------
+3) Runtime Errors:
+-------------------------------------------------------------------------
+=> Runtime Errors are those which are occuring during Excution Time / Run Time.
+=>Runtime Errors are those which are occuring  due to INVALID or WRONG INPUT entered by 
+    Application User or End Users.
+=>Runtime errors are addressed by Programmers with their Forecasting Knowledge  by studying 
+   the problem statement 
+-------------------------------------------------------------------------------------------------------------------------------
+Points to be remembered in Exception Handling
+-----------------------------------------------------------------------------------------------------
+1) When the application user enters Invalid or Wrong Input then we get Runtime Errors.
+2) Runtime Errors by default gives Technical Error Messages, which are understanable by 
+    Programmers but not by end-users. Industry always recommeds to gives User-Friendly Error Messages instead of Technical Error Messages.
+
+3)Defintion of exception: Runtime Errors of a Program are called Exceptions.
+         (Invalid Input--->Runtime Error---->exception). Hence Every Invalid Input gives Exception.
+4) Exceptions by default generates technical Error messages. Programatically, Program can  
+     convert  Technical Error Messages into User-Friendly Error Messages.
+----------------------------------------------------
+5) Definition of Exception Handling:
+----------------------------------------------------
+=>The Process of Converting technical error messages into User-Friendly Error Messages is 
+    called Exception Handling.
+6) When an exception occurs in python, Internally 3 steps takes automatically.
+			a) PVM stops the program execution abnormally. 
+			b) PVM comes out of the Program flow 
+			c) PVM generates by default Technical Error Messages.
+7) To do (a),(b) and (c) steps , PVM creates an object of an appropriate exception class
+8) When an exception occurs then PVM creates an object of approapriate exception class and by default generates Technical Error Messages.
+9) Hence every exception is one the object of approapriate exception class.
+
+Note:
+-----------
+==>Invalid Input-- Gives---->Exception--Makes PVM--->cerate object of exception class--and generates->technical error messages.
+===============================X============================================
+
+
+
+
+

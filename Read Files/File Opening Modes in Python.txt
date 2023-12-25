@@ -1,0 +1,46 @@
+		===================================
+			File Opening Modes in Python
+		===================================
+=>To open the file, we must specify type of file mode and they are classied into 7 types. They are
+---------------------------
+1) r  mode
+---------------------------
+=>This mode is used for opening the file in READ Mode.
+=>This is one of default mode.
+=>If we open any file name in "r" mode and if that file does not exists in secondary 
+    memory we get FileNotFoundError.
+---------------------------
+2) w  mode
+---------------------------
+=>This mode is used for creating a new file and opens in write mode always.
+=>If the file name already exists and if we open it in "w" mode then it opens in 
+    write mode and existing data overlaps with new data.
+---------------------------
+3) a  mode
+---------------------------
+=>This mode is used for opening new file and performs write operation.
+=>This mode can also be used for opening existing file in write mode and new            data will be appended to the existing data.
+---------------------------
+4) r+  mode
+---------------------------
+=>This moder is used for  opening the file in read mode.
+=>When we open the file name in "r+" mode then on that file(if file exists) we can perform First read operation and later we perform Write Operation.
+----------------------------
+5) w+  mode
+----------------------------
+=>This is mode is used opening the file always in write mode , First performs Write operation and later we can perform Read Operation.
+=>Note that w+ mode Functionality is similar to "w" mode but with this mode additionally we can perform read operation.
+---------------------------
+6) a+  mode
+---------------------------
+=>=>This mode is used for opening new file and performs write operation.
+=>This mode can also be used for opening existing file in write mode and new            data will be appended to the existing data.
+=>Additionally with this mode we can perform Read Operation.(First we perform Write Operation and later we perform read operation)
+---------------------------
+7) x  mode
+---------------------------
+=>This mode is  eXclusively is used for opening or creating the file in write mode.
+=>This mode opens any file in write mode only once.
+=>If we open exiting file in "x" mode then we get FileExistError
+==============================x===============================
+

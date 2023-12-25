@@ -1,0 +1,53 @@
+		============================================
+			 for  loop       (or)   for....else Loop
+		============================================
+=>The purpose of for loop is that to retrieve the data or extract the data from any Iterable object.
+
+=>Syntax1:
+--------------------
+for  varname  in  Iterable_Object:
+        --------------------------------------
+	--------------------------------------
+	Block of Statements
+	--------------------------------------
+	--------------------------------------
+---------------------------------------------
+Other Statements in Program
+---------------------------------------------
+		(OR)
+--------------------
+=>Syntax2:
+--------------------
+for  varname  in  Iterable_Object:
+        --------------------------------------
+	--------------------------------------
+	Block of Statements
+	--------------------------------------
+	--------------------------------------
+else:
+       --------------------------------------
+       else block of statements
+       --------------------------------------
+
+---------------------------------------------
+Other Statements in Program
+---------------------------------------------
+
+================
+Explanation:
+================
+=>Here   'for' , 'in' , 'else' are the keywords
+=>Varname represents Programmer choice
+=>Iterable object represents any object contains multiple values like sequence, list, set and didct types.
+=>The execution process of for loop is that "Each Element of Iterable Object selected, placed in Varname and executes Block of statements". This Process will be repeated for finite number of times
+( len(iterable_object)  )  unitl all elements are completed in Iterable_object.
+
+=>After all elements of Iterable_Object of for loop completed and it indicates condtion of for loop is false and later executes else block of statements which are written in else block. After executing block PVM executes Other statements in Program
+=>Writing else block is optional.
+==================================================================
+Note1:-  For Iterbale_objects repetation, It is recommended for   using  " for Loop"
+
+Note2:-  For Non-Iterbale_objects repetation, It is recommended for   using  " while Loop"
+================================================================================
+
+     

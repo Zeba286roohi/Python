@@ -1,0 +1,70 @@
+		==================================
+				complex
+		==================================
+=>'complex' is one of the pre-defined class and treated as Fundamental data type.
+=>The purpose of complex data type is that "To store Imaginary data / complex 
+    numbers ".
+=>The general format of complex number is shown bellow.
+			a+bj     (OR)    a-bj      
+	Here 'a' is called Real Part
+		'b' is called Imaginary Part
+		and 'j' is sqrt(-1)   
+=>To get real and imaginary parts from complex object we use two pre-dedined attributes . They are
+				1) real
+				2) imag
+=>Syntax:    complexobj.real ---->Gives real part of complex object
+		   complexobj.imag---->Gives Imaginary part of complex object	
+=>By default the values of real and imaginary parts of complex objects are treated internally as floating point values.
+=>On complex data , we can perform operations like Addition , substraction , , multiplication...etc
+=>In Complex Data Representation, for Real part , we can use any number System Value but for Imaginary part we must use only Decimal Number System Values only but not other number System values.
+-----------------
+Examples:
+-----------------
+>>> a=2+3j
+>>> print(a,type(a))-----------(2+3j) <class 'complex'>
+>>> a=-3-4j
+>>> print(a,type(a))----------(-3-4j) <class 'complex'>
+>>> a=2.3+4.5j
+>>> print(a,type(a))----------(2.3+4.5j) <class 'complex'>
+>>> a=-2.3-4.6j
+>>> print(a,type(a))---------(-2.3-4.6j) <class 'complex'>
+>>> a=2+3i----------SyntaxError: invalid decimal literal
+>>> a=2j
+>>> print(a,type(a))----------2j <class 'complex'>
+-----------------------------------------------------------------------------
+Examples:
+-------------------------
+>>> a=10+40j
+>>> print(a,type(a))--------(10+40j) <class 'complex'>
+>>> print(a.real)----------10.0
+>>> print(a.imag)--------40.0
+>>> b=2.3-4.5j
+>>> print(b.real)---------2.3
+>>> print(b.imag)------   -4.5
+>>> b=2+4.5j
+>>> print(b.real)----  2.0
+>>> print(b.imag)----4.5
+--------------------------------------------------------------------------------
+>>> a=2+3j
+>>> b=5+6j
+>>>
+>>> print(a,type(a))---------(2+3j) <class 'complex'>
+>>> print(b,type(b))--------(5+6j) <class 'complex'>
+>>> c=a+b
+>>> print(c, type(c))-----------(7+9j) <class 'complex'>
+>>>
+>>> c=a-b
+>>> print(c, type(c))-------(-3-3j) <class 'complex'>
+>>> c=a*b
+>>> print(c, type(c))---------(-8+27j) <class 'complex'>
+----------------------------------------------------------------------------
+>>> a=True+2j
+>>> print(a, type(a))-----------(1+2j) <class 'complex'>
+>>> a=0b1010-5j
+>>> print(a, type(a))---------(10-5j) <class 'complex'>
+
+>>> a=0b1010-0b1111j----------SyntaxError: invalid binary literal
+>>> a=0xA+0xFj------------SyntaxError: invalid hexadecimal literal
+>>> a=0xA+3j
+>>> print(a, type(a))---------(10+3j) <class 'complex'>
+

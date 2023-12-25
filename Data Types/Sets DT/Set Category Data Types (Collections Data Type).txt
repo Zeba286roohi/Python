@@ -1,0 +1,8 @@
+	=====================================================
+		IV) Set Category Data Types (Collections Data Type)
+	=====================================================
+=>The purpose of Set Category Data Types is that " To store multiple values either of same type or different type or both types with Unique Values in single object(Duplicate values are not allowed). "
+=>Set Category Data contains two data types. They are
+		1) set  (Mutable & Immutable)
+		2) frozenset (Immutable)
+-------------------------------------------------------------------------------------------------

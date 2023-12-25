@@ -1,0 +1,29 @@
+			========================================
+					Multi Threading in Python
+			========================================
+=>The purpose of Multi Threading is " To provide Concurrent Execution "
+=>The concurrent execution is nothing but Simultaneous or Parallel Execution.
+=>The Advantage of Concurrent Execution is that always takes Less Execution Time.
+------------------------------------------------------------------------------------------------------------------------------
+=>In the context of Programming Languages, we have 2 types of Languages. They are
+		a) Process Based Applications
+		b) Thread Based Applications.
+
+a) Process Based Applications:
+-------------------------------------------------
+=>Process Based Applications execution environment contains Single Thread
+=>Process Based Applications provides Sequential Execution
+=>Process Based ApplicationsTakes More Execution Time
+=>Process Based Applications are treated as Heavy Weight Application.
+Examples:   C,CPP...etc
+--------------------------------------------------------------------------------------------
+b) Thread Based Applications.
+---------------------------------------------------------------------------------------------
+=>Thread Based Applications are those whose execution environment contains Single Thread 
+    (by deafult) and allows us create Multiple Threads programatically.
+=>Thread Based Applications provides Sequential Execution (by default) also provides 
+    Concurrent Execution programatically.
+=>Thread Based Applications Takes Less Execution Time
+=>Thread Based Applications are treated as Light Weight Applications.
+
+Examples:   Python, Java . C#.Net...etc

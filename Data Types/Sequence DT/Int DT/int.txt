@@ -1,0 +1,83 @@
+		===============================
+				int
+		===============================
+=>'int' is one of the pre-defined class and it is treated as Fundamental Data Type.
+=>The purpose of 'int' data type is that " To Store Integer / Whole / Integral Values." 
+=>"Integer / Whole / Integral Values are nothing but data without decimal places.
+
+---------------
+Examples:
+--------------
+>>> a=123
+>>> print(a)------------123
+>>> type(a)-----------<class 'int'>
+>>> print(a, type(a), id(a))-----123 <class 'int'> 2533443702832
+>>> a=1567
+>>> print(a, type(a), id(a))---1567 <class 'int'> 2533444737104
+-----------------------------------
+=>With 'int' data type, we can also store Number System Data.
+=>In Any Programming Language ( Python, C, CPP, JAVA ), we have 4 types of Number Systems. They are
+		i)  Decimal Number System (default ).
+		ii) Binary Number System. 
+		iii) Octal Number System.
+		iv) Hexa Decimal Number System.
+
+i)  Decimal Number System (default ):
+-------------------------------------------------
+=>It is one of the default number System
+=>The  Decimal Number System (default ) are
+		Digits:  0 1 2 3 4 5 6 7 8 9  
+		Total Number of Digits: 10
+		Base :  10
+=>Base 10 Literals are called Decimal Number System Data.
+--------------------------------------------------------------------------------
+ii)  Binary Number System :
+-------------------------------------------------
+=>The Digits in Binary Number System are
+		Digits:  0 1 
+		Total Number of Digits: 2
+		Base :  2
+=>Base 2 Literals are called Binary Number System Data.
+=>To store Binary data in Pythgn Programming Environment, binary data must be 
+    preceded with either 0b or 0B.
+=>Syntax:-    varname=0b Binary Data
+				(OR)
+		     varname=0B Binary Data
+=>Even we store Binary data  and when we display The Binary Data converted into Equivalent Decimal Number System data.
+
+Examples:
+---------------
+>>> a=0b1110
+>>> print(a, type(a))---------14 <class 'int'>
+>>> a=0B1110
+>>> print(a, type(a))----------14 <class 'int'>
+>>>
+>>> a=0b1010
+>>> print(a, type(a))--------10 <class 'int'>
+>>> a=0B1010
+>>> print(a, type(a))------10 <class 'int'>
+
+>>> a=0B10102------SyntaxError: invalid digit '2' in binary literal
+-------------------------------------------------------------------------------------------------------
+III)  Octal Number System :
+-------------------------------------------------
+=>The Digits in Octal Number System are
+		Digits: 0 1  2  3  4  5  6  7
+		Total Number of Digits: 8
+		Base :  8
+=>Base 8 Literals are called Octal Number System Data.
+=>To store Octal data in Pythgn Programming Environment, Octal data must be 
+    preceded with either 0o or 0O.   
+=>Syntax:-    varname=0o Octal Data
+				(OR)
+		     varname=0O Octal Data
+=>Even we store Octal data  and when we display The Octal Data converted into Equivalent Decimal Number System data.
+
+
+------------------------------------------------------------------------------------------
+IV)Hexa Decimal Number System:
+    --------------------------------------
+=>The digits in Hexa decimal Systems are 01 2 3 4 5 6 7 8 9
+						A(10) B(11) C(12) D(13) E(14) F(15)
+Total Number of digits are=16
+Base of Hexa decimal system is  16

@@ -1,0 +1,24 @@
+			========================================
+					Multi Threading in Python
+			========================================
+Index
+----------
+=>Purpose of Multi Threading
+=>Types of Applications
+=>Definition of Thread
+=>Purpose of Thread
+=>Module Name Required For Multi Threading 
+			--> threading <----Module Name
+			           * Variables Names
+				   * Function Names
+			           * Thread class
+				   * Lock Class
+=>Programming Examples
+-------------------------------------------------------------------------------------------------
+=>Synchronization concept in Python
+=>Dead Locks in Python
+=>Avoiding Dead Locks 
+=>Programming Examples
+-------------------------------------------------------------------------------------------------
+
+

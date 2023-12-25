@@ -1,0 +1,22 @@
+		============================================
+			Data Representation in Python
+		============================================
+=>To Represent the data in Python Programming, we need 3 things.
+		1) Literals
+		2) Data Types
+		3) Identifers / Variables
+--------------------------------------------------------------------------------
+1) Literals:
+-------------------
+=> Literals are nothing but input values passing to the program.
+=>Basically, we have 4 types of Literals. They are
+		a) Numeric Literals
+		            i) Integers
+			    ii) floats 
+		b) Boolean Literals
+			   i) True
+			   ii) False
+		c)  String Literals
+			Examples:   "Python"   
+					   "Guido Van Rossum"
+------------------------------------------------------------------------------------------------

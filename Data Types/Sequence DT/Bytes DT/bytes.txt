@@ -1,0 +1,104 @@
+		==========================
+				b) bytes
+		==========================
+=>'bytes' is one of the pre-defined class and it is treated as Sequence Data Type.
+=>The purpose of bytes data type is that "To store the Numerical Possitive Integer Values ranges from 0 to 256. i.e It stores Numerical Possitive Integer Values ranges from 0 to 255 (256-1) only.
+=>bytes data type does not have any Symbolic notation for organizing the data but we can convert the data of any type into bytes data type by using  bytes().
+		Syntax:   varname=bytes(object)
+=>On the object of bytes data type, we can perform Indexing and Slicing Operations.
+=>An object of bytes data type maintains insertion order (OR) In otherwords, In whichever order we insert the data in the same order the data will be displayed.
+=>An object of bytes belongs to Immutable bcoz 'bytes' object does not support item assignment.
+-----------------------------
+Examples:
+-----------------------------
+>>> t=(10,20,30,256,34,0)
+>>> print(t,type(t))---------------(10, 20, 30, 256, 34, 0) <class 'tuple'>
+>>> b=bytes(t)-------ValueError: bytes must be in range(0, 256)
+----------------------------------
+>>> t=(10,-20,30,255,34,0)
+>>> print(t,type(t))--------(10, -20, 30, 255, 34, 0) <class 'tuple'>
+>>> b=bytes(t)-----------ValueError: bytes must be in range(0, 256)
+-----------------------------------
+>>> t=(10,20,30,255,34,0)
+>>> print(t,type(t))-----------(10, 20, 30, 255, 34, 0) <class 'tuple'>
+>>> b=bytes(t)
+>>> print(b, type(b))-------b'\n\x14\x1e\xff"\x00' <class 'bytes'>
+>>> for v in b:
+...	    print(v)
+...
+				10
+				20
+				30
+				255
+				34
+				0
+>>> print(b[0])-------------------10
+>>> print(b[-1])------------------0
+>>> print(b[-2])-----------------34
+>>> print(b[2:5])--------------b'\x1e\xff"'
+>>> for v in b[2:5]:
+...         print(v)
+				...
+				30
+				255
+				34
+>>> print(b, type(b),id(b))-------b'\n\x14\x1e\xff"\x00' <class 'bytes'> 2360235709168
+>>> print(b[0])--------10
+>>> b[0]=100  -----TypeError: 'bytes' object does not support item assignment
+=============================X===============================
+>>> l=[10,20,30,"KVR",34,56,78]
+>>> print(l,type(l))--------[10, 20, 30, 'KVR', 34, 56, 78] <class 'list'>
+>>> b=bytes(l)------TypeError: 'str' object cannot be interpreted as an integer
+-------------------------------------
+>>> l=[10,20,30,0,34,56,78,255]
+>>> print(l,type(l))----------[10, 20, 30, 0, 34, 56, 78, 255] <class 'list'>
+>>> b=bytes(l)
+>>> print(b,type(b), id(b))---b'\n\x14\x1e\x00"8N\xff' <class 'bytes'> 2360235711472
+>>> print(b[0])---10
+>>> print(b[-1])----255
+>>> for k in b:
+...         print(k)
+			...
+			10
+			20
+			30
+			0
+			34
+			56
+			78
+			255
+>>> for k in b[::-1]:
+...         print(k)
+...
+			255
+			78
+			56
+			34
+			0
+			30
+			20
+			10
+>>> for k in b[::2]:
+...     print(k)
+			...
+			10
+			30
+			34
+			78
+>>> for k in b[::-2]:
+...     print(k)
+...
+			255
+			56
+			0
+			20
+>>> b[0]=200---------TypeError: 'bytes' object does not support item assignment
+==========================X==================================
+
+
+
+
+
+
+
+

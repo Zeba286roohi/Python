@@ -1,0 +1,18 @@
+		=======================================================
+			Persistent Application development by using Files in  Python
+		=======================================================
+=>File Concept is one language Independent where we can store the data permanently.
+=>The communication between Python Program and Files is comes under development of Persistant Application.
+--------------------------------
+=>Definition of Files:
+--------------------------------
+=> A File is a collection of Records
+=>A File Name is one of the Named Location in Secondary  Memory.
+=>Files of any programming resides in Secondary Memory.
+=>In Files Programming, Every Object Data becomes a record in a file of secondary memory and every record of file of sedondary memory will become an object in main memory.
+--------------------------------------------------------------------------------------------------------------------------------
+Definition of Steram:
+------------------------------
+=>The flow of data between main memory and file of secondary memory is called Stream.
+---------------------------------------------------------------------------------------------------------------------------------
+

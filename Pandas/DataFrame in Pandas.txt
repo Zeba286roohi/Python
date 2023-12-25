@@ -1,0 +1,9 @@
+		==========================================
+				DataFrame in Pandas
+		==========================================
+=>A DataFrame is 2-Dimensional Data Structure to organize the data .
+=>In Otherwords a DataFrame Organizes the data in the Tabular Format, which is 
+     nothing but Collection of Rows and Columns.
+=>The Columns of DataFrame can be Different Data Types or Same Type
+=>The Size of DataFrame can be mutable.
+---------------------------------------------------------------------------------------------------------

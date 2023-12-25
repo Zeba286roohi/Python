@@ -1,0 +1,43 @@
+		=============================================
+			Reading ths Data Dyamically from Key Board
+		=============================================
+=>To read the data from Key Board, we have 2 pre-defined Functions. They are
+		a) input()
+		b) input(Message)
+--------------------------------------------------------------------------------------
+1) input():
+-------------------
+=>This function is used for reading any type of data from Key Board in the form of str. Programatically, we can convert str type values into other type of values by using Type casting  Techniques.
+=>Syntax:      varname=input()
+=>Here 'varname' is an object of type str.
+=>input() is pre-defined function and reads any type of data from Key board.
+------------------------------------------------------------------------------
+Examples:
+-----------------------------------------------------------------------------
+#mulex5.py
+print("Enter two values:")
+a=input()
+b=input()
+x=float(a)
+y=float(b)
+z=x*y
+print("mul({},{})={}".format(x,y,z))
+------------------------------------------------------------------------------
+b) input(Message):
+------------------------------------------------------------------------------
+=>This function is used for reading any type of data from Key Board in the form of str by giving User-Prompting Messages .
+=>Syntax:      varname=input(Message)
+=>Here 'varname' is an object of type str.
+=>input() is pre-defined function and reads any type of data from Key board.
+=>Message represents User-Prompting Messages.
+
+-----------------
+Examples:
+-----------------
+#This program reads two values and multiply them
+#mulex9.py
+#convert str type into  float type
+x=float(input("Enter First Value:"))
+y=float(input("Enter Second Value:"))
+z=x*y
+print("mul of {} and {}={}".format(x,y,z))

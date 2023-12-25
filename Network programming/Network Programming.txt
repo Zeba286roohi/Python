@@ -1,0 +1,39 @@
+			==============================================
+					Network Programming
+			==============================================
+=>The purpose of Network Programming is that "To share the data between multiple machines".
+--------------------------------
+=>Def. of Network:
+--------------------------------
+=>A Network is a collection of Inter-connected computers connected with Server".
+=>In Network programming, we have two write two types of Programs. They are
+
+		1) Server Side Program
+		2) Client Side Program
+------------------------------------------------------------------
+1) Server Side Program:
+------------------------------------------------------------------
+=>A Server Side Program is of the Python Program, which receives the request from client side program, Process the Request and gives response back to Client Side Program.
+------------------------------------------------------------------
+2) Client Side Program:
+------------------------------------------------------------------
+=>A Client Side Program is of the Python Program,which always send request to the server side program and recives the response from server side Program
+------------------------------------------------------------------
+ DNS(Domain Naming Service)
+------------------------------------------------------------------
+=>A DNS is a Name of the Physical machine where Server Side Programs resides
+=>The default DNS of every computer is "localhost"
+------------------------------------------------------------------
+ IP Address (Internet Protocol address)
+------------------------------------------------------------------
+=>An IP Address is one of the Numerical Address of the Physical Machine, where server side 
+    program resides.
+=>The default IP Address of every mchine is 127.0.0.1 (loop back address)
+---------------------------------------------------------------------------------------------------------------------
+=>port number:
+--------------------------------------
+=>A Port Number is a logical numerical id where server side program is running.
+===========================================================================
+
+
+

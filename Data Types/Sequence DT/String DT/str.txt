@@ -1,0 +1,115 @@
+		===================================
+				str
+		===================================
+Index:
+----------
+=>Purpose
+=>Number of ways to organize str data
+=>Number of Notation to organize str data
+=>Operations on str data
+		a) Indexing
+		b) Slicing
+==============================================
+=>'str' is one of the pre-defined class and treated as Sequence Category.
+=>The purpose of 'str' data type is that "To store String / Text / Alpha-numeric data" .
+--------------------------------------------------
+=>Number of ways to organize/ strore str data
+--------------------------------------------------
+=>In Python Programming, we have two ways to organize str data. They are
+		a) Single Line Str data
+		b) Multi Line Str data
+-------------------------------
+a) Single Line Str data:
+-------------------------------
+=>The single line string data is one , which is enclosed within single Quotes or double quotes.
+=>In otherwords, To organize single line string data, we must use single quotes or double quotes.
+=>Syntax1:         " Single line String data "
+		(OR)
+=>Syntax2:         ' Single line String data '
+
+=>We can't use single Quotes or double quotes  for organizing Multi Line String data.
+-----------------
+Examples
+-----------------
+>>>
+>>> s1="Guido Van Rossum"
+>>> print(s1,type(s1))-------Guido Van Rossum <class 'str'>
+>>> s2='Guido Van Rossum'
+>>> print(s2,type(s2))----------Guido Van Rossum <class 'str'>
+>>> s3="A"
+>>> print(s3,type(s3))---------A <class 'str'>
+>>> s4='A'
+>>> print(s4,type(s4))--------A <class 'str'>
+>>> s5="23456"
+>>> print(s5,type(s5))----------23456 <class 'str'>
+>>> s6="Python3.10" 
+>>> print(s6,type(s6))---------Python3.10 <class 'str'>
+>>> s7="String"
+>>> print(s7,type(s7))-------String <class 'str'>
+>>> s7='String'
+>>> print(s7,type(s7))--------String <class 'str'>
+>>> addr1="Gudido van Rossum
+		SyntaxError: unterminated string literal (detected at line 1)
+>>> addr1='Gudido van Rossum
+		SyntaxError: unterminated string literal (detected at line 1)
+
+Hence To organize Multi  line string data, we must use Tripple single quotes or tripple double quotes.
+---------------------------------------------------------------------------------
+b) Multi Line Str data:
+-----------------------------
+=>The Multi Line string data is one , which is enclosed within tripple single Quotes or tripple double quotes.
+=>In otherwords, To organize  Multi  line string data, we must use tripple single quotes or tripple double quotes.
+=>Syntax1:         " " "
+                                  String Data-1
+				  String Data-2
+				  ----------------
+				  String Data-n " " "
+    
+		(OR)
+=>Syntax2:         ' ' '    String Data-1
+				  String Data-2
+				  ----------------
+				  String Data-n ' ' '
+=>Hence with Tripple Single Quotes (or) tripple double quotes , we can organize both 
+single and multi line string data.
+----------------
+Examples:
+----------------
+>>> addr1="""Guido van Rossum
+... HNO:3-4, Red sea side
+... Python Software Foundation
+... Centrum Wiscunde Informatica
+... Nether Lands """
+
+>>> print(addr1,type(addr1))
+			Guido van Rossum
+			HNO:3-4, Red sea side
+			Python Software Foundation
+			Centrum Wiscunde Informatica
+			Nether Lands            <class 'str'>
+
+>>> addr2='''James Gosling
+... Sun Micro System
+... FNO:5-6 Hill Side
+... USA '''
+>>> print(addr2,type(addr2))
+			James Gosling
+			Sun Micro System
+			FNO:5-6 Hill Side
+			USA                    <class 'str'>
+------------------------------------------------------
+>>> s1="""Python is an oop lang """
+>>> print(s1,type(s1))---------------------Python is an oop lang  <class 'str'>
+>>> s2='''java is also oop lang'''
+>>> print(s2,type(s2))--------java is also oop lang <class 'str'>
+>>> s3="""A"""
+>>> print(s3,type(s3))----------A <class 'str'>
+>>> s4='''A'''
+>>> print(s4,type(s4))------------A <class 'str'>
+
+=>Hence , we have 4 Notations to organize String data . They are
+		a) Single Quotes
+		b) Double Quotes 
+		c) Tripple Single Quotes
+		d) Tripple Double Quotes
+===========================================================

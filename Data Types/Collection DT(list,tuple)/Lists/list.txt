@@ -1,0 +1,42 @@
+		============================
+					1) list 
+		============================
+=>'list' is one of the pre-defined class and treated as List category data type.
+=>The purpose of list data type is that "To store multiple values either of same type or 
+    different type or both types with Unique and Duplicates in single object".
+=>To store the elements in list , the elements must be written (or) enclosed within 
+    Square Brackets [ ] and the elements must be separated by comma.
+	Syntax:-     varname=[val1,val2,....,val-n]  # Non-empty list
+	                  varname= [  ]          #empty list
+			  varname=list()    # empty  list
+=>An object of list data type maintains insertion order.
+=>On the object of list , we can perform both Indexing and Slicing Operations.
+=>An Object of list belongs to mutable.
+--------------------------------------------------------------------------------------
+Examples:
+-------------------
+>>> l1=[10,20,-30,40,10,60,20]
+>>> print(l1,type(l1))-------[10, 20, -30, 40, 10, 60, 20] <class 'list'>
+>>> l2=[100,"Rossum",45.67,True,2+3j,"Python"]
+>>> print(l2,type(l2))------[100, 'Rossum', 45.67, True, (2+3j), 'Python'] <class 'list'>
+>>>
+>>> len(l1)--------7
+>>> len(l2)-------6
+>>> l3=[]
+>>> print(l3,type(l3))--------[] <class 'list'>
+>>> len(l3)--------0
+>>> l4=list()
+>>> len(l4)--------0
+>>> print(l4,type(l4))--------[] <class 'list'>
+>>> l2=[100,"Rossum",45.67,True,2+3j,"Python"]
+>>> print(l2[0])--------100
+>>> print(l2[1])--------Rossum
+>>> print(l2[-1])--------Python
+>>> print(l2[2:5])-------[45.67, True, (2+3j)]
+>>> l2=[100,"Rossum",45.67,True,2+3j,"Python"]
+>>> print(l2,type(l2), id(l2))---[100, 'Rossum', 45.67, True, (2+3j), 'Python'] 
+					<class 'list'> 2438540918080
+>>> l2[2]=66.99
+>>> print(l2,type(l2), id(l2))---[100, 'Rossum', 66.99, True, (2+3j), 'Python']
+						<class 'list'> 2438540918080
+============================X=============================

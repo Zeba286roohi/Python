@@ -1,0 +1,74 @@
+		===========================================
+			Types of Methods in Class of Python
+		===========================================
+=>In Python Programming, we can define 3 Types of Methods in side of Class. They are
+
+			1) Instance Method
+			2) Class Level Method
+			3) Static Method.
+---------------------------------------------------------------------------------------------------
+1) Instance Method:
+---------------------------------------------------------------------------------------------------
+=>Instance Methods are used for Performing Specific Operatons on the data of object 
+    and Hence Instance Methods are called Object Level Methods.
+=>Instance Methods always Takes "self" as First Positional Parameters for obtaining 
+    id of Current Class object.
+=>Syntax:-
+		def    InstanceMethodName(self, list of formal params):
+		        -----------------------------------------
+			-------Specific Operations-------
+			-----------------------------------------
+=>Instance Methods of a Class must be accessed w.r.t object name or self
+		objectname.InstanceMethodName()
+				(or)
+		self.InstanceMethodName()
+---------------------------------------------------------------------
+What is  self:
+---------------------
+=>self is one of the implicit object used as a First formal parameter in the definition of Instance Method
+=>The self contains Id or memory address or reference of Current Class object.
+=>self is applicable for objects only.
+===================================================================
+2) Class Level Method:
+--------------------------------------------
+=>Class level  Methods are used for Performing Class Level Operatons Such as Specifying Class Level Data Members and Performs operations on them (if required).
+=>Class Level Methods always Takes "cls" as First Positional Parameters for obtaining Current Class Name.
+=>Every Class Level Method must be preceded with a pre-defined decorator called @classmethod
+=>Syntax:-
+		@classmethod
+		def    ClassLevelMethodName(cls, list of formal params):
+		        -----------------------------------------
+			-------Common Operations-------
+			-----------------------------------------
+=>Every Class Level Method can be accessed w.r.t to Class Name or cls or object name or self
+			ClassName.Class Level method Name()
+					(OR)
+			cls.Class Level method Name()
+					(OR)
+			objectname.Class Level method Name()
+					(OR)
+			self.Class Level method Name()
+----------------------------------------
+What is  cls  :
+---------------------
+=>cls is one of the implicit object used as a First formal parameter in the definition of Class Level Method
+=>The cls contains Name of Current Class 
+=>cls is applicable for Class Level Data Members and Class Level Methods only.
+===================================================================
+3) Static Method:
+----------------------------------
+=>Static Methods are used for Performing Utility or Universal Operatons Such as caluclator, displaying the data of any obnject  etc.
+=>tatic Methods neither Takes "cls"  nor takes "self "as First Positional Parameters but it may take another object(s) .
+=>Every Static Method must be preceded with a pre-defined decorator called @staticmethod
+=>Syntax:-
+		@staticmethod
+		def    StaticMethodName(list of formal params if any):
+		        -----------------------------------------
+			-------Utility or Universal Operations-------
+			-----------------------------------------
+
+=>Every Static can be accessed w.r.t to Corresponding Class Name or  object name
+			ClassName.static method Name()
+					(OR)
+			objectname.static method  Name()
+==========================X=====================================
